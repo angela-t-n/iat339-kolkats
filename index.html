@@ -1,168 +1,376 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>P01 - Style Guide: Kolkats</title>
+<html lang="en">
 
-    <link href="css/main.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>P01 - Style Guide: Kolkats</title>
 
-  <body>
-    <header>
-      <h1>P01 - Style Guide: Kolkats</h1>
+  <link href="css/main.css" rel="stylesheet" />
+</head>
 
-      <p>
-        A template you can use to start building out your own style guides with.
-      </p>
-    </header>
+<body>
+  <header>
+    <h1>P01 - Style Guide: Kolkats</h1>
 
-    <nav>
-      <a href="#interactive_elements">Interactive Elements</a>
-      <a href="#text_elements">Text Elements</a>
-      <a href="#combined_elements">Combined Elements</a>
-      <a href="product_listing.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
-      <a href="#citations">Citations</a>
-    </nav>
+    <p>
+      A template you can use to start building out your own style guides with.
+    </p>
+  </header>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+  <nav>
+    <a href="#interactive_elements">Interactive Elements</a>
+    <a href="#text_elements">Text Elements</a>
+    <a href="#combined_elements">Combined Elements</a>
+    <a href="product_listing.html">Product Listing Template</a>
+    <a href="checkout.html">Checkout Template</a>
+    <a href="#citations">Citations</a>
+  </nav>
 
-      <section class="element">
-        <h3>In-text link</h3>
-      </section>
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
 
-      <!-- Default Button styling section -->
-      <section class="element">
-        <h3>Navigation Link</h3>
+    <section class="element">
+      <h3>In-text link</h3>
+    </section>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+    <!-- Default Button styling section -->
+    <section class="element">
+      <h3>Navigation Link</h3>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-      </section>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-      </section>
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Default Button</a>
+    </section>
 
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+    </section>
 
-        <!-- 
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <!-- 
           Can be used for username, email, etc.
           This is important for signing up and logging in, etc
         -->
-        <form>
-          <fieldset>
-            <label>
-              Email:
-              <input type="email" placeholder="john.doe@example.com" />
-            </label>
-          </fieldset>
-        </form>
+      <form>
+        <fieldset>
+          <label>
+            Email:
+            <input type="email" placeholder="john.doe@example.com" />
+          </label>
+        </fieldset>
+      </form>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;fieldset&gt; &lt;label&gt; Email: &lt;input type="email"
           placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
           &lt;/fieldset&gt;
         </code>
-      </section>
+    </section>
 
-      <section class="element">
-        <h3>Radio Button with Label</h3>
+    <section class="element">
+      <h3>Radio Button with Label</h3>
 
-        <!-- 
+      <!-- 
           Can be used for selection of product options, etc.
           References: 
             - https://www.w3schools.com/tags/att_input_type_radio.asp
             - Overall assignments and stuff
         -->
-        <form>
-          <fieldset>
-            <label>
-              <input type="radio" name="radio" value="1" />
-              Variant 1
-            </label>
-          </fieldset>
-        </form>
+      <form>
+        <fieldset>
+          <label>
+            <input type="radio" name="radio" value="1" />
+            Variant 1
+          </label>
+        </fieldset>
+      </form>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;fieldset&gt; &lt;label&gt; &lt;input type="radio" name="radio"
           value="1" /&gt; Variant 1 &lt;/label&gt; &lt;/fieldset&gt;
         </code>
-      </section>
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-      </section>
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <section class="element">
-        <h3>Headings</h3>
-      </section>
-
-      <section class="element">
-        <h3>Paragraphs</h3>
-      </section>
-
-      <section class="element">
-        <h3>Numbered Lists</h3>
-      </section>
+    <section class="element">
+      <h3>Image as a Link</h3>
     </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
 
-      <section class="element">
-        <h3>Main Navigation</h3>
-      </section>
-
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-      </section>
-
-      <section class="element">
-        <h3>Payment Form</h3>
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-      </section>
+    <section class="element">
+      <h3>Headings</h3>
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
 
-    <section id="citations">
-      <h2>Citations</h2>
+    <section class="element">
+      <h3>Paragraphs</h3>
 
-      <ul>
-        <li>
-          Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
-          Retrieved from
-          <a
-            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
-            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
-          >
-        </li>
-        <li>
-          Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
-          from <a href="#">URL</a>.
-        </li>
-      </ul>
+      <p>
+        Sample description for Plantosphere. Perhaps something for the About
+        Us section.
+      </p>
+
+      <h4>Sample code:</h4>
+      <code> &lt;p&gt; todo &lt;/p&gt; </code>
     </section>
-  </body>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+
+      <!-- Reference: https://www.w3schools.com/html/html_lists_ordered.asp -->
+      <ol type="1">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+      <h4>Sample code:</h4>
+      <code>
+          &lt;ol type="1"&gt; &lt;li&gt;First item&lt;/li&gt; &lt;li&gt;Second
+          item&lt;/li&gt; &lt;li&gt;Third item&lt;/li&gt; &lt;/ol&gt;
+        </code>
+    </section>
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+    </section>
+
+    <section class="element">
+      <h3>Product/Service Listing</h3>
+    </section>
+
+    <section class="element">
+      <h3>Payment Form</h3>
+
+      <!-- 
+          For fields reference, I tried basing it off of many different brands 
+          I've shopped from such as Honey Wardrobe (kind of uses a default Shopify checkout form),
+          Call It Spring, DSW/The Shoe Company, Amazon, etc.
+
+          In general, there needs to be a way to contact the user, an address
+          and then credit card details
+
+          Using references from: https://www.w3schools.com/html/html_form_elements.asp
+          for the checkbox specifically: https://www.w3schools.com/tags/att_input_type_checkbox.asp
+        -->
+      <form>
+        <fieldset>
+          <legend>Contact</legend>
+          <label>
+            First Name:
+            <input type="text" placeholder="John" />
+          </label>
+          <label>
+            Last Name:
+            <input type="text" placeholder="Doe" />
+          </label>
+          <label>
+            Phone Number:
+            <input type="tel" placeholder="604-123-4567" />
+          </label>
+          <label>
+            Email:
+            <input type="email" placeholder="john.doe@example.com" />
+          </label>
+          <label>
+            <input type="checkbox" id="toggle-newsletter" value="false" />
+            Send me newsletters and special offers
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Shipping</legend>
+          <label>
+            Country:
+            <input type="text" placeholder="Canada" />
+          </label>
+          <label>
+            Address:
+            <input type="text" placeholder="123 Main Street" />
+          </label>
+          <label>
+            Suite/Apt (Optional):
+            <input type="text" placeholder="Suite 100" />
+          </label>
+          <label>
+            City:
+            <input type="text" placeholder="Vancouver" />
+          </label>
+          <label>
+            Province:
+            <select>
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NU">Nunavut</option>
+              <option value="ON">Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="YT">Yukon</option>
+            </select>
+          </label>
+          <label>
+            Postal Code:
+            <input type="text" placeholder="A1A 1A1" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment</legend>
+          <label>
+            Card Number:
+            <input type="text" placeholder="1234 5678 9012 3456" />
+          </label>
+          <label>
+            Expiration Date:
+            <input type="text" placeholder="MM/YY" />
+          </label>
+          <label>
+            CVV:
+            <input type="text" placeholder="123" />
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+
+      <h3>Sample code:</h3>
+      <!-- The formatting looked so bad that I looked up how to keep the format -->
+      <pre>
+          <code>
+            &lt;form&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;Contact&lt;/legend&gt;
+                &lt;label&gt;
+                  First Name:
+                  &lt;input type="text" placeholder="John" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Last Name:
+                  &lt;input type="text" placeholder="Doe" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Phone Number:
+                  &lt;input type="tel" placeholder="604-123-4567" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Email:
+                  &lt;input type="email" placeholder="john.doe@example.com" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  &lt;input type="checkbox" id="toggle-newsletter" value="false" /&gt;
+                  Send me newsletters and special offers
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+
+              &lt;fieldset&gt;
+                &lt;legend&gt;Shipping&lt;/legend&gt;
+                &lt;label&gt;
+                  Country:
+                  &lt;input type="text" placeholder="Canada" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Address:
+                  &lt;input type="text" placeholder="123 Main Street" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Suite/Apt (Optional):
+                  &lt;input type="text" placeholder="Suite 100" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  City:
+                  &lt;input type="text" placeholder="Vancouver" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Province:
+                  &lt;select&gt;
+                    &lt;option value="AB"&gt;Alberta&lt;/option&gt;
+                    &lt;option value="BC"&gt;British Columbia&lt;/option&gt;
+                    &lt;option value="MB"&gt;Manitoba&lt;/option&gt;
+                    &lt;option value="NB"&gt;New Brunswick&lt;/option&gt;
+                    &lt;option value="NL"&gt;Newfoundland and Labrador&lt;/option&gt;
+                    &lt;option value="NT"&gt;Northwest Territories&lt;/option&gt;
+                    &lt;option value="NS"&gt;Nova Scotia&lt;/option&gt;
+                    &lt;option value="NU"&gt;Nunavut&lt;/option&gt;
+                    &lt;option value="ON"&gt;Ontario&lt;/option&gt;
+                    &lt;option value="PE"&gt;Prince Edward Island&lt;/option&gt;
+                    &lt;option value="QC"&gt;Quebec&lt;/option&gt;
+                    &lt;option value="SK"&gt;Saskatchewan&lt;/option&gt;
+                    &lt;option value="YT"&gt;Yukon&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Postal Code:
+                  &lt;input type="text" placeholder="A1A 1A1" /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+
+              &lt;fieldset&gt;
+                &lt;legend&gt;Payment&lt;/legend&gt;
+                &lt;label&gt;
+                  Card Number:
+                  &lt;input type="text" placeholder="1234 5678 9012 3456" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  Expiration Date:
+                  &lt;input type="text" placeholder="MM/YY" /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                  CVV:
+                  &lt;input type="text" placeholder="123" /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+              &lt;input type="submit" value="Submit" /&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+    </section>
+
+    <section class="element">
+      <h3>Checkout Cart</h3>
+    </section>
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>
+        Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
+        Retrieved from
+        <a
+          href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
+      </li>
+      <li>
+        Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
+        from <a href="#">URL</a>.
+      </li>
+    </ul>
+  </section>
+</body>
+
 </html>
