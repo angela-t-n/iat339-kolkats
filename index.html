@@ -31,24 +31,46 @@
 
       <section class="element">
         <h3>In-text link</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Help &lt;a href="https://en.wikipedia.org/wiki/Cat"&gt;Kolkat&lt;/a&gt; save the [plant name] forest before it is too late! When you purchase from the Plantosphere, you will be appointed an endangered plant. But not just any plant. This plant will grant you your deepest desires.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Help <a href="https://en.wikipedia.org/wiki/Cat">Kolkat</a> save the [plant name] forest before it is too late! When you purchase from the Plantosphere, you will be appointed an endangered plant. But not just any plant. This plant will grant you your deepest desires.</p>
       </section>
 
       <!-- Default Button styling section -->
       <section class="element">
         <h3>Navigation Link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#"&gt;Navigations Button 1&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+        <a href="#">Navigation Button 1</a>
       </section>
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;<br>
+          &lt;label for="name"&gt;Name&lt;/label&gt;<br>
+          &lt;input type="text" id="name" placeholder="Name"&gt;&lt;br&gt;<br>
+          &lt;button type="submit" value="Submit">Submit&lt;/button&gt;<br>
+          &lt;button type ="reset" value="Reset">Reset&lt;/button&gt;<br>
+        &lt;/form&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name"><br>
+          <!-- used for creating the submit/reset buttons: https://www.wikihow.tech/Create-a-Reset-Button-in-HTML -->
+          <button type="submit" value="Submit">Submit</button>
+          <button type ="reset" value="Reset">Reset</button>
+        </form>
       </section>
 
       <section class="element">
@@ -112,6 +134,22 @@
 
       <section class="element">
         <h3>Headings</h3>
+
+        <h4>Sample code:</h4>
+        
+        <code>
+          &lt;h2>Heading 2&lt;/h2&gt; <br>
+          &lt;h3>Heading 3&lt;/h3&gt; <br>
+          &lt;h4>Heading 4&lt;/h4&gt; <br>
+          &lt;h5>Heading 5&lt;/h5&gt; <br>
+        </code>
+        
+        <h4>Rendered Element</h4>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+      </section>
       </section>
 
       <section class="element">
@@ -151,10 +189,82 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#news">News&lt;/a&gt;<br>
+          &lt;a href="#plantosphere">Plantosphere&lt;/a&gt;<br>
+          &lt;a href="#readings">Readings&lt;/a&gt;<br>
+          &lt;a href="contact">Contact&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <nav>        
+          <!-- company updates -->
+          <a href="#news">News</a>
+          <!-- about the company -->
+          <a href="#plantosphere">Plantosphere</a>
+          <!-- multiproduct listing AND will link to individual product detailed view THEN will lead to the entire process of purchasing a product -->
+          <a href="#readings">Readings</a>
+          <!-- appropriate means for the user to provide feedback on a product or service -->
+          <a href="contact">Contact</a>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="product-grid-container"&gt;<br>
+          &lt;ul class="product-grid"&gt;<br>
+              &lt;li class="grid-item"&gt;<br>
+                 &lt;a href="product.html"&gt;<br>
+                  &lt;div class="card-container"&gt;<br>
+                &lt;div class="card-content"&gt;<br>
+                  &lt;div class="card-img"&gt;<br>
+                    &lt;img src="img/placeholder.png"&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="card-information"&gt;<br>
+                    &lt;h4&gt;Product name&lt;/h4&gt;<br>
+                    &lt;h5&gt;Product price&lt;/h5&gt;<br>
+                  &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+                 &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+        &lt;/div&gt;<br>
+        </code>
+  
+        <!-- inspected this website's (https://wbtiger-toraebistore.jp/collections/newitems) listing structure and used a similar heirarchy:
+         product-grid-container - as holds all the listings in a container separate from other elements like headers, side columns, etc.
+         product-grid - the list of products in a grid
+         grid-item - each individual listing
+         card-container - hold all card content, wrapped in a href so that whole card links to more product info
+         card-information - holds the textual info of the card ex. name, price
+            -->
+
+        <div class="product-grid-container">
+
+          <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
+          <ul class="product-grid">
+  
+              <li class="grid-item">
+                 <a href="product.html">
+                  <div class="card-container">
+                    <div class="card-content">
+                      <div class="card-img"> 
+                        <img src="img/placeholder.png">
+                      </div>
+                      <div class="card-information">
+                        <h4>Product name</h4>
+                        <h5>Product price</h5>
+                      </div>
+                    </div>
+                  </div>
+                 </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="element">
