@@ -1,0 +1,11 @@
+/* https://www.w3schools.com/cssref/atrule_font-face.php */
+
+/* button font */
+@font-face {
+    font-family: 'Libre_Baskerville';
+
+  src: url('font/LibreBaskerville/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic; /* Explicitly defined as italic */
+  font-display: swap;/
+}
