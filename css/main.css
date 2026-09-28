@@ -2,13 +2,15 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+/*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
-  /* Branding Colors */
+  /* purples */
   --dark-purple: #8267B9;
   --light-purple: #9E93C9;
   --neurtral-purple:#E9E4F3;
   
-  /* Neutral Shades */
+  /* greens */
   --neutral-green: #F1F3E4;
   --light-green: #A9BA7F;
   --dark-green: #526903;
