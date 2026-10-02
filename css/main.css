@@ -3,6 +3,9 @@
   Default styling for the style guide 
 */
 
+/* Import fonts.css */
+@import url('./fonts.css');
+
 /*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
   /* purples */
@@ -18,7 +21,8 @@
 }
 
 body {
-  font-family: sans-serif;
+  /* Default page font */
+  font-family: 'League_Spartan', sans-serif;
   padding: 2rem;
 }
 
@@ -62,7 +66,7 @@ code {
 */
 
 .button {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre_Baskerville', serif;
   font-style: italic;
   font-size: 1.25rem;
   padding: 2px 24px; 
