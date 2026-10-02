@@ -4,29 +4,38 @@
 */
 
 /* Import fonts.css */
-@import url('./fonts.css');
+@import url("./fonts.css");
 
 /*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
   /* purples */
-  --dark-purple: #8267B9;
-  --light-purple: #9E93C9;
-  --neurtral-purple:#E9E4F3;
-  
+  --dark-purple: #534372;
+  --medium-purple: #8267b9;
+  --light-purple: #9e93c9;
+  --neutral-purple: #e9e4f3;
+
   /* greens */
-  --neutral-green: #F1F3E4;
-  --light-green: #A9BA7F;
+  --neutral-green: #f1f3e4;
+  --light-green: #a9ba7f;
   --medium-green: #739600;
   --dark-green: #526903;
 
   /* monochromes */
   --light-greyish-green: #969f94;
   --dark-grey: #333333;
+  --white: #ffffff;
+  --black: #000000;
+  --off-black: #323232;
+}
+
+/* Global setting to border-box*/
+* {
+  box-sizing: border-box;
 }
 
 body {
   /* Default page font */
-  font-family: 'League_Spartan', sans-serif;
+  font-family: "League_Spartan", sans-serif;
   padding: 2rem;
 }
 
@@ -54,30 +63,30 @@ p {
   margin-top: 0;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
 code {
-  background-color: #EEE;
+  background-color: #eee;
   padding: 0.5rem;
   display: block;
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 .button {
-  font-family: 'Libre_Baskerville', serif;
+  font-family: "Libre_Baskerville", serif;
   font-style: italic;
   font-size: 1.25rem;
-  padding: 2px 24px; 
+  padding: 2px 24px;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  border: 2px solid var(--light-green); 
+  border: 2px solid var(--light-green);
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
@@ -88,17 +97,19 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: var(--off-black);
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+.button-nav:hover,
+.button-nav:focus {
+  background-color: rgb(200, 200, 200);
 }
 
-.button:hover, .button:focus{
+.button:hover,
+.button:focus {
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 50px;
@@ -106,38 +117,98 @@ code {
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
-  border: 2px solid var(--dark-green); 
-
+  border: 2px solid var(--dark-green);
 }
 
 /*
   FORM ELEMENTS -------------------
 */
-/*
-  Radio Button
+/* make form fields stack vertically with spacing */
+.form-column {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-  References:
-  - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
-  - https://dev.to/shubhamtiwari909/custom-checkbox-and-radio-buttons-in-css-2n38
-*/
-.radio-button{
-  appearance: none; /* hides the default radio button */
+/* make them a row instead. */
+.form-row {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 /*
-  Label fields
+  Labels
 */
-.input-field-label{
+
+.radio-button-label {
+}
+
+.text-input-label {
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
 }
 
 /*
-  Input fields
+  Radio Button
+
+  References:
+  - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+  - https://dev.to/shubhamtiwari909/custom-checkbox-and-radio-buttons-in-css-2n38
+  - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+  - https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/UI_pseudo-classes?utm_source=chatgpt.com#using_generated_content_with_pseudo-classes 
+  - https://developer.mozilla.org/en-US/play?uuid=8b6abb93f48a552d18a3b12d961fb0dc7f7cf51d&state=vVLBbtswDP0VQqe0iOPEQXtQvAJbP2HHeQdaom01iiRIcuq0yL8PVpI1Cbagh2EXQXzkI58e9c66uNGMs7KxfvNUGYCyUaRloJgigFJTS0Y%2BPXfWBoKd7T00uLVeRYLG9yqW%2BbHkSHDHy8jFmvTvEKBUxvUR4s7Rl4p5lMpWDAxuxjA1qxhsUfdjLDryflcxyM86PB%2FA04D8fEKZu3%2BtoUaDBq80fDuA%2F0tDiB5f6z948f0jcVNLmZ%2FttMyPq2ZTJkJgnCUtPy61%2FIT3kYnOEXo0gjgYa2hVmX1lKnOD8qpk7DgUczesxrgj1XbxDKitl%2BSzkdUHDotLnEPhBghWKwmtx11K5ffwVb70IQaIHYGzQUVlDdgmxaIjsa7tQAGsSUikIUKNgbQyBPf52GRLPiqBOkOtWsMhK46DbR%2FHsk%2B8kPOaGuvp8FKpgtO441BrK9aplbAmkokcKgYVW535sbj2Y%2FEXPx5PMIp1621vZCastp6DJ5kyjTUxC%2BqNOCxmBW0SGD2aMG6WH64aI02WbpjC0g13EARqmszvLmsz61WrDAdBJpL%2FSCZ7OaDWMJ8tAxAGypS5bU5aA8lLkz6la3Gm63q06GslspreFPnJfFY8TOF0PjxOoRip%2B%2FSbX8bPzKYsdrQhxplEv2b7Xw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FLearn_web_development%2FExtensions%2FForms%2FUI_pseudo-classes%2F
+  */
+.radio-button {
+  /* hides the default radio button */
+  appearance: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+  /* custom styling */
+  width: 16px;
+  height: 16px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 2px solid var(--light-purple);
+
+  display: grid;
+  place-items: center;
+}
+
+.radio-button:checked {
+  border: 2px solid var(--medium-purple);
+}
+
+/* need to create a "pseudo element" for the custom tick on a radio button*/
+.radio-button::before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-top-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background-color: var(--medium-purple);
+  
+  transform: scale(0);
+}
+
+.radio-button:checked::before {
+  transform: scale(1);
+}
+
+.radio-button:hover,
+.radio-button:focus {
+  outline: none;
+  border: 2px solid var(--dark-purple);
+}
+
+/*
+  Text Input fields
 */
 /* default input field styling */
-input{
+.text-input {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -148,36 +219,33 @@ input{
 }
 
 /* when the input field is hovered on */
-input:hover{
+.text-input:hover {
   transition-duration: 0.5s;
   border: 2px solid var(--medium-green);
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  outline:none;
+  outline: none;
 }
 
 /* when the input field is currently selected/active */
-input:focus{
+.text-input:focus {
   border: 2px solid var(--dark-green);
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  outline:none;
+  outline: none;
 }
 
 /* Placeholder text when nothing is entered */
-input::placeholder{
+.text-input::placeholder {
   color: var(--light-greyish-green);
 }
 /* 
   TEXT ELEMENTS -------------------
 */
-
-
-
 
 /* 
   COMBINED ELEMENTS -------------------

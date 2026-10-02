@@ -8,7 +8,7 @@
   src: url('../font/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;/
+  font-display: swap;
 }
 
 /* button font */
@@ -31,6 +31,7 @@
   src: url('../font/League_Spartan/LeagueSpartan-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face{
@@ -38,6 +39,7 @@
   src: url('../font/League_Spartan/LeagueSpartan-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face{
@@ -45,4 +47,5 @@
   src: url('../font/League_Spartan/LeagueSpartan-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }

@@ -96,16 +96,22 @@
           This is important for signing up and logging in, etc
         -->
         <form>
-          <label class="input-field-label" for="email">
+          <label class="text-input-label" for="email">
             Email:
-            <input id="email" type="email" placeholder="john.doe@example.com" />
+            <input
+              class="text-input"
+              id="email"
+              type="email"
+              placeholder="john.doe@example.com"
+            />
           </label>
         </form>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;fieldset&gt; &lt;label class="input-field-label" for="email"&gt; Email: &lt;input id="email"
-          type="email" placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
+          &lt;fieldset&gt; &lt;label class="text-input-label" for="email"&gt;
+          Email: &lt;input class="text-input" id="email" type="email"
+          placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
           &lt;/fieldset&gt;
         </code>
       </section>
@@ -120,19 +126,45 @@
             - https://www.w3schools.com/tags/att_input_type_radio.asp
             - Overall assignments and stuff
         -->
-        <form>
-          <fieldset>
-            <label>
-              <input class="radio-button" type="radio" name="radio" value="1" />
-              Variant 1
-            </label>
-          </fieldset>
+        <form class="form-column">
+          <div class="form-row">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-1"
+              name="example-radio-group"
+              value="1"
+            />
+            <label class="radio-button-label" for="var-1"> Variant 1 </label>
+          </div>
+
+          <div class="form-row">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-2"
+              name="example-radio-group"
+              value="2"
+            />
+            <label class="radio-button-label" for="var-2"> Variant 2 </label>
+          </div>
+
+          <div class="form-row">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-3"
+              name="example-radio-group"
+              value="3"
+            />
+            <label class="radio-button-label" for="var-3"> Variant 3 </label>
+          </div>
         </form>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;fieldset&gt; &lt;label&gt; &lt;input class="radio-button" type="radio" name="radio"
-          value="1" /&gt; Variant 1 &lt;/label&gt; &lt;/fieldset&gt;
+          &lt;label&gt; &lt;input class="radio-button" type="radio" name="radio"
+          value="1" /&gt; Variant 1 &lt;/label&gt;
         </code>
       </section>
 
