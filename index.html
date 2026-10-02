@@ -83,7 +83,7 @@
           <input type="text" id="name" placeholder="Name" /><br />
           <!-- used for creating the submit/reset buttons: https://www.wikihow.tech/Create-a-Reset-Button-in-HTML -->
           <button class="button" type="submit" value="Submit">Submit</button>
-          <button class='button' type="reset" value="Reset">Reset</button>
+          <button class="button" type="reset" value="Reset">Reset</button>
         </form>
       </section>
 
@@ -96,16 +96,16 @@
           This is important for signing up and logging in, etc
         -->
         <form>
-          <label>
+          <label class="input-field-label" for="email">
             Email:
-            <input type="email" placeholder="john.doe@example.com" />
+            <input id="email" type="email" placeholder="john.doe@example.com" />
           </label>
         </form>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;fieldset&gt; &lt;label&gt; Email: &lt;input type="email"
-          placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
+          &lt;fieldset&gt; &lt;label class="input-field-label" for="email"&gt; Email: &lt;input id="email"
+          type="email" placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
           &lt;/fieldset&gt;
         </code>
       </section>
@@ -123,7 +123,7 @@
         <form>
           <fieldset>
             <label>
-              <input type="radio" name="radio" value="1" />
+              <input class="radio-button" type="radio" name="radio" value="1" />
               Variant 1
             </label>
           </fieldset>
@@ -131,7 +131,7 @@
 
         <h4>Sample code:</h4>
         <code>
-          &lt;fieldset&gt; &lt;label&gt; &lt;input type="radio" name="radio"
+          &lt;fieldset&gt; &lt;label&gt; &lt;input class="radio-button" type="radio" name="radio"
           value="1" /&gt; Variant 1 &lt;/label&gt; &lt;/fieldset&gt;
         </code>
       </section>
@@ -520,7 +520,7 @@
       <section class="element">
         <h3>Checkout Cart</h3>
         <!-- Angela - html -->
-         
+
         <!-- 
           Also referencing off of sites I do visit as mentioned in the Payment Form
 

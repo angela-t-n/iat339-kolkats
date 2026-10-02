@@ -16,8 +16,12 @@
   /* greens */
   --neutral-green: #F1F3E4;
   --light-green: #A9BA7F;
+  --medium-green: #739600;
   --dark-green: #526903;
-  
+
+  /* monochromes */
+  --light-greyish-green: #969f94;
+  --dark-grey: #333333;
 }
 
 body {
@@ -106,8 +110,68 @@ code {
 
 }
 
+/*
+  FORM ELEMENTS -------------------
+*/
+/*
+  Radio Button
 
+  References:
+  - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+  - https://dev.to/shubhamtiwari909/custom-checkbox-and-radio-buttons-in-css-2n38
+*/
+.radio-button{
+  appearance: none; /* hides the default radio button */
+}
 
+/*
+  Label fields
+*/
+.input-field-label{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/*
+  Input fields
+*/
+/* default input field styling */
+input{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid var(--light-green);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* when the input field is hovered on */
+input:hover{
+  transition-duration: 0.5s;
+  border: 2px solid var(--medium-green);
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline:none;
+}
+
+/* when the input field is currently selected/active */
+input:focus{
+  border: 2px solid var(--dark-green);
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline:none;
+}
+
+/* Placeholder text when nothing is entered */
+input::placeholder{
+  color: var(--light-greyish-green);
+}
 /* 
   TEXT ELEMENTS -------------------
 */
