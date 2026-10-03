@@ -89,7 +89,7 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
-        <!-- Angela - html -->
+        <!-- Angela - html, css -->
 
         <!-- 
           Can be used for username, email, etc.
@@ -108,17 +108,12 @@
         </form>
 
         <h4>Sample code:</h4>
-        <code>
-          &lt;fieldset&gt; &lt;label class="text-input-label" for="email"&gt;
-          Email: &lt;input class="text-input" id="email" type="email"
-          placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
-          &lt;/fieldset&gt;
-        </code>
+        <code> &lt;fieldset&gt; todo &lt;/fieldset&gt; </code>
       </section>
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-        <!-- Angela - html -->
+        <!-- Angela - html, css -->
 
         <!-- 
           Can be used for selection of product options, etc.
@@ -127,7 +122,7 @@
             - Overall assignments and stuff
         -->
         <form class="form-column">
-          <div class="form-row">
+          <div class="radio-button-container">
             <input
               class="radio-button"
               type="radio"
@@ -138,7 +133,7 @@
             <label class="radio-button-label" for="var-1"> Variant 1 </label>
           </div>
 
-          <div class="form-row">
+          <div class="radio-button-container">
             <input
               class="radio-button"
               type="radio"
@@ -149,7 +144,7 @@
             <label class="radio-button-label" for="var-2"> Variant 2 </label>
           </div>
 
-          <div class="form-row">
+          <div class="radio-button-container">
             <input
               class="radio-button"
               type="radio"
@@ -162,18 +157,16 @@
         </form>
 
         <h4>Sample code:</h4>
-        <code>
-          &lt;label&gt; &lt;input class="radio-button" type="radio" name="radio"
-          value="1" /&gt; Variant 1 &lt;/label&gt;
-        </code>
+        <code> &lt;label&gt; todo &lt;/label&gt; </code>
       </section>
 
       <section class="element">
         <h3>Image as a Link</h3>
         <!-- Angela - html -->
 
-        <a href="https://en.wikipedia.org/wiki/O-mikuji" target="_blank">
+        <a class="image-link-a" href="https://en.wikipedia.org/wiki/O-mikuji" target="_blank">
           <img
+            class="image-link-img"
             src="img/love-canopy-fortune.png"
             alt="Fortune design sample for the Love Canopy set"
           />
@@ -181,8 +174,8 @@
 
         <h4>Sample code:</h4>
         <code>
-          &lt;a href="https://en.wikipedia.org/wiki/O-mikuji"
-          target="_blank"&gt; &lt;img src="img/love-canopy-fortune.png"
+          &lt;a class="image-link-a" href="https://en.wikipedia.org/wiki/O-mikuji"
+          target="_blank"&gt; &lt;img class="image-link-img" src="img/love-canopy-fortune.png"
           alt="Fortune design sample for the Love Canopy set" /&gt; &lt;/a&gt;
         </code>
       </section>
