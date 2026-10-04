@@ -8,6 +8,8 @@
 
 /*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
+  --transition-duration: 0.2s;
+
   /* purples */
   --dark-purple: #534372;
   --medium-purple: #8267b9;
@@ -22,14 +24,17 @@
 
   /* monochromes */
   --light-greyish-green: #969f94;
-  --dark-grey: #333333;
+  --medium-grey: #808080;
+  --light-grey: #cdcdcd;
   --white: #ffffff;
   --black: #000000;
   --off-black: #323232;
 }
 
 /* Global setting to border-box*/
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -141,10 +146,6 @@ code {
   Labels
 */
 
-.radio-button-label {
-  text-box-trim: trim-both;
-}
-
 .text-input-label {
   display: inline-flex;
   flex-direction: column;
@@ -165,7 +166,7 @@ code {
 .radio-button-container {
   display: inline-flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   gap: 8px;
 }
 
@@ -193,7 +194,7 @@ code {
 
 /* need to create a "pseudo element" for the custom tick on a radio button*/
 .radio-button::before {
-  content: " ";
+  content: "";
   width: 10px;
   height: 10px;
   border-top-left-radius: 50%;
@@ -232,7 +233,7 @@ code {
 
 /* when the input field is hovered on */
 .text-input:hover {
-  transition-duration: 0.5s;
+  transition-duration: var(--transition-duration);
   border: 2px solid var(--medium-green);
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -263,7 +264,7 @@ code {
   position: relative;
   border: 2px solid var(--neutral-purple);
   border-radius: 8%;
-  transition: 0.5s;
+  transition: var(--transition-duration);
 }
 
 .image-link-img {
@@ -273,7 +274,7 @@ code {
   */
   width: 300px;
   height: auto;
-  transition: 0.5s;
+  transition: var(--transition-duration);
 }
 
 /* 
@@ -316,6 +317,88 @@ code {
   TEXT ELEMENTS -------------------
 */
 
+/*
+  Ordered list
+  reference: https://catalin.red/css3-ordered-list-styles/
+*/
+.num-list-green::marker {
+  font-family: "Libre_Baskerville", serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--dark-green);
+}
+
+.num-list-purple::marker {
+  font-family: "Libre_Baskerville", serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--dark-purple);
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/*
+  Payment form stuff
+
+  At least the field and name is reusable!
+*/
+.form-legend {
+  font-family: "Libre_Baskerville", serif;
+  font-size: large;
+  color: var(--dark-purple);
+  margin-left: -9px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.form-group {
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--light-grey);
+  border-style: dashed;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+
+.checkbox-input {
+  appearance: none;
+  padding-right: 8px;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 2px solid var(--light-purple);
+
+  position: relative;
+}
+
+.checkbox-input:checked {
+  border: 2px solid var(--medium-green);
+}
+
+.checkbox-input::before {
+  content: "✖";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  color: var(--medium-green);
+
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.checkbox-input:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
