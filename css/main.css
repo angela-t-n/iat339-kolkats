@@ -46,20 +46,23 @@ h1{
   font-family:'Libre_Baskerville';
   font-weight: bold;
   font-style: normal;
+  font-size: 3rem;
 }
 
 h2 {
-  /* LS regular */
-  font-family: 'League_Spartan';
+   /* LB regular */
+  font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: normal;
+  font-size: 2rem;
 }
 
 h3 {
-  /* LS bold */
-  font-family: 'League_Spartan';
-  font-weight: bold;
-  font-style: normal;
+ /* LB italic */
+  font-family: 'Libre_Baskerville';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.5rem;
   
 }
 
@@ -68,14 +71,26 @@ h4 {
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
-  
 }
 
 h5 {
   font-family: 'League_Spartan';
   font-weight: normal;
   font-style: normal;
-  
+}
+
+p{
+  font-family: 'League_Spartan';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.caption{
+  font-family: 'League_Spartan';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 nav a:hover, nav a:focus {
@@ -106,8 +121,9 @@ nav {
   font-size: 1.25rem;
   padding: 2px 24px; 
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+  border-radius: 8px;
   border: 2px solid var(--light-green); 
   color: var(--light-green);
   background-color: var(--neutral-green);
@@ -133,7 +149,7 @@ nav {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: var(--dark-purple);
+  background-color: var(--medium-green);
 }
 
 .button:hover, .button:focus{

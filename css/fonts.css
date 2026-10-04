@@ -1,5 +1,6 @@
 /* https://www.w3schools.com/css/css3_fonts.asp */
 
+/* headline */
 @font-face {
   font-family: 'Libre_Baskerville';
   src: url('../font/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
@@ -18,6 +19,7 @@
   font-display: swap;
 }
 
+/* h2 */
 @font-face {
     font-family: 'Libre_Baskerville';
 
@@ -61,7 +63,7 @@
 @font-face{
   font-family: 'League_Spartan';
   src: url('../font/League_Spartan/LeagueSpartan-Light.ttf') format('truetype');
-  font-weight:normal;
+  font-weight:300;
   font-style: normal;
   font-display: swap;
 } 

@@ -17,13 +17,13 @@
     </header>
 
     <nav>
-      <a href="#interactive_elements">Interactive Elements</a>
-      <a href="#text_elements">Text Elements</a>
-      <a href="#combined_elements">Combined Elements</a>
-      <a href="product_listing.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
-      <a href="#citations">Citations</a>
-      <a href="#visual_style_guide_&_branding">Visual Style Guide & Branding</a>
+      <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+      <a class="button-nav"href="#text_elements">Text Elements</a>
+      <a class="button-nav"href="#combined_elements">Combined Elements</a>
+      <a class="button-nav"href="product_listing.html">Product Listing Template</a>
+      <a class="button-nav"href="checkout.html">Checkout Template</a>
+      <a class="button-nav"href="#citations">Citations</a>
+      <a class="button-nav"href="#visual_style_guide_&_branding">Visual Style Guide & Branding</a>
       <!-- Copied the formats above -->
     </nav>
 
@@ -170,25 +170,90 @@
         <h3>Headings</h3>
 
         <h4>Css selctor:</h4>
-        <p>h1, h2, h3, h4, h5</p>
+        <p>h1, h2, h3, p, .caption</p>
 
 
         <h4>Sample code:</h4>
 
         <code>
-          &lt;h1&gt;Heading 1&lt;/h2&gt; <br>
-          &lt;h2&gt;Heading 2&lt;/h2&gt; <br>
-          &lt;h3&gt;Heading 3&lt;/h3&gt; <br>
-          &lt;h4&gt;Heading 4&lt;/h4&gt; <br>
-          &lt;h5&gt;Heading 5&lt;/h5&gt; <br>
+         &lt;div class="box"&gt;z,<br>
+          &lt;div&gt;
+            &lt;h5&gt;Font Familes&lt;/h5>
+            &lt;h1&gt;Libre Baskerville&lt;/h1&gt;
+            &lt;h2&gt;Libre Baskerville&lt;/h2&gt;
+            &lt;h3&gt;Libre Baskerville&lt;/h3&gt;            
+            &lt;p&gt;League Spartan&lt;/p&gt;
+            &lt;p class="caption"&gt;League Spartan&lt;/p>
+            
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5&gt;Font Weight&lt;/h5&gt;
+            &lt;h1&gt;bold&lt;/h1&gt;
+            &lt;h2&gt;normal&lt;/h2&gt;
+            &lt;h3&gt;italic&lt;/h3&gt;           
+            &lt;p&gt;300&lt;/p&gt;
+            &lt;p class="caption">regular&lt;/p&gt;
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5>Size&lt;/h5&gt;
+            &lt;h1>h1&lt;/h1&gt;
+            &lt;h2>h2&lt;/h2&gt;
+            &lt;h3>h3&lt;/h3&gt;           
+            &lt;p>p&lt;/p&gt;
+            &lt;p class="caption"&gt;caption&lt;/p&gt;
+
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5&gt;Example&lt;/h5&gt;
+            &lt;h1&gt;This the main headline.&lt;/h1&gt;
+            &lt;h2&gt;This is an example of a section title.&lt;/h2&gt;
+            &lt;h3&gt;This is subheading that goes under the section title.&lt;/h3&gt;
+            &lt;p&gt;This is how the body text looks.&lt;/p&gt;
+            &lt;p class="caption">This is a caption.&lt;/p&gt;
+          &lt;/div&gt;<br>
+        &lt;/div&gt;
         </code>
 
         <h4>Rendered Element</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
+        <div class="box">
+          <div>
+            <h5>Font Familes</h5>
+            <h1>Libre Baskerville</h1>
+            <h2>Libre Baskerville</h2>
+            <h3>Libre Baskerville</h3>            
+            <p>League Spartan</p>
+            <p class="caption">League Spartan</p>
+            
+          </div>
+          <div>
+            <h5>Font Weight</h5>
+            <h1>bold</h1>
+            <h2>normal</h2>
+            <h3>italic</h3>            
+            <p>300</p>
+            <p class="caption">regular</p>
+          </div>
+          <div>
+            <h5>Size</h5>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>            
+            <p>p</p>
+            <p class="caption">caption</p>
+
+          </div>
+          <div>
+            <h5>Example</h5>
+            <h1>This the main headline.</h1>
+            <h2>This is an example of a section title.</h2>
+            <h3>This is subheading that goes under the section title.</h3>
+            <p>This is how the body text looks.</p>
+            <p class="caption">This is a caption.</p>
+
+          </div>
+
+        </div>
+       
       </section>
 
       <section class="element">
