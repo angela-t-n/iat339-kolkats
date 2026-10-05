@@ -20,13 +20,11 @@
   --neutral-green: #f1f3e4;
   --light-green: #a9ba7f;
   --medium-green: #739600;
-  --neutral-green: #f1f3e4;
-  --light-green: #a9ba7f;
-  --medium-green: #739600;
   --dark-green: #526903;
 
   /* monochromes */
   --light-greyish-green: #969f94;
+  --light-greyish-purple: #a59eac;
   --medium-grey: #808080;
   --light-grey: #cdcdcd;
   --white: #ffffff;
@@ -319,7 +317,7 @@ nav {
 
 /* when the input field is currently selected/active */
 .text-input:focus {
-  border: 2px solid var(--dark-green);
+  border: 2px solid var(--light-purple);
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 12px;
@@ -329,7 +327,7 @@ nav {
 
 /* Placeholder text when nothing is entered */
 .text-input::placeholder {
-  color: var(--light-greyish-green);
+  color: var(--light-greyish-purple);
 }
 
 /*
@@ -545,8 +543,16 @@ nav {
   position: relative;
 }
 
+.checkbox-input:hover {
+  border: 2px solid var(--medium-green);
+}
+
 .checkbox-input:checked {
   border: 2px solid var(--medium-green);
+}
+
+.checkbox-input:checked:hover {
+  border: 2px solid var(--light-green);
 }
 
 .checkbox-input::before {
@@ -627,11 +633,37 @@ nav {
   max-height: auto;
 }
 
-.checkout-quanity-button-group {
+.checkout-quantity-button-group {
   display: grid;
   grid-template-columns: auto auto auto;
   place-items: center;
   gap: 8px;
+}
+
+.checkout-total-item-price {
+  font-weight: normal;
+  color: var(--dark-green);
+}
+
+.checkout-quantity-button {
+  background-color: var(--neutral-purple);
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 2px solid var(--light-purple);
+  flex-shrink: 0;
+}
+
+.checkout-quantity-button:hover {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--light-green);
+}
+
+.checkout-quantity-button:focus {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--medium-green);
+  color: var(--dark-green);
 }
 
 .branding-guide {
