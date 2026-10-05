@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>P01 - Style Guide: Plantoscope</title>
 
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -17,13 +17,19 @@
     </header>
 
     <nav>
-      <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+      <a class="button-nav" href="#interactive_elements"
+        >Interactive Elements</a
+      >
       <a class="button-nav" href="#text_elements">Text Elements</a>
       <a class="button-nav" href="#combined_elements">Combined Elements</a>
-      <a class="button-nav" href="product_listing.html">Product Listing Template</a>
+      <a class="button-nav" href="product_listing.html"
+        >Product Listing Template</a
+      >
       <a class="button-nav" href="checkout.html">Checkout Template</a>
       <a class="button-nav" href="#citations">Citations</a>
-      <a class="button-nav" href="#visual_style_guide_&_branding">Visual Style Guide & Branding</a>
+      <a class="button-nav" href="#visual_style_guide_&_branding"
+        >Visual Style Guide & Branding</a
+      >
       <!-- Copied the formats above -->
     </nav>
 
@@ -41,17 +47,21 @@
         <code
           >&lt;p&gt;Help &lt;a class= 'intext-link'
           href="https://en.wikipedia.org/wiki/Cat"&gt;Kolkat&lt;/a&gt; save the
-          [plant name] forest before it is too late! When you purchase from the
+          Mystic Forest before it is too late! When you purchase from the
           Plantoscope, you will be appointed an endangered plant. But not just
           any plant. This plant will grant you your deepest
-          desires.&lt;/p&gt;</code>
+          desires.&lt;/p&gt;</code
+        >
 
         <h4>Rendered element:</h4>
         <p>
-          Help <a class= 'intext-link' href="https://en.wikipedia.org/wiki/Cat">Kolkat</a> save the
-          [plant name] forest before it is too late! When you purchase from the
-          Plantoscope, you will be appointed an endangered plant. But not just
-          any plant. This plant will grant you your deepest desires.
+          Help
+          <a class="intext-link" href="https://en.wikipedia.org/wiki/Cat"
+            >Kolkat</a
+          >
+          save the Mystic Forest before it is too late! When you purchase from
+          the Plantoscope, you will be appointed an endangered plant. But not
+          just any plant. This plant will grant you your deepest desires.
         </p>
       </section>
 
@@ -63,7 +73,10 @@
         <p>.button-nav</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a class="button-nav" href="#"&gt;Navigations Button 1&lt;/a&gt;</code>
+        <code
+          >&lt;a class="button-nav" href="#"&gt;Navigations Button
+          1&lt;/a&gt;</code
+        >
 
         <h4>Rendered element:</h4>
         <a class="button-nav" href="#">Navigation Button 1</a>
@@ -72,52 +85,70 @@
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
-         <h4>Css selector:</h4>
-         <p>.button</p>
+        <h4>Css selector:</h4>
+        <p>.button</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;form&gt;<br>
-          &lt;label for="name"&gt;Name&lt;/label&gt;<br>
-          &lt;input type="text" id="name" placeholder="Name"&gt;&lt;br&gt;<br>
-          &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
-          &lt;button class="button" type ="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
+          &lt;form&gt;<br />
+          &lt;button class="button" type="submit"
+          value="Submit"&gt;Submit&lt;/button&gt;<br />
+          &lt;button class="button" type ="reset"
+          value="Reset"&gt;Reset&lt;/button&gt;<br />
           &lt;/form&gt;
         </code>
 
         <h4>Rendered element:</h4>
         <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Name"><br>
           <!-- used for creating the submit/reset buttons: https://www.wikihow.tech/Create-a-Reset-Button-in-HTML -->
           <button class="button" type="submit" value="Submit">Submit</button>
-          <button class='button' type="reset" value="Reset">Reset</button>
+          <button class="button" type="reset" value="Reset">Reset</button>
         </form>
       </section>
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <!-- Angela - html, css -->
 
         <!-- 
           Can be used for username, email, etc.
           This is important for signing up and logging in, etc
         -->
         <form>
-          <label>
+          <label class="text-input-label" for="email">
             Email:
-            <input type="email" placeholder="john.doe@example.com">
+            <input
+              class="text-input"
+              id="email"
+              type="email"
+              placeholder="john.doe@example.com"
+            />
           </label>
         </form>
 
+        <h4>css selector:</h4>
+        <p>.text-input-label, .text-input</p>
+
         <h4>Sample code:</h4>
-        <code>
-          &lt;fieldset&gt; &lt;label&gt; Email: &lt;input type="email"
-          placeholder="john.doe@example.com" /&gt; &lt;/label&gt;
-          &lt;/fieldset&gt;
-        </code>
+        <pre>
+          <code>
+            &lt;form&gt;
+              &lt;label class="text-input-label" for="email"&gt;
+                Email:
+                &lt;input
+                  class="text-input"
+                  id="email"
+                  type="email"
+                  placeholder="john.doe@example.com"
+                /&gt;
+              &lt;/label&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
       </section>
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <!-- Angela - html, css -->
 
         <!-- 
           Can be used for selection of product options, etc.
@@ -125,39 +156,123 @@
             - https://www.w3schools.com/tags/att_input_type_radio.asp
             - Overall assignments and stuff
         -->
-        <form>
-          <fieldset>
-            <label>
-              <input type="radio" name="radio" value="1" />
-              <!-- add span -->
-             Variant 1
-            </label>
-          </fieldset>
+        <form class="form-column payment-form-group">
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-1"
+              name="example-radio-group"
+              value="1"
+            />
+            <label for="var-1"> Variant 1 </label>
+          </div>
+
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-2"
+              name="example-radio-group"
+              value="2"
+            />
+            <label for="var-2"> Variant 2 </label>
+          </div>
+
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-3"
+              name="example-radio-group"
+              value="3"
+            />
+            <label for="var-3"> Variant 3 </label>
+          </div>
         </form>
 
+        <h4>css selector:</h4>
+        <p>
+          .form-column, .payment-form-group, .radio-button,
+          .radio-button-container
+        </p>
+
         <h4>Sample code:</h4>
-        <code>
-          &lt;fieldset&gt; &lt;label&gt; &lt;input type="radio" name="radio"
-          value="1" /&gt; Variant 1 &lt;/label&gt; &lt;/fieldset&gt;
-        </code>
+        <pre>
+          <code>
+            &lt;form class="form-column payment-form-group"&gt;
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-1"
+                  name="example-radio-group"
+                  value="1"
+                /&gt;
+                &lt;label for="var-1"&gt; Variant 1 &lt;/label&gt;
+              &lt;/div&gt;
+
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-2"
+                  name="example-radio-group"
+                  value="2"
+                /&gt;
+                &lt;label for="var-2"&gt; Variant 2 &lt;/label&gt;
+              &lt;/div&gt;
+
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-3"
+                  name="example-radio-group"
+                  value="3"
+                /&gt;
+                &lt;label for="var-3"&gt; Variant 3 &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
       </section>
 
       <section class="element">
         <h3>Image as a Link</h3>
+        <!-- Angela - html, css -->
 
-        <a href="https://en.wikipedia.org/wiki/O-mikuji" target="_blank">
+        <a
+          class="image-link-a"
+          href="https://en.wikipedia.org/wiki/O-mikuji"
+          target="_blank"
+        >
           <img
+            class="image-link-img"
             src="img/love-canopy-fortune.png"
             alt="Fortune design sample for the Love Canopy set"
-          >
+          />
         </a>
 
+        <h4>css selector:</h4>
+        <p>.image-link-a, .imae-link-img</p>
+
         <h4>Sample code:</h4>
-        <code>
-          &lt;a href="https://en.wikipedia.org/wiki/O-mikuji"
-          target="_blank"&gt; &lt;img src="img/love-canopy-fortune.png"
-          alt="Fortune design sample for the Love Canopy set" /&gt; &lt;/a&gt;
-        </code>
+        <pre>
+          <code>
+            &lt;a
+              class="image-link-a"
+              href="https://en.wikipedia.org/wiki/O-mikuji"
+              target="_blank"
+            &gt;
+              &lt;img
+                class="image-link-img"
+                src="img/love-canopy-fortune.png"
+                alt="Fortune design sample for the Love Canopy set"
+              /&gt;
+            &lt;/a&gt;
+          </code>
+        </pre>
       </section>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -172,103 +287,95 @@
         <h4>Css selctor:</h4>
         <p>h1, h2, h3, p, .caption</p>
 
-
         <h4>Sample code:</h4>
 
         <code>
-         &lt;div class="box"&gt;z,<br>
-          &lt;div&gt;
-            &lt;h5&gt;Font Familes&lt;/h5>
-            &lt;h1&gt;Libre Baskerville&lt;/h1&gt;
-            &lt;h2&gt;Libre Baskerville&lt;/h2&gt;
-            &lt;h3&gt;Libre Baskerville&lt;/h3&gt;            
-            &lt;p&gt;League Spartan&lt;/p&gt;
-            &lt;p class="caption"&gt;League Spartan&lt;/p>
-            
-          &lt;/div&gt;<br>
-          &lt;div&gt;
-            &lt;h5&gt;Font Weight&lt;/h5&gt;
-            &lt;h1&gt;bold&lt;/h1&gt;
-            &lt;h2&gt;normal&lt;/h2&gt;
-            &lt;h3&gt;italic&lt;/h3&gt;           
-            &lt;p&gt;300&lt;/p&gt;
-            &lt;p class="caption">regular&lt;/p&gt;
-          &lt;/div&gt;<br>
-          &lt;div&gt;
-            &lt;h5>Size&lt;/h5&gt;
-            &lt;h1>h1&lt;/h1&gt;
-            &lt;h2>h2&lt;/h2&gt;
-            &lt;h3>h3&lt;/h3&gt;           
-            &lt;p>p&lt;/p&gt;
-            &lt;p class="caption"&gt;caption&lt;/p&gt;
-
-          &lt;/div&gt;<br>
-          &lt;div&gt;
-            &lt;h5&gt;Example&lt;/h5&gt;
-            &lt;h1&gt;This the main headline.&lt;/h1&gt;
-            &lt;h2&gt;This is an example of a section title.&lt;/h2&gt;
-            &lt;h3&gt;This is subheading that goes under the section title.&lt;/h3&gt;
-            &lt;p&gt;This is how the body text looks.&lt;/p&gt;
-            &lt;p class="caption">This is a caption.&lt;/p&gt;
-          &lt;/div&gt;<br>
-        &lt;/div&gt;
+          &lt;div class="box"&gt;z,<br />
+          &lt;div&gt; &lt;h5&gt;Font Familes&lt;/h5> &lt;h1&gt;Libre
+          Baskerville&lt;/h1&gt; &lt;h2&gt;Libre Baskerville&lt;/h2&gt;
+          &lt;h3&gt;Libre Baskerville&lt;/h3&gt; &lt;p&gt;League
+          Spartan&lt;/p&gt; &lt;p class="caption"&gt;League Spartan&lt;/p>
+          &lt;/div&gt;<br />
+          &lt;div&gt; &lt;h5&gt;Font Weight&lt;/h5&gt; &lt;h1&gt;bold&lt;/h1&gt;
+          &lt;h2&gt;normal&lt;/h2&gt; &lt;h3&gt;italic&lt;/h3&gt; &lt;p&gt;300
+          (light)&lt;/p&gt; &lt;p class="caption">300 (italic)&lt;/p&gt;
+          &lt;/div&gt;<br />
+          &lt;div&gt; &lt;h5>Size&lt;/h5&gt; &lt;h1>h1&lt;/h1&gt;
+          &lt;h2>h2&lt;/h2&gt; &lt;h3>h3&lt;/h3&gt; &lt;p>p&lt;/p&gt; &lt;p
+          class="caption"&gt;caption&lt;/p&gt; &lt;/div&gt;<br />
+          &lt;div&gt; &lt;h5&gt;Example&lt;/h5&gt; &lt;h1&gt;This the main
+          headline.&lt;/h1&gt; &lt;h2&gt;This is an example of a section
+          title.&lt;/h2&gt; &lt;h3&gt;This is subheading that goes under the
+          section title.&lt;/h3&gt; &lt;p&gt;This is how the body text
+          looks.&lt;/p&gt; &lt;p class="caption">This is a caption.&lt;/p&gt;
+          &lt;/div&gt;<br />
+          &lt;/div&gt;
         </code>
 
         <h4>Rendered Element</h4>
         <div class="box">
           <div>
             <div>
-               <p class="caption">Font Familes</p>
+              <p class="caption">Font Familes</p>
             </div>
-          
-            <h1>Libre Baskerville</h1>
-            <h2>Libre Baskerville</h2>
-            <h3>Libre Baskerville</h3>            
-            <p>League Spartan</p>
-            <p class="caption">League Spartan</p>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>Libre Baskerville</h1>
+              <h2>Libre Baskerville</h2>
+              <h3>Libre Baskerville</h3>
+              <p>League Spartan</p>
+              <p class="caption">League Spartan</p>
+            </div>
           </div>
           <div>
             <div>
               <p class="caption">Font Weight</p>
             </div>
-          
-            <h1>bold</h1>
-            <h2>normal</h2>
-            <h3>italic</h3>            
-            <p>300</p>
-            <p class="caption">regular</p>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>bold</h1>
+              <h2>normal</h2>
+              <h3>italic</h3>
+              <p>300 (light)</p>
+              <p class="caption">300 (italic)</p>
+            </div>
           </div>
           <div>
             <div>
               <p class="caption">Size</p>
             </div>
-            
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>            
-            <p>p</p>
-            <p class="caption">caption</p>
 
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>h1</h1>
+              <h2>h2</h2>
+              <h3>h3</h3>
+              <p>p</p>
+              <p class="caption">caption</p>
+            </div>
           </div>
           <div>
             <div>
-               <p class="caption">Example</p>
+              <p class="caption">Example</p>
             </div>
-           
-            <h1>This the main headline.</h1>
-            <h2>This is an example of a section title.</h2>
-            <h3>This is subheading that goes under the section title.</h3>
-            <p>This is how the body text looks.</p>
-            <p class="caption">This is a caption.</p>
 
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>This the main headline.</h1>
+              <h2>This is an example of a section title.</h2>
+              <h3>This is subheading that goes under the section title.</h3>
+              <p>This is how the body text looks.</p>
+              <p class="caption">This is a caption.</p>
+            </div>
           </div>
-
         </div>
-       
       </section>
 
       <section class="element">
         <h3>Paragraphs</h3>
+        <!-- Angela - html, css (just default text styling) -->
 
         <p>
           Plantoscope (derived from “plant” and “horoscope”) provides fortune
@@ -283,6 +390,9 @@
           plants “Mirrorwood” (Identity Region): plants to call out deep truths,
           secrets, and true self
         </p>
+
+        <h4>Css selector:</h4>
+        <p>p</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -302,19 +412,40 @@
 
       <section class="element">
         <h3>Numbered Lists</h3>
+        <!-- Angela - html, css -->
 
         <!-- Reference: https://www.w3schools.com/html/html_lists_ordered.asp -->
         <ol type="1">
-          <li>First item</li>
-          <li>Second item</li>
-          <li>Third item</li>
+          <li class="num-list-green"><p>(1) First item</p></li>
+          <li class="num-list-green"><p>(2) Second item</p></li>
+          <li class="num-list-green"><p>(3) Third item</p></li>
         </ol>
 
+        <ol type="1">
+          <li class="num-list-purple"><p>First item</p></li>
+          <li class="num-list-purple"><p>Second item</p></li>
+          <li class="num-list-purple"><p>Third item</p></li>
+        </ol>
+
+        <h4>Css selector:</h4>
+        <p>.num-list-green, .num-list-purple</p>
+
         <h4>Sample code:</h4>
-        <code>
-          &lt;ol type="1"&gt; &lt;li&gt;First item&lt;/li&gt; &lt;li&gt;Second
-          item&lt;/li&gt; &lt;li&gt;Third item&lt;/li&gt; &lt;/ol&gt;
-        </code>
+        <pre>
+          <code>
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(1) First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(2) Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(3) Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
       </section>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -331,11 +462,12 @@
 
         <h4>Sample code:</h4>
         <code>
-          &lt;a class="button-nav" href="#news"&gt;News&lt;/a&gt;<br>
-          &lt;div&gt;<br>
-          &lt;a class="button-nav" href="#Plantoscope"&gt;Plantoscope&lt;/a&gt;<br>
-          &lt;a class="button-nav" href="#readings"&gt;Readings&lt;/a&gt;<br>
-          &lt;a class="button-nav" href="contact"&gt;Contact&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#news"&gt;News&lt;/a&gt;<br />
+          &lt;div&gt;<br />
+          &lt;a class="button-nav"
+          href="#Plantoscope"&gt;Plantoscope&lt;/a&gt;<br />
+          &lt;a class="button-nav" href="#readings"&gt;Readings&lt;/a&gt;<br />
+          &lt;a class="button-nav" href="contact"&gt;Contact&lt;/a&gt;<br />
           &lt;/div&gt;
         </code>
 
@@ -343,94 +475,97 @@
         <nav>
           <a class="button-nav" href="#plantosphere">Plantosphere</a>
           <div>
-          <a class="button-nav" href="#about">About</a>
-          <a class="button-nav" href="#boxes">Boxes</a>
-          <a class="button-nav" href="#cart">Cart</a>
+            <a class="button-nav" href="#about">About</a>
+            <a class="button-nav" href="#boxes">Boxes</a>
+            <a class="button-nav" href="#cart">Cart</a>
           </div>
-          
         </nav>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
         <h4>Css selector:</h4>
-        <p>.box, .product-grid li, .grid-item, .card-container, .product-name, .product-price</p>
+        <p>
+          .box, .product-grid li, .grid-item, .card-container, .product-name,
+          .product-price
+        </p>
         <h4>Sample code:</h4>
         <code>
-          &lt;ul class="product-grid box"&gt;<br>
+          &lt;ul class="product-grid box"&gt;<br />
 
-            &lt;li>
-              &lt;a class="grid-item" href="product.html"&gt;
-                &lt;div class="card-container"&gt;
-                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
-                      &lt;h1 class="product-name"&gt;Love Canopy Box&lt;/h1&gt;
-                      &lt;h2 class="product-price"&gt;$600&lt;/h2&gt;
-                &lt;/div&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;<br>
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
+          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
+          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt;<br />
 
-            &lt;li>
-              &lt;a class="grid-item" href="product.html"&gt;
-                &lt;div class="card-container"&gt;
-                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
-                      &lt;h1 class="product-name"&gt;Love Canopy Box&lt;/h1&gt;
-                      &lt;h2 class="product-price"&gt;$600&lt;/h2&gt;
-                &lt;/div&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;<br>
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
+          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
+          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt;<br />
 
-            &lt;li>
-              &lt;a class="grid-item" href="product.html"&gt;
-                &lt;div class="card-container"&gt;
-                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
-                      &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
-                      &lt;p class="product-price"&gt;$600&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;<br>
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;p
+          class="product-name"&gt;Love Canopy Box&lt;/p&gt; &lt;p
+          class="product-price"&gt;$19.99&lt;/p&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt; &lt;/ul&gt;<br />
         </code>
 
         <!-- <div class="product-grid-container"> -->
-          <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
-         <ul class="product-grid box">
+        <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
+        <ul class="product-grid box">
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
 
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
 
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
-            
-          </ul>
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
+        </ul>
         <!-- </div> -->
       </section>
 
       <section class="element">
         <h3>Payment Form</h3>
+        <!-- Angela - html, css -->
 
         <!-- 
           For fields reference, I tried basing it off of many different brands 
@@ -443,90 +578,128 @@
           Using references from: https://www.w3schools.com/html/html_form_elements.asp
           for the checkbox specifically: https://www.w3schools.com/tags/att_input_type_checkbox.asp
         -->
-        <form>
-          <fieldset>
-            <legend>Contact</legend>
-            <label>
-              First Name:
-              <input type="text" placeholder="John">
-            </label>
-            <label>
-              Last Name:
-              <input type="text" placeholder="Doe">
-            </label>
-            <label>
+        <form class="form-column payment-form-gap">
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Contact</legend>
+            <div>
+              <label class="text-input-label">
+                First Name:
+                <input class="text-input" type="text" placeholder="John" />
+              </label>
+              <label class="text-input-label">
+                Last Name:
+                <input class="text-input" type="text" placeholder="Doe" />
+              </label>
+            </div>
+
+            <label class="text-input-label">
               Phone Number:
-              <input type="tel" placeholder="604-123-4567">
+              <input class="text-input" type="tel" placeholder="604-123-4567" />
             </label>
-            <label>
+
+            <label class="text-input-label">
               Email:
-              <input type="email" placeholder="john.doe@example.com">
+              <input
+                class="text-input"
+                type="email"
+                placeholder="john.doe@example.com"
+              />
             </label>
-            <label>
-              <input type="checkbox" id="toggle-newsletter" value="false">
+
+            <label class="checkbox-label">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="toggle-newsletter"
+                value="false"
+              />
               Send me newsletters and special offers
             </label>
           </fieldset>
 
-          <fieldset>
-            <legend>Shipping</legend>
-            <label>
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Shipping</legend>
+            <label class="text-input-label">
               Country:
-              <input type="text" placeholder="Canada">
+              <input class="text-input" type="text" placeholder="Canada" />
             </label>
-            <label>
+            <label class="text-input-label">
               Address:
-              <input type="text" placeholder="123 Main Street">
+              <input
+                class="text-input"
+                type="text"
+                placeholder="123 Main Street"
+              />
             </label>
-            <label>
+            <label class="text-input-label">
               Suite/Apt (Optional):
-              <input type="text" placeholder="Suite 100">
+              <input class="text-input" type="text" placeholder="Suite 100" />
             </label>
-            <label>
+            <label class="text-input-label">
               City:
-              <input type="text" placeholder="Vancouver">
+              <input class="text-input" type="text" placeholder="Vancouver" />
             </label>
-            <label>
+            <label class="text-input-label">
               Province:
-              <select>
-                <option value="AB">Alberta</option>
-                <option value="BC">British Columbia</option>
-                <option value="MB">Manitoba</option>
-                <option value="NB">New Brunswick</option>
-                <option value="NL">Newfoundland and Labrador</option>
-                <option value="NT">Northwest Territories</option>
-                <option value="NS">Nova Scotia</option>
-                <option value="NU">Nunavut</option>
-                <option value="ON">Ontario</option>
-                <option value="PE">Prince Edward Island</option>
-                <option value="QC">Quebec</option>
-                <option value="SK">Saskatchewan</option>
-                <option value="YT">Yukon</option>
+              <select class="text-input dropdown-input">
+                <option class="dropdown-item" value="AB">Alberta</option>
+                <option class="dropdown-item" value="BC">
+                  British Columbia
+                </option>
+                <option class="dropdown-item" value="MB">Manitoba</option>
+                <option class="dropdown-item" value="NB">New Brunswick</option>
+                <option class="dropdown-item" value="NL">
+                  Newfoundland and Labrador
+                </option>
+                <option class="dropdown-item" value="NT">
+                  Northwest Territories
+                </option>
+                <option class="dropdown-item" value="NS">Nova Scotia</option>
+                <option class="dropdown-item" value="NU">Nunavut</option>
+                <option class="dropdown-item" value="ON">Ontario</option>
+                <option class="dropdown-item" value="PE">
+                  Prince Edward Island
+                </option>
+                <option class="dropdown-item" value="QC">Quebec</option>
+                <option class="dropdown-item" value="SK">Saskatchewan</option>
+                <option class="dropdown-item" value="YT">Yukon</option>
               </select>
             </label>
-            <label>
+            <label class="text-input-label">
               Postal Code:
-              <input type="text" placeholder="A1A 1A1">
+              <input class="text-input" type="text" placeholder="A1A 1A1" />
             </label>
           </fieldset>
 
-          <fieldset>
-            <legend>Payment</legend>
-            <label>
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Payment</legend>
+            <label class="text-input-label">
               Card Number:
-              <input type="text" placeholder="1234 5678 9012 3456">
+              <input
+                class="text-input"
+                type="text"
+                placeholder="1234 5678 9012 3456"
+              />
             </label>
-            <label>
+            <label class="text-input-label">
               Expiration Date:
-              <input type="text" placeholder="MM/YY">
+              <input class="text-input" type="text" placeholder="MM/YY" />
             </label>
-            <label>
+            <label class="text-input-label">
               CVV:
-              <input type="text" placeholder="123">
+              <input class="text-input" type="text" placeholder="123" />
             </label>
           </fieldset>
-          <button type="submit" value="Submit">Submit</button>
+
+          <button class="button" type="submit" value="Submit">Submit</button>
         </form>
+
+        <h4>Css selector:</h4>
+        <p>
+          .payment-form-legend, .payment-form-group, .payment-form-gap,
+          .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
+          .text-input, .text-input-label, .button
+        </p>
 
         <h3>Sample code:</h3>
         <!--
@@ -535,89 +708,120 @@
         -->
         <pre>
           <code>
-            &lt;form&gt;
-              &lt;fieldset&gt;
-                &lt;legend&gt;Contact&lt;/legend&gt;
-                &lt;label&gt;
-                  First Name:
-                  &lt;input type="text" placeholder="John" /&gt;
-                &lt;/label&gt;
-                &lt;label&gt;
-                  Last Name:
-                  &lt;input type="text" placeholder="Doe" /&gt;
-                &lt;/label&gt;
-                &lt;label&gt;
+            &lt;form class="form-column payment-form-gap"&gt;
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
+                &lt;div&gt;
+                  &lt;label class="text-input-label"&gt;
+                    First Name:
+                    &lt;input class="text-input" type="text" placeholder="John" /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Last Name:
+                    &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;label class="text-input-label"&gt;
                   Phone Number:
-                  &lt;input type="tel" placeholder="604-123-4567" /&gt;
+                  &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+
+                &lt;label class="text-input-label"&gt;
                   Email:
-                  &lt;input type="email" placeholder="john.doe@example.com" /&gt;
+                  &lt;input
+                    class="text-input"
+                    type="email"
+                    placeholder="john.doe@example.com"
+                  /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
-                  &lt;input type="checkbox" id="toggle-newsletter" value="false" /&gt;
+
+                &lt;label class="checkbox-label"&gt;
+                  &lt;input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="toggle-newsletter"
+                    value="false"
+                  /&gt;
                   Send me newsletters and special offers
                 &lt;/label&gt;
               &lt;/fieldset&gt;
 
-              &lt;fieldset&gt;
-                &lt;legend&gt;Shipping&lt;/legend&gt;
-                &lt;label&gt;
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
+                &lt;label class="text-input-label"&gt;
                   Country:
-                  &lt;input type="text" placeholder="Canada" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   Address:
-                  &lt;input type="text" placeholder="123 Main Street" /&gt;
+                  &lt;input
+                    class="text-input"
+                    type="text"
+                    placeholder="123 Main Street"
+                  /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   Suite/Apt (Optional):
-                  &lt;input type="text" placeholder="Suite 100" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   City:
-                  &lt;input type="text" placeholder="Vancouver" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   Province:
-                  &lt;select&gt;
-                    &lt;option value="AB"&gt;Alberta&lt;/option&gt;
-                    &lt;option value="BC"&gt;British Columbia&lt;/option&gt;
-                    &lt;option value="MB"&gt;Manitoba&lt;/option&gt;
-                    &lt;option value="NB"&gt;New Brunswick&lt;/option&gt;
-                    &lt;option value="NL"&gt;Newfoundland and Labrador&lt;/option&gt;
-                    &lt;option value="NT"&gt;Northwest Territories&lt;/option&gt;
-                    &lt;option value="NS"&gt;Nova Scotia&lt;/option&gt;
-                    &lt;option value="NU"&gt;Nunavut&lt;/option&gt;
-                    &lt;option value="ON"&gt;Ontario&lt;/option&gt;
-                    &lt;option value="PE"&gt;Prince Edward Island&lt;/option&gt;
-                    &lt;option value="QC"&gt;Quebec&lt;/option&gt;
-                    &lt;option value="SK"&gt;Saskatchewan&lt;/option&gt;
-                    &lt;option value="YT"&gt;Yukon&lt;/option&gt;
+                  &lt;select class="text-input dropdown-input"&gt;
+                    &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="BC"&gt;
+                      British Columbia
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NB"&gt;New Brunswick&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NL"&gt;
+                      Newfoundland and Labrador
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NT"&gt;
+                      Northwest Territories
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="PE"&gt;
+                      Prince Edward Island
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
                   &lt;/select&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   Postal Code:
-                  &lt;input type="text" placeholder="A1A 1A1" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
                 &lt;/label&gt;
               &lt;/fieldset&gt;
 
-              &lt;fieldset&gt;
-                &lt;legend&gt;Payment&lt;/legend&gt;
-                &lt;label&gt;
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
+                &lt;label class="text-input-label"&gt;
                   Card Number:
-                  &lt;input type="text" placeholder="1234 5678 9012 3456" /&gt;
+                  &lt;input
+                    class="text-input"
+                    type="text"
+                    placeholder="1234 5678 9012 3456"
+                  /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   Expiration Date:
-                  &lt;input type="text" placeholder="MM/YY" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
                 &lt;/label&gt;
-                &lt;label&gt;
+                &lt;label class="text-input-label"&gt;
                   CVV:
-                  &lt;input type="text" placeholder="123" /&gt;
+                  &lt;input class="text-input" type="text" placeholder="123" /&gt;
                 &lt;/label&gt;
               &lt;/fieldset&gt;
-              &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+
+              &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
             &lt;/form&gt;
           </code>
         </pre>
@@ -625,6 +829,8 @@
 
       <section class="element">
         <h3>Checkout Cart</h3>
+        <!-- Angela - html -->
+
         <!-- 
           Also referencing off of sites I do visit as mentioned in the Payment Form
 
@@ -635,43 +841,69 @@
           keeping it in a user's cart might be more involved to code in js. Therefore, I'll probably
           only keep the delete button and force the user to filter it manually themselves.
         -->
-        <div>
-          <div>
-            <img
-              src="img/love-canopy-box.png"
-              alt="Blind box design for the Love Canopy set"
-            />
-            <h3>Love Canopy Blind Box</h3>
-            <p>$14.99 per unit</p>
-
-            <div>
-              <button type="button">-</button>
-              <p>2</p>
-              <button type="button">+</button>
-              <button type="button">Remove from cart</button>
+        <div class="checkout-cart-list">
+          <div class="checkout-cart-item-group">
+            <div class="checkout-cart-segment-row">
+              <img
+                class="checkout-item-img"
+                src="img/love-canopy-box.png"
+                alt="Blind box design for the Love Canopy set"
+              />
+              <h3>Love Canopy Blind Box</h3>
             </div>
 
-            <p>$29.98</p>
+            <div class="checkout-cart-segment-row">
+              <p>$19.99/unit</p>
+
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>2</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
+              </div>
+
+              <p class="checkout-total-item-price">$39.98</p>
+            </div>
           </div>
 
-          <div>
-            <img
-              src="img/love-canopy-placeholder-box.png"
-              alt="Blind box design for the Love Canopy set"
-            />
-            <h3>[PLACEHOLDER] Blind Box</h3>
-            <p>$14.99 per unit</p>
-
-            <div>
-              <button type="button">-</button>
-              <p>1</p>
-              <button type="button">+</button>
-              <button type="button">Remove from cart</button>
+          <div class="checkout-cart-item-group">
+            <div class="checkout-cart-segment-row">
+              <img
+                class="checkout-item-img"
+                src="img/placeholder-box.png"
+                alt="Blind box design for the [placeholder] set"
+              />
+              <h3>[placeholder] Blind Box</h3>
             </div>
 
-            <p>$14.99</p>
+            <div class="checkout-cart-segment-row">
+              <p>$19.99/unit</p>
+
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>1</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
+              </div>
+
+              <p class="checkout-total-item-price">$19.99</p>
+            </div>
           </div>
         </div>
+
+        <h4>Css selector:</h4>
+        <p>
+          .checkout-cart-list, .checkout-cart-item-group,
+          .checkout-cart-segment-row, .checkout-item-img,
+          .checkout-quantity-button-group, .checkout-total-item-price,
+          .checkout-quantity-button
+        </p>
 
         <h3>Sample Code</h3>
         <!--
@@ -680,41 +912,59 @@
         -->
         <pre>
           <code>
-            &lt;div&gt;
-              &lt;div&gt;
-                &lt;img
-                  src="img/love-canopy-box.png"
-                  alt="Blind box design for the Love Canopy set"
-                /&gt;
-                &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
-                &lt;p&gt;$14.99 per unit&lt;/p&gt;
-
-                &lt;div&gt;
-                  &lt;button type="button"&gt;-&lt;/button&gt;
-                  &lt;p&gt;2&lt;/p&gt;
-                  &lt;button type="button"&gt;+&lt;/button&gt;
-                  &lt;button type="button"&gt;Remove from cart&lt;/button&gt;
+            &lt;div class="checkout-cart-list"&gt;
+              &lt;div class="checkout-cart-item-group"&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/love-canopy-box.png"
+                    alt="Blind box design for the Love Canopy set"
+                  /&gt;
+                  &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
                 &lt;/div&gt;
 
-                &lt;p&gt;$29.98&lt;/p&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;p&gt;$19.99/unit&lt;/p&gt;
+
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;2&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
 
-              &lt;div&gt;
-                &lt;img
-                  src="img/love-canopy-placeholder-box.png"
-                  alt="Blind box design for the Love Canopy set"
-                /&gt;
-                &lt;h3&gt;[PLACEHOLDER] Blind Box&lt;/h3&gt;
-                &lt;p&gt;$14.99 per unit&lt;/p&gt;
-
-                &lt;div&gt;
-                  &lt;button type="button"&gt;-&lt;/button&gt;
-                  &lt;p&gt;1&lt;/p&gt;
-                  &lt;button type="button"&gt;+&lt;/button&gt;
-                  &lt;button type="button"&gt;Remove from cart&lt;/button&gt;
+              &lt;div class="checkout-cart-item-group"&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/placeholder-box.png"
+                    alt="Blind box design for the [placeholder] set"
+                  /&gt;
+                  &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
                 &lt;/div&gt;
 
-                &lt;p&gt;$14.99&lt;/p&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;p&gt;$19.99/unit&lt;/p&gt;
+
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;1&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           </code>
@@ -725,12 +975,13 @@
 
     <!-- VISUAL STYLE GUIDE SECTION // -->
     <section id="visual_style_guide_&_branding">
-      <h2>Combined Elements</h2>
+      <h2>Other</h2>
 
       <section class="element">
         <h3>Visual Style Guide and Branding</h3>
 
         <img
+          class="branding-guide"
           src="img/plantoscope-style-guide.png"
           alt="Plantoscope Style Guide and Branding"
         />

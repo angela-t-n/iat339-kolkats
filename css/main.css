@@ -3,11 +3,14 @@
   Default styling for the style guide 
 */
 
+/* Import fonts.css */
 @import url("./fonts.css");
 
 /*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
-    /* purples */
+  --transition-duration: 0.2s;
+
+  /* purples */
   --dark-purple: #534372;
   --medium-purple: #8267b9;
   --light-purple: #9e93c9;
@@ -21,16 +24,28 @@
 
   /* monochromes */
   --light-greyish-green: #969f94;
-  --dark-grey: #333333;
+  --light-greyish-purple: #a59eac;
+  --medium-grey: #808080;
+  --light-grey: #cdcdcd;
   --white: #ffffff;
   --black: #000000;
   --off-black: #323232;
-  
+}
+
+/* Global setting to border-box*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
   padding: 2rem;
+
+  /* Default page font */
+  font-family: "League_Spartan", sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .element {
@@ -40,17 +55,20 @@ body {
   border-top-color: black;
 }
 
-h1{
+/*
+  Headings
+*/
+h1 {
   /* LB bold */
   display: inline-block;
-  font-family:'Libre_Baskerville';
+  font-family: 'Libre_Baskerville';
   font-weight: bold;
   font-style: normal;
   font-size: 3rem;
 }
 
 h2 {
-   /* LB regular */
+  /* LB regular */
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: normal;
@@ -58,12 +76,12 @@ h2 {
 }
 
 h3 {
- /* LB italic */
+  /* LB italic */
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
   font-size: 1.5rem;
-  
+
 }
 
 h4 {
@@ -71,38 +89,41 @@ h4 {
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
+  font-size: 1.3rem;
 }
 
 h5 {
   font-family: 'League_Spartan';
   font-weight: normal;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
-p{
+p,
+label {
   font-family: 'League_Spartan';
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
-.caption{
+.caption {
   font-family: 'League_Spartan';
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
 code {
-  background-color: #EEE;
+  background-color: #eee;
   padding: 0.5rem;
   display: block;
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -111,48 +132,48 @@ code {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--medium-purple);
+  background-color: var(--neutral-purple);
   padding: 1rem;
 }
 
 .button {
-  font-family: 'Libre Baskerville Italic';
+  font-family: "Libre_Baskerville", serif;
   font-style: italic;
   font-size: 1.25rem;
-  padding: 2px 24px; 
+  padding: 2px 24px;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   /* border-top-left-radius: 50px;
   border-bottom-right-radius: 50px; */
   border-radius: 8px;
-  border: 2px solid var(--light-green); 
+  border: 2px solid var(--light-green);
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
-  
+
 }
-
-
 
 /* Styling for the navigation button */
 .button-nav {
   font-family: "Libre_Baskerville";
   font-weight: normal;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   color: white;
   background-color: var(--medium-purple);
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
 
-.button-nav:hover, .button-nav:focus {
+.button-nav:hover,
+.button-nav:focus {
   background-color: var(--medium-green);
 }
 
-.button:hover, .button:focus{
+.button:hover,
+.button:focus {
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 50px;
@@ -160,69 +181,272 @@ nav {
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
-  border: 2px solid var(--dark-green); 
-
+  border: 2px solid var(--dark-green);
 }
 
 .intext-link {
   font-family: "Libre Baskerville";
   font-style: italic;
   font-weight: normal;
-  font-size: large;
   color: var(--dark-purple);
   transition: 0.3s;
 }
 
-.intext-link:hover, .intext-link:focus {
-color: var(--light-purple);
+.intext-link:hover,
+.intext-link:focus {
+  color: var(--light-purple);
 }
 
+/*
+  FORM ELEMENTS -------------------
+*/
+/* make form fields stack vertically with spacing */
+.form-column {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* make them a row instead. */
+.form-row {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+/*
+  Labels
+*/
+
+.text-input-label {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: normal;
+}
+
+/*
+  Radio Button
+
+  References:
+  - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+  - https://dev.to/shubhamtiwari909/custom-checkbox-and-radio-buttons-in-css-2n38
+  - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+  - https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/UI_pseudo-classes?utm_source=chatgpt.com#using_generated_content_with_pseudo-classes 
+  - https://developer.mozilla.org/en-US/play?uuid=8b6abb93f48a552d18a3b12d961fb0dc7f7cf51d&state=vVLBbtswDP0VQqe0iOPEQXtQvAJbP2HHeQdaom01iiRIcuq0yL8PVpI1Cbagh2EXQXzkI58e9c66uNGMs7KxfvNUGYCyUaRloJgigFJTS0Y%2BPXfWBoKd7T00uLVeRYLG9yqW%2BbHkSHDHy8jFmvTvEKBUxvUR4s7Rl4p5lMpWDAxuxjA1qxhsUfdjLDryflcxyM86PB%2FA04D8fEKZu3%2BtoUaDBq80fDuA%2F0tDiB5f6z948f0jcVNLmZ%2FttMyPq2ZTJkJgnCUtPy61%2FIT3kYnOEXo0gjgYa2hVmX1lKnOD8qpk7DgUczesxrgj1XbxDKitl%2BSzkdUHDotLnEPhBghWKwmtx11K5ffwVb70IQaIHYGzQUVlDdgmxaIjsa7tQAGsSUikIUKNgbQyBPf52GRLPiqBOkOtWsMhK46DbR%2FHsk%2B8kPOaGuvp8FKpgtO441BrK9aplbAmkokcKgYVW535sbj2Y%2FEXPx5PMIp1621vZCastp6DJ5kyjTUxC%2BqNOCxmBW0SGD2aMG6WH64aI02WbpjC0g13EARqmszvLmsz61WrDAdBJpL%2FSCZ7OaDWMJ8tAxAGypS5bU5aA8lLkz6la3Gm63q06GslspreFPnJfFY8TOF0PjxOoRip%2B%2FSbX8bPzKYsdrQhxplEv2b7Xw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FLearn_web_development%2FExtensions%2FForms%2FUI_pseudo-classes%2F
+  - https://www.youtube.com/watch?v=YEmdHbQBCSQ for visual learning of positons  
+*/
+.radio-button-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-button {
+  /* hides the default radio button */
+  appearance: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+  /* custom styling */
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 2px solid var(--light-purple);
+  flex-shrink: 0;
+
+  position: relative;
+}
+
+.radio-button:checked {
+  border: 2px solid var(--medium-green);
+}
+
+/* need to create a "pseudo element" for the custom tick on a radio button*/
+.radio-button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: var(--medium-green);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.radio-button:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-button:hover,
+.radio-button:focus {
+  outline: none;
+  border: 2px solid var(--medium-green);
+}
+
+/*
+  Text Input fields
+*/
+/* default input field styling */
+.text-input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid var(--light-green);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* when the input field is hovered on */
+.text-input:hover {
+  transition-duration: var(--transition-duration);
+  border: 2px solid var(--medium-green);
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline: none;
+}
+
+/* when the input field is currently selected/active */
+.text-input:focus {
+  border: 2px solid var(--light-purple);
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline: none;
+}
+
+/* Placeholder text when nothing is entered */
+.text-input::placeholder {
+  color: var(--light-greyish-purple);
+}
+
+/*
+  Image Links
+*/
+.image-link-a {
+  display: inline-flex;
+  position: relative;
+  border: 2px solid var(--light-purple);
+  border-radius: 8%;
+  transition: var(--transition-duration);
+}
+
+.image-link-img {
+  /* 
+    I wanted to resize the image... 
+    its quite big.
+  */
+  width: 300px;
+  height: auto;
+  transition: var(--transition-duration);
+}
+
+/* 
+  adds yet another pseudo
+  this time over the image, similar to the radio button tick.
+*/
+.image-link-a::before {
+  content: "🔗";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+
+  /* 
+    force this to render above when the image gets transformed 
+    reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+  
+    the "future" transformation of the image will be scaled down,
+    causing the pseudo element to be "under" the image, which isn't what
+    I wanted! by setting z-index to 1, it forces the pseudo element
+    to be rendered above the image because the image has a default z-index of 0.
+  */
+  z-index: 1;
+}
+
+.image-link-a:hover {
+  border: 2px solid var(--medium-green);
+  border-radius: 5%;
+}
+
+/*
+  Affects the image only when the link is hovered on,
+  and not just the image itself!
+*/
+.image-link-a:hover .image-link-img {
+  transform: scale(0.95);
+}
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
+/*
+  Ordered list
+  reference: https://catalin.red/css3-ordered-list-styles/
+*/
+.num-list-green::marker {
+  font-family: "Libre_Baskerville", serif;
+  font-style: normal;
+  color: var(--dark-green);
+}
 
-
+.num-list-purple::marker {
+  font-family: "Libre_Baskerville", serif;
+  font-style: normal;
+  color: var(--dark-purple);
+}
 
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-
 .box {
-	display: flex;
+  display: flex;
   gap: 1rem;
-	flex-wrap: wrap;
-	/* justify-content: space-around; */
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 
 /* effects only the li in .product-grid */
-.product-grid li{
+.product-grid li {
   list-style: none;
   display: inline-block;
-  flex: 1 1 auto;
-
+  grid-template-columns: auto auto auto;
 }
 
-.grid-item{
+.product-grid {
+  /* Removes the padding around the ul */
+  padding: 0px;
+}
+
+.grid-item {
   display: inline-block;
   text-decoration: none;
   /* padding: 2rem; */
   transition: 0.3s;
 }
 
-.card-container{
+.card-container {
   border: 1px solid var(--black);
   border-radius: 8px;
-  border: 2px solid var(--light-green); 
+  border: 2px solid var(--light-green);
   padding: 1rem;
   width: fit-content;
   background-color: var(--neutral-green);
   transition-duration: 0.3s;
 }
 
-.product-name{
+.product-name {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: normal;
@@ -230,29 +454,219 @@ color: var(--light-purple);
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
+  margin: 24px 0px 8px 0px;
 }
 
-.product-price{
+.product-price {
   font-family: "League_Spartan";
   font-weight: normal;
-  font-size: 1.5rem;
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .grid-item:hover .card-container,
 .grid-item:focus .card-container {
-background-color: var(--dark-green);
-border-color:var(--dark-green); 
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
 }
 
 .grid-item:hover .product-name,
 .grid-item:focus .product-name {
-color: var(--light-green);
+  color: var(--neutral-green);
 }
 
 .grid-item:hover .product-price,
 .grid-item:focus .product-price {
-color: var(--light-green);
+  color: var(--neutral-green);
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/*
+  Payment form stuff
+
+  At least the field and name is reusable!
+*/
+.payment-form-legend {
+  font-family: "Libre_Baskerville", serif;
+  font-size: 1.3rem;
+  color: var(--dark-purple);
+  margin-left: -9px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.payment-form-group {
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--light-grey);
+  border-style: dashed;
+}
+
+.payment-form-gap {
+  gap: 24px;
+}
+
+/*
+  Checkbox
+*/
+
+.checkbox-label {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+
+.checkbox-input {
+  appearance: none;
+  padding-right: 8px;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 2px solid var(--light-purple);
+
+  position: relative;
+}
+
+.checkbox-input:hover {
+  border: 2px solid var(--medium-green);
+}
+
+.checkbox-input:checked {
+  border: 2px solid var(--medium-green);
+}
+
+.checkbox-input:checked:hover {
+  border: 2px solid var(--light-green);
+}
+
+.checkbox-input::before {
+  content: "✖";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  color: var(--medium-green);
+
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.checkbox-input:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 
+  Dropdown menu stuff
+  reference: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select 
+*/
+.dropdown-input {
+  background-color: var(--neutral-green);
+}
+
+.dropdown-item {
+  background-color: var(--neutral-green);
+}
+
+/*
+  Hover states, the dropdown icon too are all
+  overriden by the browser's default.
+  there is a way to disable that depending on your browser (ex. chrome)
+  but it's a hassle and I can't see it (I'm on firefox)
+  - angela
+*/
+
+/*
+  Checkout Cart
+*/
+.checkout-cart-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  min-width: 550px;
+  gap: 24px;
+}
+
+.checkout-cart-item-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px;
+  border: 2px solid var(--dark-green);
+  border-radius: 8px;
+
+  max-width: 100%;
+}
+
+.checkout-cart-segment-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 24px;
+}
+
+.checkout-item-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.checkout-quantity-button-group {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  gap: 8px;
+}
+
+.checkout-total-item-price {
+  font-weight: normal;
+  color: var(--dark-green);
+}
+
+.checkout-quantity-button {
+  background-color: var(--neutral-purple);
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 2px solid var(--light-purple);
+  flex-shrink: 0;
+}
+
+.checkout-quantity-button:hover {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--light-green);
+}
+
+.checkout-quantity-button:focus {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--medium-green);
+  color: var(--dark-green);
+}
+
+.branding-guide {
+  width: 100%;
+  height: auto;
 }
