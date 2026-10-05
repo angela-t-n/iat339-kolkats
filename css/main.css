@@ -100,14 +100,14 @@ p {
   font-family: 'League_Spartan';
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .caption {
   font-family: 'League_Spartan';
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover,
