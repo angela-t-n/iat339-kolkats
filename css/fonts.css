@@ -1,12 +1,10 @@
-/* https://www.w3schools.com/cssref/atrule_font-face.php */
+/* https://www.w3schools.com/css/css3_fonts.asp */
 
-/*
-  League Spartan Font Faces
-*/
+/* headline */
 @font-face {
   font-family: 'Libre_Baskerville';
-  src: url('../font/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../font/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -18,7 +16,17 @@
   src: url('../font/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic; /* Explicitly defined as italic */
-  font-display: swap;/
+  font-display: swap;
+}
+
+/* h2 */
+@font-face {
+    font-family: 'Libre_Baskerville';
+
+  src: url('../font/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+  font-display: swap;
 }
 
 
@@ -26,6 +34,7 @@
 /* 
   League Spartan Font Faces
 */
+/* normal */
 @font-face{
   font-family: 'League_Spartan';
   src: url('../font/League_Spartan/LeagueSpartan-Regular.ttf') format('truetype');
@@ -33,7 +42,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* bold */
 @font-face{
   font-family: 'League_Spartan';
   src: url('../font/League_Spartan/LeagueSpartan-Bold.ttf') format('truetype');
@@ -41,11 +50,25 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* medium */
 @font-face{
   font-family: 'League_Spartan';
   src: url('../font/League_Spartan/LeagueSpartan-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
+} 
+
+/* light, paragraph */
+@font-face{
+  font-family: 'League_Spartan';
+  src: url('../font/League_Spartan/LeagueSpartan-Light.ttf') format('truetype');
+  font-weight:300;
+  font-style: normal;
+  font-display: swap;
+} 
+
+
+
+
+
