@@ -42,9 +42,12 @@
 }
 
 body {
+  padding: 2rem;
+
   /* Default page font */
   font-family: "League_Spartan", sans-serif;
-  padding: 2rem;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .element {
@@ -88,26 +91,29 @@ h4 {
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
+  font-size: 1.3rem;
 }
 
 h5 {
   font-family: 'League_Spartan';
   font-weight: normal;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
-p {
+p,
+label {
   font-family: 'League_Spartan';
   font-weight: 300;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .caption {
   font-family: 'League_Spartan';
   font-weight: 300;
-  font-style: normal;
-  font-size: 1.2rem;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 nav a:hover,
@@ -184,7 +190,6 @@ nav {
   font-family: "Libre Baskerville";
   font-style: italic;
   font-weight: normal;
-  font-size: large;
   color: var(--dark-purple);
   transition: 0.3s;
 }
@@ -219,6 +224,7 @@ nav {
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
+  font-weight: normal;
 }
 
 /*
@@ -235,7 +241,6 @@ nav {
 .radio-button-container {
   display: inline-flex;
   flex-direction: row;
-  align-items: end;
   gap: 8px;
 }
 
@@ -394,14 +399,12 @@ nav {
 .num-list-green::marker {
   font-family: "Libre_Baskerville", serif;
   font-style: normal;
-  font-size: 0.9rem;
   color: var(--dark-green);
 }
 
 .num-list-purple::marker {
   font-family: "Libre_Baskerville", serif;
   font-style: normal;
-  font-size: 0.9rem;
   color: var(--dark-purple);
 }
 
@@ -501,7 +504,7 @@ nav {
 */
 .form-legend {
   font-family: "Libre_Baskerville", serif;
-  font-size: large;
+  font-size: 1.3rem;
   color: var(--dark-purple);
   margin-left: -9px;
   padding-left: 8px;
