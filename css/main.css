@@ -421,12 +421,12 @@ nav {
 .product-grid li {
   list-style: none;
   display: inline-block;
-  flex: 1 1 1;
+  grid-template-columns: auto auto auto;
 }
 
 .product-grid {
   /* Removes the padding around the ul */
-  padding: 0;
+  padding: 0px;
 }
 
 .grid-item {
@@ -461,7 +461,7 @@ nav {
   font-family: "League_Spartan";
   font-weight: normal;
   color: var(--dark-green);
-  text-decoration: nones;
+  text-decoration: none;
   transition-duration: 0.3s;
   margin: 0px;
   margin-bottom: 8px;
@@ -630,7 +630,7 @@ nav {
 
 .checkout-item-img {
   max-width: 100px;
-  max-height: auto;
+  height: auto;
 }
 
 .checkout-quantity-button-group {
