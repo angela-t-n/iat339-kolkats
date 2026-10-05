@@ -3,17 +3,28 @@
   Default styling for the style guide 
 */
 
+@import url("./fonts.css");
+
 /*variables: https://www.w3schools.com/CSS/css3_variables.asp */
 :root {
-  /* purples */
-  --dark-purple: #8267B9;
-  --light-purple: #9E93C9;
-  --neurtral-purple:#E9E4F3;
-  
+    /* purples */
+  --dark-purple: #534372;
+  --medium-purple: #8267b9;
+  --light-purple: #9e93c9;
+  --neutral-purple: #e9e4f3;
+
   /* greens */
-  --neutral-green: #F1F3E4;
-  --light-green: #A9BA7F;
+  --neutral-green: #f1f3e4;
+  --light-green: #a9ba7f;
+  --medium-green: #739600;
   --dark-green: #526903;
+
+  /* monochromes */
+  --light-greyish-green: #969f94;
+  --dark-grey: #333333;
+  --white: #ffffff;
+  --black: #000000;
+  --off-black: #323232;
   
 }
 
@@ -29,21 +40,57 @@ body {
   border-top-color: black;
 }
 
+h1{
+  /* LB bold */
+  display: inline-block;
+  font-family:'Libre_Baskerville';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3rem;
+}
+
 h2 {
-  margin-top: 6rem;
+   /* LB regular */
+  font-family: 'Libre_Baskerville';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 h3 {
+ /* LB italic */
+  font-family: 'Libre_Baskerville';
+  font-weight: normal;
   font-style: italic;
-  margin-top: 1rem;
+  font-size: 1.5rem;
+  
 }
 
 h4 {
-  margin-bottom: 0.25rem;
+  /* LB italic */
+  font-family: 'Libre_Baskerville';
+  font-weight: normal;
+  font-style: italic;
 }
 
-p {
-  margin-top: 0;
+h5 {
+  font-family: 'League_Spartan';
+  font-weight: normal;
+  font-style: normal;
+}
+
+p{
+  font-family: 'League_Spartan';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.caption{
+  font-family: 'League_Spartan';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 nav a:hover, nav a:focus {
@@ -61,33 +108,48 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--medium-purple);
+  padding: 1rem;
+}
+
 .button {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville Italic';
   font-style: italic;
   font-size: 1.25rem;
   padding: 2px 24px; 
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+  border-radius: 8px;
   border: 2px solid var(--light-green); 
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
+  
 }
 
-/* Styling for the navigation button NOT STYLED YET TO OUR SITE YET */
+
+
+/* Styling for the navigation button */
 .button-nav {
+  font-family: "Libre_Baskerville";
+  font-weight: normal;
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: var(--medium-purple);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+  background-color: var(--medium-green);
 }
 
 .button:hover, .button:focus{
@@ -102,6 +164,18 @@ code {
 
 }
 
+.intext-link {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: normal;
+  font-size: large;
+  color: var(--dark-purple);
+  transition: 0.3s;
+}
+
+.intext-link:hover, .intext-link:focus {
+color: var(--light-purple);
+}
 
 
 /* 
@@ -114,3 +188,71 @@ code {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+
+.box {
+	display: flex;
+  gap: 1rem;
+	flex-wrap: wrap;
+	/* justify-content: space-around; */
+}
+
+/* effects only the li in .product-grid */
+.product-grid li{
+  list-style: none;
+  display: inline-block;
+  flex: 1 1 auto;
+
+}
+
+.grid-item{
+  display: inline-block;
+  text-decoration: none;
+  /* padding: 2rem; */
+  transition: 0.3s;
+}
+
+.card-container{
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  border: 2px solid var(--light-green); 
+  padding: 1rem;
+  width: fit-content;
+  background-color: var(--neutral-green);
+  transition-duration: 0.3s;
+}
+
+.product-name{
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.product-price{
+  font-family: "League_Spartan";
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.grid-item:hover .card-container,
+.grid-item:focus .card-container {
+background-color: var(--dark-green);
+border-color:var(--dark-green); 
+}
+
+.grid-item:hover .product-name,
+.grid-item:focus .product-name {
+color: var(--light-green);
+}
+
+.grid-item:hover .product-price,
+.grid-item:focus .product-price {
+color: var(--light-green);
+}

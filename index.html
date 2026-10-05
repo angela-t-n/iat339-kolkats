@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>P01 - Style Guide: Plantoscope</title>
 
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet">
   </head>
 
   <body>
@@ -17,13 +17,13 @@
     </header>
 
     <nav>
-      <a href="#interactive_elements">Interactive Elements</a>
-      <a href="#text_elements">Text Elements</a>
-      <a href="#combined_elements">Combined Elements</a>
-      <a href="product_listing.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
-      <a href="#citations">Citations</a>
-      <a href="#visual_style_guide_&_branding">Visual Style Guide & Branding</a>
+      <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+      <a class="button-nav" href="#text_elements">Text Elements</a>
+      <a class="button-nav" href="#combined_elements">Combined Elements</a>
+      <a class="button-nav" href="product_listing.html">Product Listing Template</a>
+      <a class="button-nav" href="checkout.html">Checkout Template</a>
+      <a class="button-nav" href="#citations">Citations</a>
+      <a class="button-nav" href="#visual_style_guide_&_branding">Visual Style Guide & Branding</a>
       <!-- Copied the formats above -->
     </nav>
 
@@ -34,19 +34,21 @@
       <section class="element">
         <h3>In-text link</h3>
 
+        <h4>Css selector:</h4>
+        <p>.intext-link</p>
+
         <h4>Sample code:</h4>
         <code
-          >&lt;p&gt;Help &lt;a
+          >&lt;p&gt;Help &lt;a class= 'intext-link'
           href="https://en.wikipedia.org/wiki/Cat"&gt;Kolkat&lt;/a&gt; save the
           [plant name] forest before it is too late! When you purchase from the
           Plantoscope, you will be appointed an endangered plant. But not just
           any plant. This plant will grant you your deepest
-          desires.&lt;/p&gt;</code
-        >
+          desires.&lt;/p&gt;</code>
 
         <h4>Rendered element:</h4>
         <p>
-          Help <a href="https://en.wikipedia.org/wiki/Cat">Kolkat</a> save the
+          Help <a class= 'intext-link' href="https://en.wikipedia.org/wiki/Cat">Kolkat</a> save the
           [plant name] forest before it is too late! When you purchase from the
           Plantoscope, you will be appointed an endangered plant. But not just
           any plant. This plant will grant you your deepest desires.
@@ -57,30 +59,35 @@
       <section class="element">
         <h3>Navigation Link</h3>
 
+        <h4>Css selector:</h4>
+        <p>.button-nav</p>
+
         <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;Navigations Button 1&lt;/a&gt;</code>
+        <code>&lt;a class="button-nav" href="#"&gt;Navigations Button 1&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a href="#">Navigation Button 1</a>
+        <a class="button-nav" href="#">Navigation Button 1</a>
       </section>
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
+         <h4>Css selector:</h4>
+         <p>.button</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;form&gt;<br />
-          &lt;label for="name"&gt;Name&lt;/label&gt;<br />
-          &lt;input type="text" id="name" placeholder="Name"&gt;&lt;br&gt;<br />
-          &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br />
-          &lt;button type ="reset" value="Reset"&gt;Reset&lt;/button&gt;<br />
+          &lt;form&gt;<br>
+          &lt;label for="name"&gt;Name&lt;/label&gt;<br>
+          &lt;input type="text" id="name" placeholder="Name"&gt;&lt;br&gt;<br>
+          &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;button class="button" type ="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
           &lt;/form&gt;
         </code>
 
         <h4>Rendered element:</h4>
         <form>
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Name" /><br />
+          <input type="text" id="name" placeholder="Name"><br>
           <!-- used for creating the submit/reset buttons: https://www.wikihow.tech/Create-a-Reset-Button-in-HTML -->
           <button class="button" type="submit" value="Submit">Submit</button>
           <button class='button' type="reset" value="Reset">Reset</button>
@@ -97,7 +104,7 @@
         <form>
           <label>
             Email:
-            <input type="email" placeholder="john.doe@example.com" />
+            <input type="email" placeholder="john.doe@example.com">
           </label>
         </form>
 
@@ -122,7 +129,8 @@
           <fieldset>
             <label>
               <input type="radio" name="radio" value="1" />
-              Variant 1
+              <!-- add span -->
+             Variant 1
             </label>
           </fieldset>
         </form>
@@ -141,7 +149,7 @@
           <img
             src="img/love-canopy-fortune.png"
             alt="Fortune design sample for the Love Canopy set"
-          />
+          >
         </a>
 
         <h4>Sample code:</h4>
@@ -161,22 +169,102 @@
       <section class="element">
         <h3>Headings</h3>
 
+        <h4>Css selctor:</h4>
+        <p>h1, h2, h3, p, .caption</p>
+
+
         <h4>Sample code:</h4>
 
         <code>
-          &lt;h1&gt;Heading 1&lt;/h2&gt; <br />
-          &lt;h2&gt;Heading 2&lt;/h2&gt; <br />
-          &lt;h3&gt;Heading 3&lt;/h3&gt; <br />
-          &lt;h4&gt;Heading 4&lt;/h4&gt; <br />
-          &lt;h5&gt;Heading 5&lt;/h5&gt; <br />
+         &lt;div class="box"&gt;z,<br>
+          &lt;div&gt;
+            &lt;h5&gt;Font Familes&lt;/h5>
+            &lt;h1&gt;Libre Baskerville&lt;/h1&gt;
+            &lt;h2&gt;Libre Baskerville&lt;/h2&gt;
+            &lt;h3&gt;Libre Baskerville&lt;/h3&gt;            
+            &lt;p&gt;League Spartan&lt;/p&gt;
+            &lt;p class="caption"&gt;League Spartan&lt;/p>
+            
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5&gt;Font Weight&lt;/h5&gt;
+            &lt;h1&gt;bold&lt;/h1&gt;
+            &lt;h2&gt;normal&lt;/h2&gt;
+            &lt;h3&gt;italic&lt;/h3&gt;           
+            &lt;p&gt;300&lt;/p&gt;
+            &lt;p class="caption">regular&lt;/p&gt;
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5>Size&lt;/h5&gt;
+            &lt;h1>h1&lt;/h1&gt;
+            &lt;h2>h2&lt;/h2&gt;
+            &lt;h3>h3&lt;/h3&gt;           
+            &lt;p>p&lt;/p&gt;
+            &lt;p class="caption"&gt;caption&lt;/p&gt;
+
+          &lt;/div&gt;<br>
+          &lt;div&gt;
+            &lt;h5&gt;Example&lt;/h5&gt;
+            &lt;h1&gt;This the main headline.&lt;/h1&gt;
+            &lt;h2&gt;This is an example of a section title.&lt;/h2&gt;
+            &lt;h3&gt;This is subheading that goes under the section title.&lt;/h3&gt;
+            &lt;p&gt;This is how the body text looks.&lt;/p&gt;
+            &lt;p class="caption">This is a caption.&lt;/p&gt;
+          &lt;/div&gt;<br>
+        &lt;/div&gt;
         </code>
 
         <h4>Rendered Element</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
+        <div class="box">
+          <div>
+            <div>
+               <p class="caption">Font Familes</p>
+            </div>
+          
+            <h1>Libre Baskerville</h1>
+            <h2>Libre Baskerville</h2>
+            <h3>Libre Baskerville</h3>            
+            <p>League Spartan</p>
+            <p class="caption">League Spartan</p>
+          </div>
+          <div>
+            <div>
+              <p class="caption">Font Weight</p>
+            </div>
+          
+            <h1>bold</h1>
+            <h2>normal</h2>
+            <h3>italic</h3>            
+            <p>300</p>
+            <p class="caption">regular</p>
+          </div>
+          <div>
+            <div>
+              <p class="caption">Size</p>
+            </div>
+            
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>            
+            <p>p</p>
+            <p class="caption">caption</p>
+
+          </div>
+          <div>
+            <div>
+               <p class="caption">Example</p>
+            </div>
+           
+            <h1>This the main headline.</h1>
+            <h2>This is an example of a section title.</h2>
+            <h3>This is subheading that goes under the section title.</h3>
+            <p>This is how the body text looks.</p>
+            <p class="caption">This is a caption.</p>
+
+          </div>
+
+        </div>
+       
       </section>
 
       <section class="element">
@@ -238,83 +326,109 @@
       <section class="element">
         <h3>Main Navigation</h3>
 
+        <h4>Css selector:</h4>
+        <p>.button-nav</p>
+
         <h4>Sample code:</h4>
         <code>
-          &lt;a href="#news"&gt;News&lt;/a&gt;<br />
-          &lt;a href="#Plantoscope"&gt;Plantoscope&lt;/a&gt;<br />
-          &lt;a href="#readings"&gt;Readings&lt;/a&gt;<br />
-          &lt;a href="contact"&gt;Contact&lt;/a&gt;
+          &lt;a class="button-nav" href="#news"&gt;News&lt;/a&gt;<br>
+          &lt;div&gt;<br>
+          &lt;a class="button-nav" href="#Plantoscope"&gt;Plantoscope&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#readings"&gt;Readings&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="contact"&gt;Contact&lt;/a&gt;<br>
+          &lt;/div&gt;
         </code>
 
         <h4>Rendered element:</h4>
         <nav>
-          <!-- company updates -->
-          <a href="#news">News</a>
-          <!-- about the company -->
-          <a href="#Plantoscope">Plantoscope</a>
-          <!-- multiproduct listing AND will link to individual product detailed view THEN will lead to the entire process of purchasing a product -->
-          <a href="#readings">Readings</a>
-          <!-- appropriate means for the user to provide feedback on a product or service -->
-          <a href="contact">Contact</a>
+          <a class="button-nav" href="#plantosphere">Plantosphere</a>
+          <div>
+          <a class="button-nav" href="#about">About</a>
+          <a class="button-nav" href="#boxes">Boxes</a>
+          <a class="button-nav" href="#cart">Cart</a>
+          </div>
+          
         </nav>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
+        <h4>Css selector:</h4>
+        <p>.box, .product-grid li, .grid-item, .card-container, .product-name, .product-price</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;div class="product-grid-container"&gt;<br />
-          &lt;ul class="product-grid"&gt;<br />
-          &lt;li class="grid-item"&gt;<br />
-          &lt;a href="product.html"&gt;<br />
-          &lt;div class="card-container"&gt;<br />
-          &lt;div class="card-content"&gt;<br />
-          &lt;div class="card-img"&gt;<br />
-          &lt;img src="img/placeholder.png"&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="card-information"&gt;<br />
-          &lt;h4&gt;Product name&lt;/h4&gt;<br />
-          &lt;h5&gt;Product price&lt;/h5&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/li&gt;<br />
-          &lt;/ul&gt;<br />
-          &lt;/div&gt;<br />
+          &lt;ul class="product-grid box"&gt;<br>
+
+            &lt;li>
+              &lt;a class="grid-item" href="product.html"&gt;
+                &lt;div class="card-container"&gt;
+                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
+                      &lt;h1 class="product-name"&gt;Love Canopy Box&lt;/h1&gt;
+                      &lt;h2 class="product-price"&gt;$600&lt;/h2&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;<br>
+
+            &lt;li>
+              &lt;a class="grid-item" href="product.html"&gt;
+                &lt;div class="card-container"&gt;
+                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
+                      &lt;h1 class="product-name"&gt;Love Canopy Box&lt;/h1&gt;
+                      &lt;h2 class="product-price"&gt;$600&lt;/h2&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;<br>
+
+            &lt;li>
+              &lt;a class="grid-item" href="product.html"&gt;
+                &lt;div class="card-container"&gt;
+                      &lt;img src="img/love-canopy-box.png" alt="Love Canopy Box"&gt;
+                      &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                      &lt;p class="product-price"&gt;$600&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;<br>
         </code>
 
-        <!-- inspected this website's (https://wbtiger-toraebistore.jp/collections/newitems) listing structure and used a similar heirarchy:
-         product-grid-container - as holds all the listings in a container separate from other elements like headers, side columns, etc.
-         product-grid - the list of products in a grid
-         grid-item - each individual listing
-         card-container - hold all card content, wrapped in a href so that whole card links to more product info
-         card-information - holds the textual info of the card ex. name, price
-            -->
-
-        <div class="product-grid-container">
+        <!-- <div class="product-grid-container"> -->
           <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
-          <ul class="product-grid">
-            <li class="grid-item">
-              <a href="product.html">
+          <ul class="product-grid box">
+
+            <li>
+              <a class="grid-item" href="product.html">
                 <div class="card-container">
-                  <div class="card-content">
-                    <div class="card-img">
-                      <img
-                        src="img/love-canopy-roster.png"
-                        alt="Plant roster for the Love Canopy set"
-                      />
-                    </div>
-                    <div class="card-information">
-                      <h4>Product name</h4>
-                      <h5>Product price</h5>
-                    </div>
-                  </div>
+                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
+                      <p class="product-name">Love Canopy Box</p>
+                      <p class="product-price">$600</p>
                 </div>
               </a>
             </li>
+
+            <li>
+              <a class="grid-item" href="product.html">
+                <div class="card-container">
+                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
+                      <p class="product-name">Love Canopy Box</p>
+                      <p class="product-price">$600</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="grid-item" href="product.html">
+                <div class="card-container">
+                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
+                      <p class="product-name">Love Canopy Box</p>
+                      <p class="product-price">$600</p>
+                </div>
+              </a>
+            </li>
+
+        
+
           </ul>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="element">
@@ -336,22 +450,22 @@
             <legend>Contact</legend>
             <label>
               First Name:
-              <input type="text" placeholder="John" />
+              <input type="text" placeholder="John">
             </label>
             <label>
               Last Name:
-              <input type="text" placeholder="Doe" />
+              <input type="text" placeholder="Doe">
             </label>
             <label>
               Phone Number:
-              <input type="tel" placeholder="604-123-4567" />
+              <input type="tel" placeholder="604-123-4567">
             </label>
             <label>
               Email:
-              <input type="email" placeholder="john.doe@example.com" />
+              <input type="email" placeholder="john.doe@example.com">
             </label>
             <label>
-              <input type="checkbox" id="toggle-newsletter" value="false" />
+              <input type="checkbox" id="toggle-newsletter" value="false">
               Send me newsletters and special offers
             </label>
           </fieldset>
@@ -360,19 +474,19 @@
             <legend>Shipping</legend>
             <label>
               Country:
-              <input type="text" placeholder="Canada" />
+              <input type="text" placeholder="Canada">
             </label>
             <label>
               Address:
-              <input type="text" placeholder="123 Main Street" />
+              <input type="text" placeholder="123 Main Street">
             </label>
             <label>
               Suite/Apt (Optional):
-              <input type="text" placeholder="Suite 100" />
+              <input type="text" placeholder="Suite 100">
             </label>
             <label>
               City:
-              <input type="text" placeholder="Vancouver" />
+              <input type="text" placeholder="Vancouver">
             </label>
             <label>
               Province:
@@ -394,7 +508,7 @@
             </label>
             <label>
               Postal Code:
-              <input type="text" placeholder="A1A 1A1" />
+              <input type="text" placeholder="A1A 1A1">
             </label>
           </fieldset>
 
@@ -402,15 +516,15 @@
             <legend>Payment</legend>
             <label>
               Card Number:
-              <input type="text" placeholder="1234 5678 9012 3456" />
+              <input type="text" placeholder="1234 5678 9012 3456">
             </label>
             <label>
               Expiration Date:
-              <input type="text" placeholder="MM/YY" />
+              <input type="text" placeholder="MM/YY">
             </label>
             <label>
               CVV:
-              <input type="text" placeholder="123" />
+              <input type="text" placeholder="123">
             </label>
           </fieldset>
           <button type="submit" value="Submit">Submit</button>
