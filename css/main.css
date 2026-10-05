@@ -54,17 +54,20 @@ body {
   border-top-color: black;
 }
 
-h1{
+/*
+  Headings
+*/
+h1 {
   /* LB bold */
   display: inline-block;
-  font-family:'Libre_Baskerville';
+  font-family: 'Libre_Baskerville';
   font-weight: bold;
   font-style: normal;
   font-size: 3rem;
 }
 
 h2 {
-   /* LB regular */
+  /* LB regular */
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: normal;
@@ -72,12 +75,12 @@ h2 {
 }
 
 h3 {
- /* LB italic */
+  /* LB italic */
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
   font-size: 1.5rem;
-  
+
 }
 
 h4 {
@@ -93,14 +96,14 @@ h5 {
   font-style: normal;
 }
 
-p{
+p {
   font-family: 'League_Spartan';
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
 }
 
-.caption{
+.caption {
   font-family: 'League_Spartan';
   font-weight: 200;
   font-style: normal;
@@ -125,7 +128,7 @@ code {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--medium-purple);
+  background-color: var(--neutral-purple);
   padding: 1rem;
 }
 
@@ -138,21 +141,19 @@ nav {
   /* border-top-left-radius: 50px;
   border-bottom-right-radius: 50px; */
   border-radius: 8px;
-  border: 2px solid var(--light-green); 
+  border: 2px solid var(--light-green);
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
-  
+
 }
-
-
 
 /* Styling for the navigation button */
 .button-nav {
   font-family: "Libre_Baskerville";
   font-weight: normal;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   color: white;
   background-color: var(--medium-purple);
   text-decoration: none;
@@ -162,7 +163,8 @@ nav {
   border-bottom-right-radius: 50px;
 }
 
-.button-nav:hover, .button-nav:focus {
+.button-nav:hover,
+.button-nav:focus {
   background-color: var(--medium-green);
 }
 
@@ -175,8 +177,7 @@ nav {
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
-  border: 2px solid var(--dark-green); 
-
+  border: 2px solid var(--dark-green);
 }
 
 .intext-link {
@@ -188,8 +189,9 @@ nav {
   transition: 0.3s;
 }
 
-.intext-link:hover, .intext-link:focus {
-color: var(--light-purple);
+.intext-link:hover,
+.intext-link:focus {
+  color: var(--light-purple);
 }
 
 /*
@@ -323,6 +325,7 @@ color: var(--light-purple);
 .text-input::placeholder {
   color: var(--light-greyish-green);
 }
+
 /*
   Image Links
 */
@@ -405,41 +408,43 @@ color: var(--light-purple);
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-
 .box {
-	display: flex;
+  display: flex;
   gap: 1rem;
-	flex-wrap: wrap;
-	/* justify-content: space-around; */
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 
 /* effects only the li in .product-grid */
-.product-grid li{
+.product-grid li {
   list-style: none;
   display: inline-block;
-  flex: 1 1 auto;
-
+  flex: 1 1 1;
 }
 
-.grid-item{
+.product-grid {
+  /* Removes the padding around the ul */
+  padding: 0;
+}
+
+.grid-item {
   display: inline-block;
   text-decoration: none;
   /* padding: 2rem; */
   transition: 0.3s;
 }
 
-.card-container{
+.card-container {
   border: 1px solid var(--black);
   border-radius: 8px;
-  border: 2px solid var(--light-green); 
+  border: 2px solid var(--light-green);
   padding: 1rem;
   width: fit-content;
   background-color: var(--neutral-green);
   transition-duration: 0.3s;
 }
 
-.product-name{
+.product-name {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: normal;
@@ -449,7 +454,7 @@ color: var(--light-purple);
   transition-duration: 0.3s;
 }
 
-.product-price{
+.product-price {
   font-family: "League_Spartan";
   font-weight: normal;
   font-size: 1.5rem;
@@ -460,18 +465,23 @@ color: var(--light-purple);
 
 .grid-item:hover .card-container,
 .grid-item:focus .card-container {
-background-color: var(--dark-green);
-border-color:var(--dark-green); 
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
 }
 
 .grid-item:hover .product-name,
 .grid-item:focus .product-name {
-color: var(--light-green);
+  color: var(--light-green);
 }
 
 .grid-item:hover .product-price,
 .grid-item:focus .product-price {
-color: var(--light-green);
+  color: var(--light-green);
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
 }
 
 
