@@ -139,7 +139,7 @@
             - https://www.w3schools.com/tags/att_input_type_radio.asp
             - Overall assignments and stuff
         -->
-        <form class="form-column form-group">
+        <form class="form-column payment-form-group">
           <div class="radio-button-container">
             <input
               class="radio-button"
@@ -486,9 +486,9 @@
           Using references from: https://www.w3schools.com/html/html_form_elements.asp
           for the checkbox specifically: https://www.w3schools.com/tags/att_input_type_checkbox.asp
         -->
-        <form class="form-column">
-          <fieldset class="form-column form-group">
-            <legend class="form-legend">Contact</legend>
+        <form class="form-column payment-form-gap">
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Contact</legend>
             <div>
               <label class="text-input-label">
                 First Name:
@@ -525,8 +525,8 @@
             </label>
           </fieldset>
 
-          <fieldset class="form-column form-group">
-            <legend class="form-legend">Shipping</legend>
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Shipping</legend>
             <label class="text-input-label">
               Country:
               <input class="text-input" type="text" placeholder="Canada" />
@@ -549,20 +549,28 @@
             </label>
             <label class="text-input-label">
               Province:
-              <select>
-                <option value="AB">Alberta</option>
-                <option value="BC">British Columbia</option>
-                <option value="MB">Manitoba</option>
-                <option value="NB">New Brunswick</option>
-                <option value="NL">Newfoundland and Labrador</option>
-                <option value="NT">Northwest Territories</option>
-                <option value="NS">Nova Scotia</option>
-                <option value="NU">Nunavut</option>
-                <option value="ON">Ontario</option>
-                <option value="PE">Prince Edward Island</option>
-                <option value="QC">Quebec</option>
-                <option value="SK">Saskatchewan</option>
-                <option value="YT">Yukon</option>
+              <select class="text-input dropdown-input">
+                <option class="dropdown-item" value="AB">Alberta</option>
+                <option class="dropdown-item" value="BC">
+                  British Columbia
+                </option>
+                <option class="dropdown-item" value="MB">Manitoba</option>
+                <option class="dropdown-item" value="NB">New Brunswick</option>
+                <option class="dropdown-item" value="NL">
+                  Newfoundland and Labrador
+                </option>
+                <option class="dropdown-item" value="NT">
+                  Northwest Territories
+                </option>
+                <option class="dropdown-item" value="NS">Nova Scotia</option>
+                <option class="dropdown-item" value="NU">Nunavut</option>
+                <option class="dropdown-item" value="ON">Ontario</option>
+                <option class="dropdown-item" value="PE">
+                  Prince Edward Island
+                </option>
+                <option class="dropdown-item" value="QC">Quebec</option>
+                <option class="dropdown-item" value="SK">Saskatchewan</option>
+                <option class="dropdown-item" value="YT">Yukon</option>
               </select>
             </label>
             <label class="text-input-label">
@@ -571,8 +579,8 @@
             </label>
           </fieldset>
 
-          <fieldset class="form-column form-group">
-            <legend class="form-legend">Payment</legend>
+          <fieldset class="form-column payment-form-group">
+            <legend class="payment-form-legend">Payment</legend>
             <label class="text-input-label">
               Card Number:
               <input

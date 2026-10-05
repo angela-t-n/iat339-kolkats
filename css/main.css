@@ -241,6 +241,7 @@ nav {
 .radio-button-container {
   display: inline-flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
 }
 
@@ -502,7 +503,7 @@ nav {
 
   At least the field and name is reusable!
 */
-.form-legend {
+.payment-form-legend {
   font-family: "Libre_Baskerville", serif;
   font-size: 1.3rem;
   color: var(--dark-purple);
@@ -511,12 +512,20 @@ nav {
   padding-right: 8px;
 }
 
-.form-group {
+.payment-form-group {
   padding: 16px;
   border-radius: 8px;
   border: 2px solid var(--light-grey);
   border-style: dashed;
 }
+
+.payment-form-gap {
+  gap: 24px;
+}
+
+/*
+  Checkbox
+*/
 
 .checkbox-label {
   display: flex;
@@ -560,3 +569,27 @@ nav {
 .checkbox-input:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
+
+/* 
+  Dropdown menu stuff
+  reference: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select 
+*/
+.dropdown-input {
+  background-color: var(--neutral-green);
+}
+
+.dropdown-item {
+  background-color: var(--neutral-green);
+}
+
+/*
+  Hover states, the dropdown icon too are all
+  overriden by the browser's default.
+  there is a way to disable that depending on your browser (ex. chrome)
+  but it's a hassle and I can't see it (I'm on firefox)
+  - angela
+*/
+
+/*
+  Checkout Cart
+*/
