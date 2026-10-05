@@ -125,8 +125,25 @@
           </label>
         </form>
 
+        <h4>css selector:</h4>
+        <p>.text-input-label, .text-input</p>
+
         <h4>Sample code:</h4>
-        <code> &lt;fieldset&gt; todo &lt;/fieldset&gt; </code>
+        <pre>
+          <code>
+            &lt;form&gt;
+              &lt;label class="text-input-label" for="email"&gt;
+                Email:
+                &lt;input
+                  class="text-input"
+                  id="email"
+                  type="email"
+                  placeholder="john.doe@example.com"
+                /&gt;
+              &lt;/label&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
       </section>
 
       <section class="element">
@@ -174,8 +191,51 @@
           </div>
         </form>
 
+        <h4>css selector:</h4>
+        <p>
+          .form-column, .payment-form-group, .radio-button,
+          .radio-button-container
+        </p>
+
         <h4>Sample code:</h4>
-        <code> &lt;label&gt; todo &lt;/label&gt; </code>
+        <pre>
+          <code>
+            &lt;form class="form-column payment-form-group"&gt;
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-1"
+                  name="example-radio-group"
+                  value="1"
+                /&gt;
+                &lt;label for="var-1"&gt; Variant 1 &lt;/label&gt;
+              &lt;/div&gt;
+
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-2"
+                  name="example-radio-group"
+                  value="2"
+                /&gt;
+                &lt;label for="var-2"&gt; Variant 2 &lt;/label&gt;
+              &lt;/div&gt;
+
+              &lt;div class="radio-button-container"&gt;
+                &lt;input
+                  class="radio-button"
+                  type="radio"
+                  id="var-3"
+                  name="example-radio-group"
+                  value="3"
+                /&gt;
+                &lt;label for="var-3"&gt; Variant 3 &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
       </section>
 
       <section class="element">
@@ -194,13 +254,25 @@
           />
         </a>
 
+        <h4>css selector:</h4>
+        <p>.image-link-a, .imae-link-img</p>
+
         <h4>Sample code:</h4>
-        <code>
-          &lt;a class="image-link-a"
-          href="https://en.wikipedia.org/wiki/O-mikuji" target="_blank"&gt;
-          &lt;img class="image-link-img" src="img/love-canopy-fortune.png"
-          alt="Fortune design sample for the Love Canopy set" /&gt; &lt;/a&gt;
-        </code>
+        <pre>
+          <code>
+            &lt;a
+              class="image-link-a"
+              href="https://en.wikipedia.org/wiki/O-mikuji"
+              target="_blank"
+            &gt;
+              &lt;img
+                class="image-link-img"
+                src="img/love-canopy-fortune.png"
+                alt="Fortune design sample for the Love Canopy set"
+              /&gt;
+            &lt;/a&gt;
+          </code>
+        </pre>
       </section>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -319,6 +391,9 @@
           secrets, and true self
         </p>
 
+        <h4>Css selector:</h4>
+        <p>p</p>
+
         <h4>Sample code:</h4>
         <code>
           &lt;p&gt; Plantoscope (derived from “plant” and “horoscope”) provides
@@ -352,8 +427,25 @@
           <li class="num-list-purple"><p>Third item</p></li>
         </ol>
 
+        <h4>Css selector:</h4>
+        <p>.num-list-green, .num-list-purple</p>
+
         <h4>Sample code:</h4>
-        <code> &lt;ol type="1"&gt; todo &lt;/ol&gt; </code>
+        <pre>
+          <code>
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(1) First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(2) Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(3) Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
       </section>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -473,7 +565,7 @@
 
       <section class="element">
         <h3>Payment Form</h3>
-        <!-- Angela - html -->
+        <!-- Angela - html, css -->
 
         <!-- 
           For fields reference, I tried basing it off of many different brands 
@@ -602,6 +694,13 @@
           <button class="button" type="submit" value="Submit">Submit</button>
         </form>
 
+        <h4>Css selector:</h4>
+        <p>
+          .payment-form-legend, .payment-form-group, .payment-form-gap,
+          .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
+          .text-input, .text-input-label, .button
+        </p>
+
         <h3>Sample code:</h3>
         <!--
           The formatting looked so bad that I looked up how to keep the format
@@ -609,7 +708,121 @@
         -->
         <pre>
           <code>
-            todo
+            &lt;form class="form-column payment-form-gap"&gt;
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
+                &lt;div&gt;
+                  &lt;label class="text-input-label"&gt;
+                    First Name:
+                    &lt;input class="text-input" type="text" placeholder="John" /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Last Name:
+                    &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;label class="text-input-label"&gt;
+                  Phone Number:
+                  &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
+                &lt;/label&gt;
+
+                &lt;label class="text-input-label"&gt;
+                  Email:
+                  &lt;input
+                    class="text-input"
+                    type="email"
+                    placeholder="john.doe@example.com"
+                  /&gt;
+                &lt;/label&gt;
+
+                &lt;label class="checkbox-label"&gt;
+                  &lt;input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="toggle-newsletter"
+                    value="false"
+                  /&gt;
+                  Send me newsletters and special offers
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
+                &lt;label class="text-input-label"&gt;
+                  Country:
+                  &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  Address:
+                  &lt;input
+                    class="text-input"
+                    type="text"
+                    placeholder="123 Main Street"
+                  /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  Suite/Apt (Optional):
+                  &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  City:
+                  &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  Province:
+                  &lt;select class="text-input dropdown-input"&gt;
+                    &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="BC"&gt;
+                      British Columbia
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NB"&gt;New Brunswick&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NL"&gt;
+                      Newfoundland and Labrador
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NT"&gt;
+                      Northwest Territories
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="PE"&gt;
+                      Prince Edward Island
+                    &lt;/option&gt;
+                    &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
+                    &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  Postal Code:
+                  &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+
+              &lt;fieldset class="form-column payment-form-group"&gt;
+                &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
+                &lt;label class="text-input-label"&gt;
+                  Card Number:
+                  &lt;input
+                    class="text-input"
+                    type="text"
+                    placeholder="1234 5678 9012 3456"
+                  /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  Expiration Date:
+                  &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
+                &lt;/label&gt;
+                &lt;label class="text-input-label"&gt;
+                  CVV:
+                  &lt;input class="text-input" type="text" placeholder="123" /&gt;
+                &lt;/label&gt;
+              &lt;/fieldset&gt;
+
+              &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
           </code>
         </pre>
       </section>
@@ -684,6 +897,14 @@
           </div>
         </div>
 
+        <h4>Css selector:</h4>
+        <p>
+          .checkout-cart-list, .checkout-cart-item-group,
+          .checkout-cart-segment-row, .checkout-item-img,
+          .checkout-quantity-button-group, .checkout-total-item-price,
+          .checkout-quantity-button
+        </p>
+
         <h3>Sample Code</h3>
         <!--
           The formatting looked so bad that I looked up how to keep the format
@@ -691,7 +912,61 @@
         -->
         <pre>
           <code>
-            todo
+            &lt;div class="checkout-cart-list"&gt;
+              &lt;div class="checkout-cart-item-group"&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/love-canopy-box.png"
+                    alt="Blind box design for the Love Canopy set"
+                  /&gt;
+                  &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
+                &lt;/div&gt;
+
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;p&gt;$19.99/unit&lt;/p&gt;
+
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;2&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="checkout-cart-item-group"&gt;
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/placeholder-box.png"
+                    alt="Blind box design for the [placeholder] set"
+                  /&gt;
+                  &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
+                &lt;/div&gt;
+
+                &lt;div class="checkout-cart-segment-row"&gt;
+                  &lt;p&gt;$19.99/unit&lt;/p&gt;
+
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;1&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
           </code>
         </pre>
       </section>
