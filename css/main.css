@@ -332,7 +332,7 @@ nav {
 .image-link-a {
   display: inline-flex;
   position: relative;
-  border: 2px solid var(--neutral-purple);
+  border: 2px solid var(--light-purple);
   border-radius: 8%;
   transition: var(--transition-duration);
 }
@@ -371,7 +371,7 @@ nav {
 }
 
 .image-link-a:hover {
-  border: 2px solid var(--light-purple);
+  border: 2px solid var(--medium-green);
   border-radius: 5%;
 }
 
@@ -452,15 +452,23 @@ nav {
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
+  margin: 24px 0px 8px 0px;
 }
 
 .product-price {
   font-family: "League_Spartan";
   font-weight: normal;
-  font-size: 1.5rem;
   color: var(--dark-green);
-  text-decoration: none;
+  text-decoration: nones;
   transition-duration: 0.3s;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .grid-item:hover .card-container,
@@ -471,17 +479,18 @@ nav {
 
 .grid-item:hover .product-name,
 .grid-item:focus .product-name {
-  color: var(--light-green);
+  color: var(--neutral-green);
 }
 
 .grid-item:hover .product-price,
 .grid-item:focus .product-price {
-  color: var(--light-green);
+  color: var(--neutral-green);
 }
 
 .product-image {
   width: 300px;
   height: auto;
+  border-radius: 8px;
 }
 
 
