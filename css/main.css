@@ -84,7 +84,7 @@ h3 {
 
 }
 
-h4 {
+h4{
   /* LB italic */
   font-family: 'Libre_Baskerville';
   font-weight: normal;
@@ -92,7 +92,7 @@ h4 {
   font-size: 1.3rem;
 }
 
-h5 {
+h5, summary {
   font-family: 'League_Spartan';
   font-weight: normal;
   font-style: normal;
@@ -202,7 +202,7 @@ nav {
 */
 /* make form fields stack vertically with spacing */
 .form-column {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 8px;
 }
@@ -219,10 +219,11 @@ nav {
 */
 
 .text-input-label {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 4px;
   font-weight: normal;
+  width: 100%;
 }
 
 /*
@@ -346,7 +347,9 @@ nav {
     I wanted to resize the image... 
     its quite big.
   */
-  width: 300px;
+  max-width: 300px;
+  min-width: 150px;
+  width: 100%;
   height: auto;
   transition: var(--transition-duration);
 }
@@ -511,14 +514,20 @@ nav {
 }
 
 .payment-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 16px;
   border-radius: 8px;
   border: 2px solid var(--light-grey);
   border-style: dashed;
 }
 
-.payment-form-gap {
+.payment-form {
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 }
 
 /*
