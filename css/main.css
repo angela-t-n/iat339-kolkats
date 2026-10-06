@@ -125,6 +125,10 @@ code {
   display: block;
 }
 
+summary{
+  color: var(--dark-green);
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
