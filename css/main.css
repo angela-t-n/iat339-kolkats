@@ -138,7 +138,7 @@ summary {
 .button {
   font-family: "Libre_Baskerville", serif;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.25rem;
   padding: 2px 24px;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   border-radius: 8px;
@@ -798,9 +798,6 @@ nav div .button-nav {
     grid-template-columns: 1fr 1fr;
   }
 
-  .button {
-    font-size: 1.25rem;
-  }
 }
 
 @media (min-width: 768px) {
