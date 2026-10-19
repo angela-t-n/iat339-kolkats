@@ -5,14 +5,19 @@
             <title>Product Listings</title>
 
             <link href="css/main.css" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
 
     <body>
         <nav>
-            <a class="button-nav" href="#plantosphere">Plantosphere</a>
+            <!-- <a class="button-nav" href="#plantosphere">Plantosphere</a> -->
+              <a class="button-nav" href="#plantosphere">
+          <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo">
+          </a>
           <div>
           <a class="button-nav" href="#about">About</a>
-          <a class="button-nav" href="#boxes">Boxes</a>
+          <a class="button-nav active" href="#boxes">Boxes</a>
           <a class="button-nav" href="#cart">Cart</a>
           </div>
         </nav>
@@ -21,40 +26,99 @@
             <p>Here are all the products we have!</p>
         </header>
 
+        <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>Css selector:</h4>
+        <p>
+          .box, .product-grid li, .grid-item, .card-container, .product-name,
+          .product-price
+        </p>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ul class="product-grid box"&gt;<br />
+
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
+          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
+          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt;<br />
+
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
+          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
+          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt;<br />
+
+          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
+          class="card-container"&gt; &lt;img class="product-image"
+          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;p
+          class="product-name"&gt;Love Canopy Box&lt;/p&gt; &lt;p
+          class="product-price"&gt;$19.99&lt;/p&gt; &lt;/div&gt; &lt;/a&gt;
+          &lt;/li&gt; &lt;/ul&gt;<br />
+        </code>
+
+        <!-- <div class="product-grid-container"> -->
+        <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
         <ul class="product-grid box">
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
 
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
 
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
 
-            <li>
-              <a class="grid-item" href="product.html">
-                <div class="card-container">
-                      <img src="img/love-canopy-box.png" alt="Love Canopy Box"><br>
-                      <p class="product-name">Love Canopy Box</p>
-                      <p class="product-price">$600</p>
-                </div>
-              </a>
-            </li>
- 
-        
-
-          </ul>
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /><br />
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </section>
     </body>
 </html>
