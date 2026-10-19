@@ -165,9 +165,9 @@ summary {
 
 nav {
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 1rem;              
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   background-color: var(--medium-purple);
   padding: 0.5rem;
@@ -176,7 +176,7 @@ nav {
 
 nav div {
   display: flex;
-  flex-wrap: wrap;      
+  flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: column; */
   gap: 0.5rem;
@@ -191,28 +191,29 @@ nav div {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
- 
+  background-color: var(--medium-purple);
+
 }
 
-nav div .button-nav{
+nav div .button-nav {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
 
-.button-nav.active {
-  background-color: var(--dark-purple);
-  color: white;
+.button-nav:hover {
+  background-color: var(--medium-green);
 }
 
-.button-nav:hover,
-.button-nav:focus {
-  background-color: var(--medium-green);
+.button-nav:focus,
+.button-nav.active {
+  background-color: var(--dark-green);
+  color: white;
 }
 
 
 .nav-logo {
-  height: auto; 
-  width: 100%;    
+  height: auto;
+  width: 100%;
   display: block;
 }
 
@@ -336,6 +337,8 @@ nav div .button-nav{
 */
 /* default input field styling */
 .text-input {
+  min-width: none;
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -658,7 +661,6 @@ nav div .button-nav{
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  min-width: 250px;
   gap: 24px;
 }
 
@@ -780,55 +782,55 @@ nav div .button-nav{
 
 /* responsive screen stuff  */
 
-@media(min-width:425px){
+@media(min-width:425px) {
   nav div {
-  display: flex;
-  flex-wrap: wrap;      
-  flex-direction: row;
-  gap: 0.5rem;
-}
-  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .button{
-  font-size: 1.25rem;
+  .button {
+    font-size: 1.25rem;
   }
 }
+
 @media (min-width: 768px) {
   .box {
-  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
 
 @media (min-width: 1024px) {
   .box {
-  grid-template-columns: auto auto auto;
-  justify-content: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 
-  .product-grid li{
-    width: 303.67px; 
+  .product-grid li {
+    width: 303.67px;
     max-width: 100%;
   }
 
-  nav{
+  nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
-  .nav-logo{
-  height: auto; 
-  width: 100%;    
-  display: inline-block;
+  .nav-logo {
+    height: auto;
+    width: 100%;
+    display: inline-block;
   }
 
 }
-
