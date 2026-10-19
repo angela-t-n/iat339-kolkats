@@ -327,67 +327,60 @@
           only keep the delete button and force the user to filter it manually themselves.
         -->
         <div class="checkout-cart-list">
-          <div class="checkout-cart-item-group">
-            <div class="checkout-cart-segment-row">
-              <img
-                class="checkout-item-img"
-                src="img/love-canopy-box.png"
-                alt="Blind box design for the Love Canopy set"
-              />
+          <!-- Item 1 -->
+          <div class="checkout-item-card">
+            <!-- Item visuals and info -->
+            <img
+              class="checkout-item-img"
+              src="img/love-canopy-box.png"
+              alt="Blind box design for the Love Canopy set"
+            />
+            <div class="checkout-item-details">
               <h3>Love Canopy Blind Box</h3>
-            </div>
-
-            <div class="checkout-cart-segment-row">
               <p>$19.99/unit</p>
-
-              <div class="checkout-quantity-button-group">
-                <button class="checkout-quantity-button" type="button">
-                  -
-                </button>
-                <p>2</p>
-                <button class="checkout-quantity-button" type="button">
-                  +
-                </button>
-              </div>
-
-              <p class="checkout-total-item-price">$39.98</p>
             </div>
+
+            <!-- Unit controls -->
+            <div class="checkout-quantity-button-group">
+              <button class="checkout-quantity-button" type="button">-</button>
+              <p>2</p>
+              <button class="checkout-quantity-button" type="button">+</button>
+            </div>
+
+            <!-- Total Price -->
+            <p class="checkout-total-item-price">$39.98</p>
           </div>
 
-          <div class="checkout-cart-item-group">
-            <div class="checkout-cart-segment-row">
-              <img
-                class="checkout-item-img"
-                src="img/placeholder-box.png"
-                alt="Blind box design for the [placeholder] set"
-              />
+          <!-- Item 2 -->
+          <div class="checkout-item-card">
+            <!-- Item visuals and info -->
+            <img
+              class="checkout-item-img"
+              src="img/placeholder-box.png"
+              alt="Blind box design for the Love Canopy set"
+            />
+            <div class="checkout-item-details">
               <h3>[placeholder] Blind Box</h3>
-            </div>
-
-            <div class="checkout-cart-segment-row">
               <p>$19.99/unit</p>
-
-              <div class="checkout-quantity-button-group">
-                <button class="checkout-quantity-button" type="button">
-                  -
-                </button>
-                <p>1</p>
-                <button class="checkout-quantity-button" type="button">
-                  +
-                </button>
-              </div>
-
-              <p class="checkout-total-item-price">$19.99</p>
             </div>
+
+            <!-- Unit controls -->
+            <div class="checkout-quantity-button-group">
+              <button class="checkout-quantity-button" type="button">-</button>
+              <p>1</p>
+              <button class="checkout-quantity-button" type="button">+</button>
+            </div>
+
+            <!-- Total Price -->
+            <p class="checkout-total-item-price">$19.99</p>
           </div>
         </div>
 
         <h4>Css selector:</h4>
         <p>
-          .checkout-cart-list, .checkout-cart-item-group,
-          .checkout-cart-segment-row, .checkout-item-img,
-          .checkout-quantity-button-group, .checkout-total-item-price,
-          .checkout-quantity-button
+          .checkout-cart-list, .checkout-item-card, .checkout-cart-segment-row,
+          .checkout-item-img, .checkout-quantity-button-group,
+          .checkout-total-item-price, .checkout-quantity-button
         </p>
 
         <h3>Sample Code</h3>
@@ -400,58 +393,60 @@
           <pre>
             <code>
               &lt;div class="checkout-cart-list"&gt;
-                &lt;div class="checkout-cart-item-group"&gt;
-                  &lt;div class="checkout-cart-segment-row"&gt;
-                    &lt;img
-                      class="checkout-item-img"
-                      src="img/love-canopy-box.png"
-                      alt="Blind box design for the Love Canopy set"
-                    /&gt;
+                &lt;!-- Item 1 --&gt;
+                &lt;div class="checkout-item-card"&gt;
+                  &lt;!-- Item visuals and info --&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/love-canopy-box.png"
+                    alt="Blind box design for the Love Canopy set"
+                  /&gt;
+                  &lt;div class="checkout-item-details"&gt;
                     &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
-                  &lt;/div&gt;
-
-                  &lt;div class="checkout-cart-segment-row"&gt;
                     &lt;p&gt;$19.99/unit&lt;/p&gt;
-
-                    &lt;div class="checkout-quantity-button-group"&gt;
-                      &lt;button class="checkout-quantity-button" type="button"&gt;
-                        -
-                      &lt;/button&gt;
-                      &lt;p&gt;2&lt;/p&gt;
-                      &lt;button class="checkout-quantity-button" type="button"&gt;
-                        +
-                      &lt;/button&gt;
-                    &lt;/div&gt;
-
-                    &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
                   &lt;/div&gt;
+
+                  &lt;!-- Unit controls --&gt;
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;2&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Total Price --&gt;
+                  &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
                 &lt;/div&gt;
 
-                &lt;div class="checkout-cart-item-group"&gt;
-                  &lt;div class="checkout-cart-segment-row"&gt;
-                    &lt;img
-                      class="checkout-item-img"
-                      src="img/placeholder-box.png"
-                      alt="Blind box design for the [placeholder] set"
-                    /&gt;
+                &lt;!-- Item 2 --&gt;
+                &lt;div class="checkout-item-card"&gt;
+                  &lt;!-- Item visuals and info --&gt;
+                  &lt;img
+                    class="checkout-item-img"
+                    src="img/placeholder-box.png"
+                    alt="Blind box design for the Love Canopy set"
+                  /&gt;
+                  &lt;div class="checkout-item-details"&gt;
                     &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
-                  &lt;/div&gt;
-
-                  &lt;div class="checkout-cart-segment-row"&gt;
                     &lt;p&gt;$19.99/unit&lt;/p&gt;
-
-                    &lt;div class="checkout-quantity-button-group"&gt;
-                      &lt;button class="checkout-quantity-button" type="button"&gt;
-                        -
-                      &lt;/button&gt;
-                      &lt;p&gt;1&lt;/p&gt;
-                      &lt;button class="checkout-quantity-button" type="button"&gt;
-                        +
-                      &lt;/button&gt;
-                    &lt;/div&gt;
-
-                    &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
                   &lt;/div&gt;
+
+                  &lt;!-- Unit controls --&gt;
+                  &lt;div class="checkout-quantity-button-group"&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      -
+                    &lt;/button&gt;
+                    &lt;p&gt;1&lt;/p&gt;
+                    &lt;button class="checkout-quantity-button" type="button"&gt;
+                      +
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Total Price --&gt;
+                  &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
             </code>
