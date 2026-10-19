@@ -129,47 +129,19 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--neutral-purple);
-  padding: 1rem;
-}
 
 .button {
   font-family: "Libre_Baskerville", serif;
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 2rem;
   padding: 2px 24px;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
-  /* border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px; */
   border-radius: 8px;
   border: 2px solid var(--light-green);
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
 
-}
-
-/* Styling for the navigation button */
-.button-nav {
-  font-family: "Libre_Baskerville";
-  font-weight: normal;
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
-  color: white;
-  background-color: var(--medium-purple);
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.button-nav:hover,
-.button-nav:focus {
-  background-color: var(--medium-green);
 }
 
 .button:hover,
@@ -182,6 +154,61 @@ nav {
   color: white;
   background-color: var(--dark-green);
   border: 2px solid var(--dark-green);
+}
+
+/* Styling for the navigation bar + its buttons */
+
+nav {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 1rem;              
+  width: 100%;
+  background-color: var(--medium-purple);
+  padding: 0.5rem;
+}
+
+
+nav div {
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 0.5rem;
+}
+
+.button-nav {
+  font-family: "Libre_Baskerville";
+  font-weight: normal;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+ 
+}
+
+nav div .button-nav{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.button-nav.active {
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  background-color: var(--medium-green);
+}
+
+
+.nav-logo {
+  height: auto; 
+  width: 100%;    
+  display: block;
 }
 
 .intext-link {
@@ -410,6 +437,8 @@ nav {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/* product listing stuff */
 .box {
   display: flex;
   gap: 1rem;
@@ -421,14 +450,18 @@ nav {
 .product-grid li {
   list-style: none;
   display: inline-block;
-  grid-template-columns: auto auto auto;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: auto;
+  /* justify-items: center; */
 }
 
 .product-grid {
   /* Removes the padding around the ul */
   padding: 0px;
+  /* justify-items: center; */
 }
 
+/* link of each item */
 .grid-item {
   display: inline-block;
   text-decoration: none;
@@ -441,7 +474,7 @@ nav {
   border-radius: 8px;
   border: 2px solid var(--light-green);
   padding: 1rem;
-  width: fit-content;
+  width: 90%;
   background-color: var(--neutral-green);
   transition-duration: 0.3s;
 }
@@ -450,7 +483,7 @@ nav {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
@@ -490,7 +523,8 @@ nav {
 }
 
 .product-image {
-  width: 300px;
+  /* change width to fit within the product listing */
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -670,3 +704,58 @@ nav {
   width: 100%;
   height: auto;
 }
+
+/* responsive screen stuff  */
+
+@media(min-width:425px){
+  nav div {
+  display: flex;
+  flex-wrap: wrap;      
+  flex-direction: row;
+  gap: 0.5rem;
+}
+  
+}
+
+@media (min-width: 576px){
+  .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .button{
+  font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .box {
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .box {
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  }
+
+  .product-grid li{
+    width: 303.67px; 
+    max-width: 100%;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+
+  .nav-logo{
+  height: auto; 
+  width: 100%;    
+  display: inline-block;
+  }
+
+}
+
