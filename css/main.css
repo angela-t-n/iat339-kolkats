@@ -133,7 +133,7 @@ code {
 .button {
   font-family: "Libre_Baskerville", serif;
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 2rem;
   padding: 2px 24px;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   border-radius: 8px;
@@ -721,6 +721,10 @@ nav div .button-nav{
   .box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  }
+
+  .button{
+  font-size: 1.25rem;
   }
 }
 @media (min-width: 768px) {
