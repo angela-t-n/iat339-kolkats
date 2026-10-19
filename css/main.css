@@ -92,7 +92,8 @@ h4 {
   font-size: 1.3rem;
 }
 
-h5 {
+h5,
+summary {
   font-family: 'League_Spartan';
   font-weight: normal;
   font-style: normal;
@@ -123,6 +124,10 @@ code {
   background-color: #eee;
   padding: 0.5rem;
   display: block;
+}
+
+summary {
+  color: var(--dark-green);
 }
 
 /* 
@@ -160,9 +165,9 @@ code {
 
 nav {
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 1rem;              
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   background-color: var(--medium-purple);
   padding: 0.5rem;
@@ -171,7 +176,7 @@ nav {
 
 nav div {
   display: flex;
-  flex-wrap: wrap;      
+  flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: column; */
   gap: 0.5rem;
@@ -186,28 +191,29 @@ nav div {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
- 
+  background-color: var(--medium-purple);
+
 }
 
-nav div .button-nav{
+nav div .button-nav {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
 
-.button-nav.active {
-  background-color: var(--dark-purple);
-  color: white;
+.button-nav:hover {
+  background-color: var(--medium-green);
 }
 
-.button-nav:hover,
-.button-nav:focus {
-  background-color: var(--medium-green);
+.button-nav:focus,
+.button-nav.active {
+  background-color: var(--dark-green);
+  color: white;
 }
 
 
 .nav-logo {
-  height: auto; 
-  width: 100%;    
+  height: auto;
+  width: 100%;
   display: block;
 }
 
@@ -229,7 +235,7 @@ nav div .button-nav{
 */
 /* make form fields stack vertically with spacing */
 .form-column {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 8px;
 }
@@ -238,7 +244,15 @@ nav div .button-nav{
 .form-row {
   display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 8px;
+}
+
+/* allow it */
+.form-row .text-input-label {
+  flex: 1 1 130px;
+  width: auto;
 }
 
 /*
@@ -246,10 +260,11 @@ nav div .button-nav{
 */
 
 .text-input-label {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 4px;
   font-weight: normal;
+  width: 100%;
 }
 
 /*
@@ -322,6 +337,8 @@ nav div .button-nav{
 */
 /* default input field styling */
 .text-input {
+  min-width: none;
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -373,7 +390,9 @@ nav div .button-nav{
     I wanted to resize the image... 
     its quite big.
   */
-  width: 300px;
+  max-width: 300px;
+  min-width: 150px;
+  width: 100%;
   height: auto;
   transition: var(--transition-duration);
 }
@@ -545,14 +564,20 @@ nav div .button-nav{
 }
 
 .payment-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 16px;
   border-radius: 8px;
   border: 2px solid var(--light-grey);
   border-style: dashed;
 }
 
-.payment-form-gap {
+.payment-form {
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
 }
 
 /*
@@ -561,7 +586,6 @@ nav div .button-nav{
 
 .checkbox-label {
   display: flex;
-  align-items: end;
   gap: 4px;
 }
 
@@ -637,16 +661,13 @@ nav div .button-nav{
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  min-width: 550px;
   gap: 24px;
 }
 
-.checkout-cart-item-group {
-  display: flex;
-  flex-direction: row;
+.checkout-item-card {
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
   padding: 16px;
   border: 2px solid var(--dark-green);
   border-radius: 8px;
@@ -654,6 +675,7 @@ nav div .button-nav{
   max-width: 100%;
 }
 
+/* DEPRICATED */
 .checkout-cart-segment-row {
   display: flex;
   flex-direction: row;
@@ -667,16 +689,28 @@ nav div .button-nav{
   height: auto;
 }
 
+.checkout-item-details {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* removes the auto margin */
+.checkout-item-details h3,
+.checkout-item-details p {
+  margin: 0;
+}
+
 .checkout-quantity-button-group {
+  width: fit-content;
+
   display: grid;
   grid-template-columns: auto auto auto;
   place-items: center;
   gap: 8px;
-}
-
-.checkout-total-item-price {
-  font-weight: normal;
-  color: var(--dark-green);
 }
 
 .checkout-quantity-button {
@@ -700,6 +734,47 @@ nav div .button-nav{
   color: var(--dark-green);
 }
 
+.checkout-total-item-price {
+  width: fit-content;
+  font-weight: normal;
+  color: var(--dark-green);
+}
+
+/*
+  Media Query specifics
+  since it's read top to bottom, these
+  should be on the bottom for it to take effect
+*/
+@media (min-width: 400px) {
+  .checkout-item-card {
+    grid-template-columns: auto 1fr;
+    row-gap: 0px;
+    column-gap: 24px;
+  }
+
+  .checkout-quantity-button-group {
+    width: 100%;
+  }
+
+  .checkout-item-details {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 600px) {
+  .checkout-item-card {
+    grid-template-columns: auto 1fr auto auto;
+    column-gap: 24px;
+  }
+
+  .checkout-item-details {
+    margin-top: 0px;
+  }
+}
+
+/*
+  Branding guide at the end 
+*/
 .branding-guide {
   width: 100%;
   height: auto;
@@ -707,55 +782,55 @@ nav div .button-nav{
 
 /* responsive screen stuff  */
 
-@media(min-width:425px){
+@media(min-width:425px) {
   nav div {
-  display: flex;
-  flex-wrap: wrap;      
-  flex-direction: row;
-  gap: 0.5rem;
-}
-  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .button{
-  font-size: 1.25rem;
+  .button {
+    font-size: 1.25rem;
   }
 }
+
 @media (min-width: 768px) {
   .box {
-  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
 
 @media (min-width: 1024px) {
   .box {
-  grid-template-columns: auto auto auto;
-  justify-content: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 
-  .product-grid li{
-    width: 303.67px; 
+  .product-grid li {
+    width: 303.67px;
     max-width: 100%;
   }
 
-  nav{
+  nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
-  .nav-logo{
-  height: auto; 
-  width: 100%;    
-  display: inline-block;
+  .nav-logo {
+    height: auto;
+    width: 100%;
+    display: inline-block;
   }
 
 }
-

@@ -5,8 +5,7 @@
     <title>P01 - Style Guide: Plantoscope</title>
 
     <link href="css/main.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -14,7 +13,8 @@
       <h1>P01 - Style Guide: Plantoscope</h1>
 
       <p>
-        A template you can use to start building out your own style guides with.
+        Style guide for the Plantoscope brand. Created by IAT 339 Group 14:
+        Angela Nguyen & Manha Sheikh.
       </p>
     </header>
 
@@ -28,10 +28,10 @@
         >Product Listing Template</a
       >
       <a class="button-nav" href="checkout.html">Checkout Template</a>
-      <a class="button-nav" href="#citations">Citations</a>
       <a class="button-nav" href="#visual_style_guide_&_branding"
         >Visual Style Guide & Branding</a
       >
+      <a class="button-nav" href="#citations">Citations</a>
       <!-- Copied the formats above -->
     </nav>
 
@@ -109,7 +109,7 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
-        <!-- Angela - html, css -->
+        <!-- Angela - html, css, responsive...? -->
 
         <!-- 
           Can be used for username, email, etc.
@@ -150,7 +150,7 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-        <!-- Angela - html, css -->
+        <!-- Angela - html, css, res-wip -->
 
         <!-- 
           Can be used for selection of product options, etc.
@@ -158,7 +158,7 @@
             - https://www.w3schools.com/tags/att_input_type_radio.asp
             - Overall assignments and stuff
         -->
-        <form class="form-column payment-form-group">
+        <form class="payment-form-group">
           <div class="radio-button-container">
             <input
               class="radio-button"
@@ -200,49 +200,52 @@
         </p>
 
         <h4>Sample code:</h4>
-        <pre>
-          <code>
-            &lt;form class="form-column payment-form-group"&gt;
-              &lt;div class="radio-button-container"&gt;
-                &lt;input
-                  class="radio-button"
-                  type="radio"
-                  id="var-1"
-                  name="example-radio-group"
-                  value="1"
-                /&gt;
-                &lt;label for="var-1"&gt; Variant 1 &lt;/label&gt;
-              &lt;/div&gt;
+        <details>
+          <summary>(Collasped code because it's too long)</summary>
+          <pre>
+            <code>
+              &lt;form class="payment-form-group"&gt;
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-1"
+                    name="example-radio-group"
+                    value="1"
+                  /&gt;
+                  &lt;label for="var-1"&gt; Variant 1 &lt;/label&gt;
+                &lt;/div&gt;
 
-              &lt;div class="radio-button-container"&gt;
-                &lt;input
-                  class="radio-button"
-                  type="radio"
-                  id="var-2"
-                  name="example-radio-group"
-                  value="2"
-                /&gt;
-                &lt;label for="var-2"&gt; Variant 2 &lt;/label&gt;
-              &lt;/div&gt;
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-2"
+                    name="example-radio-group"
+                    value="2"
+                  /&gt;
+                  &lt;label for="var-2"&gt; Variant 2 &lt;/label&gt;
+                &lt;/div&gt;
 
-              &lt;div class="radio-button-container"&gt;
-                &lt;input
-                  class="radio-button"
-                  type="radio"
-                  id="var-3"
-                  name="example-radio-group"
-                  value="3"
-                /&gt;
-                &lt;label for="var-3"&gt; Variant 3 &lt;/label&gt;
-              &lt;/div&gt;
-            &lt;/form&gt;
-          </code>
-        </pre>
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-3"
+                    name="example-radio-group"
+                    value="3"
+                  /&gt;
+                  &lt;label for="var-3"&gt; Variant 3 &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            </code>
+          </pre>
+        </details>
       </section>
 
       <section class="element">
         <h3>Image as a Link</h3>
-        <!-- Angela - html, css -->
+        <!-- Angela - html, css, responsive -->
 
         <a
           class="image-link-a"
@@ -377,7 +380,7 @@
 
       <section class="element">
         <h3>Paragraphs</h3>
-        <!-- Angela - html, css (just default text styling) -->
+        <!-- Angela - html, css (just default text styling), responsive naturally -->
 
         <p>
           Plantoscope (derived from “plant” and “horoscope”) provides fortune
@@ -414,7 +417,7 @@
 
       <section class="element">
         <h3>Numbered Lists</h3>
-        <!-- Angela - html, css -->
+        <!-- Angela - html, css, responsive naturally -->
 
         <!-- Reference: https://www.w3schools.com/html/html_lists_ordered.asp -->
         <ol type="1">
@@ -476,13 +479,13 @@
         <h4>Rendered element:</h4>
         <nav>
           <!-- <a class="button-nav" href="#plantosphere">Plantosphere</a> -->
-           <a class="button-nav" href="#plantosphere">
-          <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo">
+          <a class="button-nav" href="index.html">
+            <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo" />
           </a>
           <div>
-            <a class="button-nav" href="#about">About</a>
-            <a class="button-nav" href="#boxes">Boxes</a>
-            <a class="button-nav" href="#cart">Cart</a>
+            <a class="button-nav" href="index.html">About</a>
+            <a class="button-nav" href="product_listing.html">Boxes</a>
+            <a class="button-nav" href="checkout.html">Cart</a>
           </div>
         </nav>
       </section>
@@ -568,11 +571,14 @@
         <!-- </div> -->
       </section>
 
-      <section class="element">
-        <h3>Payment Form</h3>
-        <!-- Angela - html, css -->
+      <section>
+        <h2>Checkout Elements</h2>
 
-        <!-- 
+        <section class="element">
+          <h3>Payment Form</h3>
+          <!-- Angela - html, css, res-wip-->
+
+          <!-- 
           For fields reference, I tried basing it off of many different brands 
           I've shopped from such as Honey Wardrobe (kind of uses a default Shopify checkout form),
           Call It Spring, DSW/The Shoe Company, Amazon, White Tiger and Black Tiger merch, etc.
@@ -583,260 +589,269 @@
           Using references from: https://www.w3schools.com/html/html_form_elements.asp
           for the checkbox specifically: https://www.w3schools.com/tags/att_input_type_checkbox.asp
         -->
-        <form class="form-column payment-form-gap">
-          <fieldset class="form-column payment-form-group">
-            <legend class="payment-form-legend">Contact</legend>
-            <div>
+          <form class="payment-form">
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Contact</legend>
+              <div class="form-row">
+                <label class="text-input-label">
+                  First Name:
+                  <input class="text-input" type="text" placeholder="John" />
+                </label>
+                <label class="text-input-label">
+                  Last Name:
+                  <input class="text-input" type="text" placeholder="Doe" />
+                </label>
+              </div>
+
               <label class="text-input-label">
-                First Name:
-                <input class="text-input" type="text" placeholder="John" />
+                Phone Number:
+                <input
+                  class="text-input"
+                  type="tel"
+                  placeholder="604-123-4567"
+                />
+              </label>
+
+              <label class="text-input-label">
+                Email:
+                <input
+                  class="text-input"
+                  type="email"
+                  placeholder="john.doe@example.com"
+                />
+              </label>
+
+              <label class="checkbox-label">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  id="toggle-newsletter"
+                  value="false"
+                />
+                Send me newsletters and special offers
+              </label>
+            </fieldset>
+
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Shipping</legend>
+              <label class="text-input-label">
+                Country:
+                <input class="text-input" type="text" placeholder="Canada" />
               </label>
               <label class="text-input-label">
-                Last Name:
-                <input class="text-input" type="text" placeholder="Doe" />
+                Address:
+                <input
+                  class="text-input"
+                  type="text"
+                  placeholder="123 Main Street"
+                />
               </label>
-            </div>
+              <label class="text-input-label">
+                Suite/Apt (Optional):
+                <input class="text-input" type="text" placeholder="Suite 100" />
+              </label>
+              <label class="text-input-label">
+                City:
+                <input class="text-input" type="text" placeholder="Vancouver" />
+              </label>
+              <label class="text-input-label">
+                Province:
+                <select class="text-input dropdown-input">
+                  <option class="dropdown-item" value="AB">Alberta</option>
+                  <option class="dropdown-item" value="BC">
+                    British Columbia
+                  </option>
+                  <option class="dropdown-item" value="MB">Manitoba</option>
+                  <option class="dropdown-item" value="NB">
+                    New Brunswick
+                  </option>
+                  <option class="dropdown-item" value="NL">
+                    Newfoundland and Labrador
+                  </option>
+                  <option class="dropdown-item" value="NT">
+                    Northwest Territories
+                  </option>
+                  <option class="dropdown-item" value="NS">Nova Scotia</option>
+                  <option class="dropdown-item" value="NU">Nunavut</option>
+                  <option class="dropdown-item" value="ON">Ontario</option>
+                  <option class="dropdown-item" value="PE">
+                    Prince Edward Island
+                  </option>
+                  <option class="dropdown-item" value="QC">Quebec</option>
+                  <option class="dropdown-item" value="SK">Saskatchewan</option>
+                  <option class="dropdown-item" value="YT">Yukon</option>
+                </select>
+              </label>
+              <label class="text-input-label">
+                Postal Code:
+                <input class="text-input" type="text" placeholder="A1A 1A1" />
+              </label>
+            </fieldset>
 
-            <label class="text-input-label">
-              Phone Number:
-              <input class="text-input" type="tel" placeholder="604-123-4567" />
-            </label>
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Payment</legend>
+              <label class="text-input-label">
+                Card Number:
+                <input
+                  class="text-input"
+                  type="text"
+                  placeholder="1234 5678 9012 3456"
+                />
+              </label>
+              <label class="text-input-label">
+                Expiration Date:
+                <input class="text-input" type="text" placeholder="MM/YY" />
+              </label>
+              <label class="text-input-label">
+                CVV:
+                <input class="text-input" type="text" placeholder="123" />
+              </label>
+            </fieldset>
 
-            <label class="text-input-label">
-              Email:
-              <input
-                class="text-input"
-                type="email"
-                placeholder="john.doe@example.com"
-              />
-            </label>
+            <button class="button" type="submit" value="Submit">Submit</button>
+          </form>
 
-            <label class="checkbox-label">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                id="toggle-newsletter"
-                value="false"
-              />
-              Send me newsletters and special offers
-            </label>
-          </fieldset>
+          <h4>Css selector:</h4>
+          <p>
+            .payment-form-legend, .payment-form-group, .payment-form-gap,
+            .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
+            .text-input, .text-input-label, .button
+          </p>
 
-          <fieldset class="form-column payment-form-group">
-            <legend class="payment-form-legend">Shipping</legend>
-            <label class="text-input-label">
-              Country:
-              <input class="text-input" type="text" placeholder="Canada" />
-            </label>
-            <label class="text-input-label">
-              Address:
-              <input
-                class="text-input"
-                type="text"
-                placeholder="123 Main Street"
-              />
-            </label>
-            <label class="text-input-label">
-              Suite/Apt (Optional):
-              <input class="text-input" type="text" placeholder="Suite 100" />
-            </label>
-            <label class="text-input-label">
-              City:
-              <input class="text-input" type="text" placeholder="Vancouver" />
-            </label>
-            <label class="text-input-label">
-              Province:
-              <select class="text-input dropdown-input">
-                <option class="dropdown-item" value="AB">Alberta</option>
-                <option class="dropdown-item" value="BC">
-                  British Columbia
-                </option>
-                <option class="dropdown-item" value="MB">Manitoba</option>
-                <option class="dropdown-item" value="NB">New Brunswick</option>
-                <option class="dropdown-item" value="NL">
-                  Newfoundland and Labrador
-                </option>
-                <option class="dropdown-item" value="NT">
-                  Northwest Territories
-                </option>
-                <option class="dropdown-item" value="NS">Nova Scotia</option>
-                <option class="dropdown-item" value="NU">Nunavut</option>
-                <option class="dropdown-item" value="ON">Ontario</option>
-                <option class="dropdown-item" value="PE">
-                  Prince Edward Island
-                </option>
-                <option class="dropdown-item" value="QC">Quebec</option>
-                <option class="dropdown-item" value="SK">Saskatchewan</option>
-                <option class="dropdown-item" value="YT">Yukon</option>
-              </select>
-            </label>
-            <label class="text-input-label">
-              Postal Code:
-              <input class="text-input" type="text" placeholder="A1A 1A1" />
-            </label>
-          </fieldset>
-
-          <fieldset class="form-column payment-form-group">
-            <legend class="payment-form-legend">Payment</legend>
-            <label class="text-input-label">
-              Card Number:
-              <input
-                class="text-input"
-                type="text"
-                placeholder="1234 5678 9012 3456"
-              />
-            </label>
-            <label class="text-input-label">
-              Expiration Date:
-              <input class="text-input" type="text" placeholder="MM/YY" />
-            </label>
-            <label class="text-input-label">
-              CVV:
-              <input class="text-input" type="text" placeholder="123" />
-            </label>
-          </fieldset>
-
-          <button class="button" type="submit" value="Submit">Submit</button>
-        </form>
-
-        <h4>Css selector:</h4>
-        <p>
-          .payment-form-legend, .payment-form-group, .payment-form-gap,
-          .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
-          .text-input, .text-input-label, .button
-        </p>
-
-        <h3>Sample code:</h3>
-        <!--
+          <h3>Sample code:</h3>
+          <!--
           The formatting looked so bad that I looked up how to keep the format
           reference: https://www.w3schools.com/TAGs/tag_pre.asp  
         -->
-        <pre>
-          <code>
-            &lt;form class="form-column payment-form-gap"&gt;
-              &lt;fieldset class="form-column payment-form-group"&gt;
-                &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
-                &lt;div&gt;
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+            <code>
+              &lt;form class="payment-form-gap"&gt;
+                &lt;fieldset class="payment-form-group"&gt;
+                  &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
+                  &lt;div&gt;
+                    &lt;label class="text-input-label"&gt;
+                      First Name:
+                      &lt;input class="text-input" type="text" placeholder="John" /&gt;
+                    &lt;/label&gt;
+                    &lt;label class="text-input-label"&gt;
+                      Last Name:
+                      &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+
                   &lt;label class="text-input-label"&gt;
-                    First Name:
-                    &lt;input class="text-input" type="text" placeholder="John" /&gt;
+                    Phone Number:
+                    &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
+                  &lt;/label&gt;
+
+                  &lt;label class="text-input-label"&gt;
+                    Email:
+                    &lt;input
+                      class="text-input"
+                      type="email"
+                      placeholder="john.doe@example.com"
+                    /&gt;
+                  &lt;/label&gt;
+
+                  &lt;label class="checkbox-label"&gt;
+                    &lt;input
+                      class="checkbox-input"
+                      type="checkbox"
+                      id="toggle-newsletter"
+                      value="false"
+                    /&gt;
+                    Send me newsletters and special offers
+                  &lt;/label&gt;
+                &lt;/fieldset&gt;
+
+                &lt;fieldset class="payment-form-group"&gt;
+                  &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Country:
+                    &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
                   &lt;/label&gt;
                   &lt;label class="text-input-label"&gt;
-                    Last Name:
-                    &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
+                    Address:
+                    &lt;input
+                      class="text-input"
+                      type="text"
+                      placeholder="123 Main Street"
+                    /&gt;
                   &lt;/label&gt;
-                &lt;/div&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Suite/Apt (Optional):
+                    &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    City:
+                    &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Province:
+                    &lt;select class="text-input dropdown-input"&gt;
+                      &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="BC"&gt;
+                        British Columbia
+                      &lt;/option&gt;
+                      &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="NB"&gt;New Brunswick&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="NL"&gt;
+                        Newfoundland and Labrador
+                      &lt;/option&gt;
+                      &lt;option class="dropdown-item" value="NT"&gt;
+                        Northwest Territories
+                      &lt;/option&gt;
+                      &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="PE"&gt;
+                        Prince Edward Island
+                      &lt;/option&gt;
+                      &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
+                      &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Postal Code:
+                    &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
+                  &lt;/label&gt;
+                &lt;/fieldset&gt;
 
-                &lt;label class="text-input-label"&gt;
-                  Phone Number:
-                  &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
-                &lt;/label&gt;
+                &lt;fieldset class="payment-form-group"&gt;
+                  &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Card Number:
+                    &lt;input
+                      class="text-input"
+                      type="text"
+                      placeholder="1234 5678 9012 3456"
+                    /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    Expiration Date:
+                    &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
+                  &lt;/label&gt;
+                  &lt;label class="text-input-label"&gt;
+                    CVV:
+                    &lt;input class="text-input" type="text" placeholder="123" /&gt;
+                  &lt;/label&gt;
+                &lt;/fieldset&gt;
 
-                &lt;label class="text-input-label"&gt;
-                  Email:
-                  &lt;input
-                    class="text-input"
-                    type="email"
-                    placeholder="john.doe@example.com"
-                  /&gt;
-                &lt;/label&gt;
+                &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+              &lt;/form&gt;
+            </code>
+          </pre>
+          </details>
+        </section>
 
-                &lt;label class="checkbox-label"&gt;
-                  &lt;input
-                    class="checkbox-input"
-                    type="checkbox"
-                    id="toggle-newsletter"
-                    value="false"
-                  /&gt;
-                  Send me newsletters and special offers
-                &lt;/label&gt;
-              &lt;/fieldset&gt;
+        <section class="element">
+          <h3>Checkout Cart</h3>
+          <!-- Angela - html, css, res-wip -->
 
-              &lt;fieldset class="form-column payment-form-group"&gt;
-                &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
-                &lt;label class="text-input-label"&gt;
-                  Country:
-                  &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  Address:
-                  &lt;input
-                    class="text-input"
-                    type="text"
-                    placeholder="123 Main Street"
-                  /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  Suite/Apt (Optional):
-                  &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  City:
-                  &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  Province:
-                  &lt;select class="text-input dropdown-input"&gt;
-                    &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="BC"&gt;
-                      British Columbia
-                    &lt;/option&gt;
-                    &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="NB"&gt;New Brunswick&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="NL"&gt;
-                      Newfoundland and Labrador
-                    &lt;/option&gt;
-                    &lt;option class="dropdown-item" value="NT"&gt;
-                      Northwest Territories
-                    &lt;/option&gt;
-                    &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="PE"&gt;
-                      Prince Edward Island
-                    &lt;/option&gt;
-                    &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
-                    &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
-                  &lt;/select&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  Postal Code:
-                  &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
-                &lt;/label&gt;
-              &lt;/fieldset&gt;
-
-              &lt;fieldset class="form-column payment-form-group"&gt;
-                &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
-                &lt;label class="text-input-label"&gt;
-                  Card Number:
-                  &lt;input
-                    class="text-input"
-                    type="text"
-                    placeholder="1234 5678 9012 3456"
-                  /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  Expiration Date:
-                  &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
-                &lt;/label&gt;
-                &lt;label class="text-input-label"&gt;
-                  CVV:
-                  &lt;input class="text-input" type="text" placeholder="123" /&gt;
-                &lt;/label&gt;
-              &lt;/fieldset&gt;
-
-              &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
-            &lt;/form&gt;
-          </code>
-        </pre>
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-        <!-- Angela - html -->
-
-        <!-- 
+          <!-- 
           Also referencing off of sites I do visit as mentioned in the Payment Form
 
           A main product image, product name, quantity with the option to add or subtract,
@@ -846,20 +861,21 @@
           keeping it in a user's cart might be more involved to code in js. Therefore, I'll probably
           only keep the delete button and force the user to filter it manually themselves.
         -->
-        <div class="checkout-cart-list">
-          <div class="checkout-cart-item-group">
-            <div class="checkout-cart-segment-row">
+          <div class="checkout-cart-list">
+            <!-- Item 1 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
               <img
                 class="checkout-item-img"
                 src="img/love-canopy-box.png"
                 alt="Blind box design for the Love Canopy set"
               />
-              <h3>Love Canopy Blind Box</h3>
-            </div>
+              <div class="checkout-item-details">
+                <h3>Love Canopy Blind Box</h3>
+                <p>$19.99/unit</p>
+              </div>
 
-            <div class="checkout-cart-segment-row">
-              <p>$19.99/unit</p>
-
+              <!-- Unit controls -->
               <div class="checkout-quantity-button-group">
                 <button class="checkout-quantity-button" type="button">
                   -
@@ -870,23 +886,24 @@
                 </button>
               </div>
 
+              <!-- Total Price -->
               <p class="checkout-total-item-price">$39.98</p>
             </div>
-          </div>
 
-          <div class="checkout-cart-item-group">
-            <div class="checkout-cart-segment-row">
+            <!-- Item 2 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
               <img
                 class="checkout-item-img"
                 src="img/placeholder-box.png"
-                alt="Blind box design for the [placeholder] set"
+                alt="Blind box design for the Love Canopy set"
               />
-              <h3>[placeholder] Blind Box</h3>
-            </div>
+              <div class="checkout-item-details">
+                <h3>[placeholder] Blind Box</h3>
+                <p>$19.99/unit</p>
+              </div>
 
-            <div class="checkout-cart-segment-row">
-              <p>$19.99/unit</p>
-
+              <!-- Unit controls -->
               <div class="checkout-quantity-button-group">
                 <button class="checkout-quantity-button" type="button">
                   -
@@ -897,40 +914,43 @@
                 </button>
               </div>
 
+              <!-- Total Price -->
               <p class="checkout-total-item-price">$19.99</p>
             </div>
           </div>
-        </div>
 
-        <h4>Css selector:</h4>
-        <p>
-          .checkout-cart-list, .checkout-cart-item-group,
-          .checkout-cart-segment-row, .checkout-item-img,
-          .checkout-quantity-button-group, .checkout-total-item-price,
-          .checkout-quantity-button
-        </p>
+          <h4>Css selector:</h4>
+          <p>
+            .checkout-cart-list, .checkout-item-card,
+            .checkout-cart-segment-row, .checkout-item-img,
+            .checkout-quantity-button-group, .checkout-total-item-price,
+            .checkout-quantity-button
+          </p>
 
-        <h3>Sample Code</h3>
-        <!--
+          <h3>Sample Code</h3>
+          <!--
           The formatting looked so bad that I looked up how to keep the format
           reference: https://www.w3schools.com/TAGs/tag_pre.asp  
         -->
-        <pre>
-          <code>
-            &lt;div class="checkout-cart-list"&gt;
-              &lt;div class="checkout-cart-item-group"&gt;
-                &lt;div class="checkout-cart-segment-row"&gt;
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+            <code>
+              &lt;div class="checkout-cart-list"&gt;
+                &lt;!-- Item 1 --&gt;
+                &lt;div class="checkout-item-card"&gt;
+                  &lt;!-- Item visuals and info --&gt;
                   &lt;img
                     class="checkout-item-img"
                     src="img/love-canopy-box.png"
                     alt="Blind box design for the Love Canopy set"
                   /&gt;
-                  &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
-                &lt;/div&gt;
+                  &lt;div class="checkout-item-details"&gt;
+                    &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
+                    &lt;p&gt;$19.99/unit&lt;/p&gt;
+                  &lt;/div&gt;
 
-                &lt;div class="checkout-cart-segment-row"&gt;
-                  &lt;p&gt;$19.99/unit&lt;/p&gt;
-
+                  &lt;!-- Unit controls --&gt;
                   &lt;div class="checkout-quantity-button-group"&gt;
                     &lt;button class="checkout-quantity-button" type="button"&gt;
                       -
@@ -941,23 +961,24 @@
                     &lt;/button&gt;
                   &lt;/div&gt;
 
+                  &lt;!-- Total Price --&gt;
                   &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
                 &lt;/div&gt;
-              &lt;/div&gt;
 
-              &lt;div class="checkout-cart-item-group"&gt;
-                &lt;div class="checkout-cart-segment-row"&gt;
+                &lt;!-- Item 2 --&gt;
+                &lt;div class="checkout-item-card"&gt;
+                  &lt;!-- Item visuals and info --&gt;
                   &lt;img
                     class="checkout-item-img"
                     src="img/placeholder-box.png"
-                    alt="Blind box design for the [placeholder] set"
+                    alt="Blind box design for the Love Canopy set"
                   /&gt;
-                  &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
-                &lt;/div&gt;
+                  &lt;div class="checkout-item-details"&gt;
+                    &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
+                    &lt;p&gt;$19.99/unit&lt;/p&gt;
+                  &lt;/div&gt;
 
-                &lt;div class="checkout-cart-segment-row"&gt;
-                  &lt;p&gt;$19.99/unit&lt;/p&gt;
-
+                  &lt;!-- Unit controls --&gt;
                   &lt;div class="checkout-quantity-button-group"&gt;
                     &lt;button class="checkout-quantity-button" type="button"&gt;
                       -
@@ -968,21 +989,23 @@
                     &lt;/button&gt;
                   &lt;/div&gt;
 
+                  &lt;!-- Total Price --&gt;
                   &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
-            &lt;/div&gt;
-          </code>
-        </pre>
+            </code>
+          </pre>
+          </details>
+        </section>
       </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <!-- VISUAL STYLE GUIDE SECTION // -->
-    <section id="visual_style_guide_&_branding">
+    <section>
       <h2>Other</h2>
 
-      <section class="element">
+      <section id="visual_style_guide_&_branding" class="element">
         <h3>Visual Style Guide and Branding</h3>
 
         <img
@@ -997,18 +1020,41 @@
     <section id="citations">
       <h2>Citations</h2>
 
+      <p>Fonts (Formal Citations):</p>
       <ul>
         <li>
-          Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
-          Retrieved from
+          Impallari Type. Designer. 2012.
+          <strong>Libre Baskerville [Font]</strong>. Retrieved from
           <a
-            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
-            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
+            href="https://fonts.google.com/specimen/Libre+Baskerville?preview.layout=grid&preview.script=Latn"
+            >https://fonts.google.com/specimen/Libre+Baskerville?preview.layout=grid&preview.script=Latn</a
           >
         </li>
+
         <li>
-          Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
-          from <a href="#">URL</a>.
+          Matt Bailey, Tyler Finck. Designers. 2020.
+          <strong>League Spartan [Font]</strong>. Retrieved from
+          <a
+            href="https://fonts.google.com/specimen/League+Spartan?preview.script=Latn"
+            >https://fonts.google.com/specimen/League+Spartan?preview.script=Latn</a
+          >
+        </li>
+      </ul>
+
+      <p>Brainstorm Imagery Used in Figma (Informal Citations):</p>
+      <ul>
+        <li><a href="https://pin.it/6kviy9YFM">https://pin.it/6kviy9YFM</a></li>
+        <li><a href="https://pin.it/1LJwJg59a">https://pin.it/1LJwJg59a</a></li>
+        <li><a href="https://pin.it/7i3CGQr2g">https://pin.it/7i3CGQr2g</a></li>
+        <li><a href="https://pin.it/2nCLuKJa4">https://pin.it/2nCLuKJa4</a></li>
+        <li><a href="https://pin.it/3yYAeBFz4">https://pin.it/3yYAeBFz4</a></li>
+        <li><a href="https://pin.it/1Q9XdOgZZ">https://pin.it/1Q9XdOgZZ</a></li>
+        <li><a href="https://pin.it/10pZrKXva">https://pin.it/10pZrKXva</a></li>
+        <li>
+          <a
+            href="https://www.etsy.com/ca/listing/1241702949/healing-herbs-fine-art-print-kitchen"
+            >https://www.etsy.com/ca/listing/1241702949/healing-herbs-fine-art-print-kitchen</a
+          >
         </li>
       </ul>
     </section>
