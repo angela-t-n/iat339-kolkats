@@ -11,10 +11,10 @@
   --transition-duration: 0.2s;
 
   /* purples */
-  --dark-purple: #534372;
-  --medium-purple: #8267b9;
-  --light-purple: #9e93c9;
   --neutral-purple: #e9e4f3;
+  --light-purple: #9e93c9;
+  --medium-purple: #8267b9;
+  --dark-purple: #534372;
 
   /* greens */
   --neutral-green: #f1f3e4;
@@ -166,7 +166,6 @@ summary {
 }
 
 /* Styling for the navigation bar + its buttons */
-
 nav {
   display: flex;
   flex-direction: column;
@@ -221,14 +220,19 @@ nav div .button-nav {
 .intext-link {
   font-family: "Libre Baskerville";
   font-style: italic;
-  font-weight: normal;
   color: var(--dark-purple);
   transition: 0.3s;
 }
 
 .intext-link:hover,
 .intext-link:focus {
-  color: var(--light-purple);
+  color: var(--medium-purple);
+  text-decoration: underline dashed;
+}
+
+.intext-link:active {
+  color: var(--dark-green);
+  transition: 0.2s;
 }
 
 /*
@@ -931,4 +935,10 @@ nav div .button-nav {
     width: 100%;
     display: inline-block;
   }
+}
+
+/* Force Overrides */
+.bold-text {
+  font-weight: bold;
+  font-style: normal;
 }
