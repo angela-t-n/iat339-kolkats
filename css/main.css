@@ -157,16 +157,12 @@ summary {
   border: 2px solid var(--dark-green);
 }
 
-.button:focus,
 .button:active {
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
   border: 2px solid var(--dark-green);
+  transition: 0.25s;
 }
 
 /* Styling for the navigation bar + its buttons */
@@ -210,10 +206,10 @@ nav div .button-nav {
   background-color: var(--medium-green);
 }
 
-.button-nav:focus,
-.button-nav.active {
+.button-nav:active {
   background-color: var(--dark-green);
   color: white;
+  transition: 0.25s;
 }
 
 .nav-logo {
@@ -775,7 +771,7 @@ nav div .button-nav {
   border: 2px solid var(--light-green);
 }
 
-.checkout-quantity-button:focus {
+.checkout-quantity-button:active {
   background-color: var(--neutral-green);
   border: 2px solid var(--medium-green);
   color: var(--dark-green);
