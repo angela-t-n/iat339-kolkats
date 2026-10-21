@@ -467,29 +467,29 @@ nav div .button-nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
-}
-
-/* effects only the li in .product-grid */
-.product-grid li {
-  list-style: none;
-  display: inline-block;
-  /* grid-template-columns: auto auto auto; */
-  grid-template-columns: auto;
-  /* justify-items: center; */
 }
 
 .product-grid {
   /* Removes the padding around the ul */
   padding: 0px;
-  /* justify-items: center; */
+}
+
+/* effects only the li in .product-grid */
+.product-grid.box {
+  justify-content: center;
+}
+
+.product-grid li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
 }
 
 /* link of each item */
 .grid-item {
   display: inline-block;
   text-decoration: none;
-  /* padding: 2rem; */
   transition: 0.3s;
 }
 
@@ -498,7 +498,6 @@ nav div .button-nav {
   border-radius: 8px;
   border: 2px solid var(--light-green);
   padding: 1rem;
-  width: 90%;
   background-color: var(--neutral-green);
   transition-duration: 0.3s;
 }
@@ -888,8 +887,7 @@ nav div .button-nav {
   height: auto;
 }
 
-/* responsive screen stuff  */
-
+/* responsive screen stuff for product listing and nav bar*/
 @media (min-width: 425px) {
   nav div {
     display: flex;
@@ -902,28 +900,24 @@ nav div .button-nav {
 @media (min-width: 576px) {
   .box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
   }
-
 }
 
 @media (min-width: 768px) {
   .box {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-grid.box {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .box {
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-  }
-
-  .product-grid li {
-    width: 303.67px;
-    max-width: 100%;
-  }
-
   nav {
     display: flex;
     flex-direction: row;
