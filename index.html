@@ -293,29 +293,68 @@
         <p>h1, h2, h3, p, .caption</p>
 
         <h4>Sample code:</h4>
-
+        <pre>
         <code>
-          &lt;div class="box"&gt;z,<br />
-          &lt;div&gt; &lt;h5&gt;Font Familes&lt;/h5> &lt;h1&gt;Libre
-          Baskerville&lt;/h1&gt; &lt;h2&gt;Libre Baskerville&lt;/h2&gt;
-          &lt;h3&gt;Libre Baskerville&lt;/h3&gt; &lt;p&gt;League
-          Spartan&lt;/p&gt; &lt;p class="caption"&gt;League Spartan&lt;/p>
-          &lt;/div&gt;<br />
-          &lt;div&gt; &lt;h5&gt;Font Weight&lt;/h5&gt; &lt;h1&gt;bold&lt;/h1&gt;
-          &lt;h2&gt;normal&lt;/h2&gt; &lt;h3&gt;italic&lt;/h3&gt; &lt;p&gt;300
-          (light)&lt;/p&gt; &lt;p class="caption">300 (italic)&lt;/p&gt;
-          &lt;/div&gt;<br />
-          &lt;div&gt; &lt;h5>Size&lt;/h5&gt; &lt;h1>h1&lt;/h1&gt;
-          &lt;h2>h2&lt;/h2&gt; &lt;h3>h3&lt;/h3&gt; &lt;p>p&lt;/p&gt; &lt;p
-          class="caption"&gt;caption&lt;/p&gt; &lt;/div&gt;<br />
-          &lt;div&gt; &lt;h5&gt;Example&lt;/h5&gt; &lt;h1&gt;This the main
-          headline.&lt;/h1&gt; &lt;h2&gt;This is an example of a section
-          title.&lt;/h2&gt; &lt;h3&gt;This is subheading that goes under the
-          section title.&lt;/h3&gt; &lt;p&gt;This is how the body text
-          looks.&lt;/p&gt; &lt;p class="caption">This is a caption.&lt;/p&gt;
-          &lt;/div&gt;<br />
-          &lt;/div&gt;
+        &lt;div class="box"&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Font Familes &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>Libre Baskerville &lt;/h1&gt;
+               &lt;h2>Libre Baskerville &lt;/h2&gt;
+               &lt;h3>Libre Baskerville &lt;/h3&gt;
+               &lt;p>League Spartan &lt;/p&gt;
+               &lt;p class="caption">League Spartan &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Font Weight &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>bold &lt;/h1&gt;
+               &lt;h2>normal &lt;/h2&gt;
+               &lt;h3>italic &lt;/h3&gt;
+               &lt;p>300 (light) &lt;/p&gt;
+               &lt;p class="caption">300 (italic) &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Size &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>h1 &lt;/h1&gt;
+               &lt;h2>h2 &lt;/h2&gt;
+               &lt;h3>h3 &lt;/h3&gt;
+               &lt;p>p &lt;/p&gt;
+               &lt;p class="caption"&gt;caption &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Example &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>This the main headline. &lt;/h1&gt;
+               &lt;h2>This is an example of a section title. &lt;/h2&gt;
+               &lt;h3>This is subheading that goes under the section title. &lt;/h3&gt;
+               &lt;p>This is how the body text looks. &lt;/p&gt;
+               &lt;p class="caption">This is a caption. &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
         </code>
+        </pre>
 
         <h4>Rendered Element</h4>
         <div class="box">
@@ -463,23 +502,28 @@
         <h3>Main Navigation</h3>
 
         <h4>Css selector:</h4>
-        <p>.button-nav</p>
+        <p>nav, nav div, .button-nav, nav div .button-nav, nav-logo</p>
 
         <h4>Sample code:</h4>
+        <pre>
         <code>
-          &lt;a class="button-nav" href="#news"&gt;News&lt;/a&gt;<br />
-          &lt;div&gt;<br />
-          &lt;a class="button-nav"
-          href="#Plantoscope"&gt;Plantoscope&lt;/a&gt;<br />
-          &lt;a class="button-nav" href="#readings"&gt;Readings&lt;/a&gt;<br />
-          &lt;a class="button-nav" href="contact"&gt;Contact&lt;/a&gt;<br />
+          &lt;nav&gt;
+          &lt;a href="index.html"&gt;
+            &lt;img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo"&gt;
+          &lt;/a&gt;
+          &lt;div&gt;
+            &lt;a class="button-nav" href="index.html">About&lt;/a&gt;
+            &lt;a class="button-nav" href="product_listing.html">Boxes&lt;/a&gt;
+            &lt;a class="button-nav" href="checkout.html">Cart&lt;/a&gt;
           &lt;/div&gt;
+        &lt;/nav&gt;
         </code>
+        </pre>
 
         <h4>Rendered element:</h4>
         <nav>
-          <!-- <a class="button-nav" href="#plantosphere">Plantosphere</a> -->
-          <a class="button-nav" href="index.html">
+          <!-- should link back to home page -->
+          <a href="index.html">
             <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo" />
           </a>
           <div>
@@ -498,32 +542,55 @@
           .product-price
         </p>
         <h4>Sample code:</h4>
+        <pre>
         <code>
-          &lt;ul class="product-grid box"&gt;<br />
+         &lt;ul class="product-grid box"&gt;
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
 
-          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
-          class="card-container"&gt; &lt;img class="product-image"
-          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
-          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
-          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
-          &lt;/li&gt;<br />
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
 
-          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
-          class="card-container"&gt; &lt;img class="product-image"
-          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;h1
-          class="product-name"&gt;Love Canopy Box&lt;/h1&gt; &lt;h2
-          class="product-price"&gt;$19.99&lt;/h2&gt; &lt;/div&gt; &lt;/a&gt;
-          &lt;/li&gt;<br />
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
 
-          &lt;li> &lt;a class="grid-item" href="product.html"&gt; &lt;div
-          class="card-container"&gt; &lt;img class="product-image"
-          src="img/love-canopy-box.png" alt="Love Canopy Box"&gt; &lt;p
-          class="product-name"&gt;Love Canopy Box&lt;/p&gt; &lt;p
-          class="product-price"&gt;$19.99&lt;/p&gt; &lt;/div&gt; &lt;/a&gt;
-          &lt;/li&gt; &lt;/ul&gt;<br />
+        &lt;/ul&gt;
         </code>
+        </pre>
 
-        <!-- <div class="product-grid-container"> -->
         <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
         <ul class="product-grid box">
           <li>
@@ -568,7 +635,6 @@
             </a>
           </li>
         </ul>
-        <!-- </div> -->
       </section>
 
       <section>
