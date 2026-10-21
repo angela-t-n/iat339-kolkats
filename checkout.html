@@ -38,14 +38,17 @@
 
     <section>
       <h2>Checkout Elements</h2>
-      <p> Note: In the real web-page, the checkout cart should remain visible before the payment form. 
-        That way, users can see exactly what is in their cart before they pay! </p>
+      <p>
+        Note: In the real web-page, the checkout cart should remain visible
+        before the payment form. That way, users can see exactly what is in
+        their cart before they pay!
+      </p>
 
       <section class="element">
-          <h3>Checkout Cart</h3>
-          <!-- Angela - html, css, res-wip -->
+        <h3>Checkout Cart</h3>
+        <!-- Angela - html, css, res-wip -->
 
-          <!-- 
+        <!-- 
           Also referencing off of sites I do visit as mentioned in the Payment Form
 
           A main product image, product name, quantity with the option to add or subtract,
@@ -55,106 +58,107 @@
           keeping it in a user's cart might be more involved to code in js. Therefore, I'll probably
           only keep the delete button and force the user to filter it manually themselves.
         -->
-          <div class="checkout-cart">
-            <div class="checkout-cart-list">
-              <!-- Item 1 -->
-              <div class="checkout-item-card">
-                <!-- Item visuals and info -->
-                <img
-                  class="checkout-item-img"
-                  src="img/love-canopy-box.png"
-                  alt="Blind box design for the Love Canopy set"
-                />
-                <div class="checkout-item-details">
-                  <h3>Love Canopy Blind Box</h3>
-                  <p>$19.99/unit</p>
-                </div>
-
-                <!-- Unit controls -->
-                <div class="checkout-quantity-button-group">
-                  <button class="checkout-quantity-button" type="button">
-                    -
-                  </button>
-                  <p>2</p>
-                  <button class="checkout-quantity-button" type="button">
-                    +
-                  </button>
-                </div>
-
-                <!-- Total Price -->
-                <p class="checkout-total-item-price">$39.98</p>
+        <div class="checkout-cart">
+          <div class="checkout-cart-list">
+            <!-- Item 1 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
+              <img
+                class="checkout-item-img"
+                src="img/love-canopy-box.png"
+                alt="Blind box design for the Love Canopy set"
+              />
+              <div class="checkout-item-details">
+                <h3>Love Canopy Blind Box</h3>
+                <p>$19.99/unit</p>
               </div>
 
-              <!-- Item 2 -->
-              <div class="checkout-item-card">
-                <!-- Item visuals and info -->
-                <img
-                  class="checkout-item-img"
-                  src="img/placeholder-box.png"
-                  alt="Blind box design for the Love Canopy set"
-                />
-                <div class="checkout-item-details">
-                  <h3>[placeholder] Blind Box</h3>
-                  <p>$19.99/unit</p>
-                </div>
-
-                <!-- Unit controls -->
-                <div class="checkout-quantity-button-group">
-                  <button class="checkout-quantity-button" type="button">
-                    -
-                  </button>
-                  <p>1</p>
-                  <button class="checkout-quantity-button" type="button">
-                    +
-                  </button>
-                </div>
-
-                <!-- Total Price -->
-                <p class="checkout-total-item-price">$19.99</p>
+              <!-- Unit controls -->
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>2</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
               </div>
+
+              <!-- Total Price -->
+              <p class="checkout-total-item-price">$39.98</p>
             </div>
 
-            <!-- Final cost of the entire cart -->
-            <div class="checkout-cart-summary">
-              <div class="checkout-cart-summary-row">
-                <h5>Subtotal:</h5>
-                <p>$59.97</p>
-              </div>
-              <div class="checkout-cart-summary-row">
-                <h5>GST (5%):</h5>
-                <p>$2.99</p>
-              </div>
-              <div class="checkout-cart-summary-row">
-                <h5>HST (7%):</h5>
-                <p>$4.19</p>
+            <!-- Item 2 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
+              <img
+                class="checkout-item-img"
+                src="img/placeholder-box.png"
+                alt="Blind box design for the Love Canopy set"
+              />
+              <div class="checkout-item-details">
+                <h3>[placeholder] Blind Box</h3>
+                <p>$19.99/unit</p>
               </div>
 
-              <hr class="horizontal-bar" />
-
-              <div class="checkout-cart-summary-row">
-                <h5 class="checkout-cart-emphasis-text">Total:</h5>
-                <p class="checkout-cart-emphasis-text">$67.17</p>
+              <!-- Unit controls -->
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>1</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
               </div>
+
+              <!-- Total Price -->
+              <p class="checkout-total-item-price">$19.99</p>
             </div>
           </div>
 
-          <h4>Css selector:</h4>
-          <p>.checkout-cart, .checkout-cart-list, .checkout-item-card, 
-            .checkout-item-img, .checkout-item-details, 
-            .checkout-quantity-button-group, .checkout-quantity-button, 
-            .checkout-total-item-price, .checkout-cart-summary, 
-            .checkout-cart-summary-row, .horizontal-bar, 
-            .checkout-cart-emphasis-text
-          </p>
+          <!-- Final cost of the entire cart -->
+          <div class="checkout-cart-summary">
+            <div class="checkout-cart-summary-row">
+              <h5>Subtotal:</h5>
+              <p>$59.97</p>
+            </div>
+            <div class="checkout-cart-summary-row">
+              <h5>GST (5%):</h5>
+              <p>$2.99</p>
+            </div>
+            <div class="checkout-cart-summary-row">
+              <h5>HST (7%):</h5>
+              <p>$4.19</p>
+            </div>
 
-          <h3>Sample Code</h3>
-          <!--
+            <hr class="horizontal-bar" />
+
+            <div class="checkout-cart-summary-row">
+              <h5 class="checkout-cart-emphasis-text">Total:</h5>
+              <p class="checkout-cart-emphasis-text">$67.17</p>
+            </div>
+          </div>
+        </div>
+
+        <h4>Css selector:</h4>
+        <p>
+          .checkout-cart, .checkout-cart-list, .checkout-item-card,
+          .checkout-item-img, .checkout-item-details,
+          .checkout-quantity-button-group, .checkout-quantity-button,
+          .checkout-total-item-price, .checkout-cart-summary,
+          .checkout-cart-summary-row, .horizontal-bar,
+          .checkout-cart-emphasis-text
+        </p>
+
+        <h3>Sample Code</h3>
+        <!--
           The formatting looked so bad that I looked up how to keep the format
           reference: https://www.w3schools.com/TAGs/tag_pre.asp  
         -->
-          <details>
-            <summary>(Collasped code because it's too long)</summary>
-            <pre>
+        <details>
+          <summary>(Collasped code because it's too long)</summary>
+          <pre>
             <code>
               &lt;div class="checkout-cart"&gt;
                 &lt;div class="checkout-cart-list"&gt;
@@ -240,8 +244,8 @@
               &lt;/div&gt;
             </code>
           </pre>
-          </details>
-        </section>
+        </details>
+      </section>
 
       <section class="element">
         <h3>Payment Form</h3>

@@ -146,8 +146,19 @@ summary {
   transition: 0.5s;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-color: var(--dark-green);
+  color: white;
+  background-color: var(--medium-green);
+  border: 2px solid var(--dark-green);
+}
+
+.button:focus,
+.button:active {
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 50px;
@@ -275,7 +286,7 @@ nav div .button-nav {
 .radio-button-container {
   display: inline-flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
