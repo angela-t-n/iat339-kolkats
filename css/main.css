@@ -61,7 +61,7 @@ body {
 h1 {
   /* LB bold */
   display: inline-block;
-  font-family: 'Libre_Baskerville';
+  font-family: "Libre_Baskerville";
   font-weight: bold;
   font-style: normal;
   font-size: 3rem;
@@ -69,7 +69,7 @@ h1 {
 
 h2 {
   /* LB regular */
-  font-family: 'Libre_Baskerville';
+  font-family: "Libre_Baskerville";
   font-weight: normal;
   font-style: normal;
   font-size: 2rem;
@@ -77,16 +77,15 @@ h2 {
 
 h3 {
   /* LB italic */
-  font-family: 'Libre_Baskerville';
+  font-family: "Libre_Baskerville";
   font-weight: normal;
   font-style: italic;
   font-size: 1.5rem;
-
 }
 
 h4 {
   /* LB italic */
-  font-family: 'Libre_Baskerville';
+  font-family: "Libre_Baskerville";
   font-weight: normal;
   font-style: italic;
   font-size: 1.3rem;
@@ -94,7 +93,7 @@ h4 {
 
 h5,
 summary {
-  font-family: 'League_Spartan';
+  font-family: "League_Spartan";
   font-weight: normal;
   font-style: normal;
   font-size: 1.2rem;
@@ -102,14 +101,14 @@ summary {
 
 p,
 label {
-  font-family: 'League_Spartan';
+  font-family: "League_Spartan";
   font-weight: 300;
   font-style: normal;
   font-size: 1.2rem;
 }
 
 .caption {
-  font-family: 'League_Spartan';
+  font-family: "League_Spartan";
   font-weight: 300;
   font-style: italic;
   font-size: 1.1rem;
@@ -134,7 +133,6 @@ summary {
   INTERACTIVE ELEMENTS -------------------
 */
 
-
 .button {
   font-family: "Libre_Baskerville", serif;
   font-style: italic;
@@ -146,7 +144,6 @@ summary {
   color: var(--light-green);
   background-color: var(--neutral-green);
   transition: 0.5s;
-
 }
 
 .button:hover,
@@ -173,7 +170,6 @@ nav {
   padding: 0.5rem;
 }
 
-
 nav div {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +188,6 @@ nav div {
   transition-property: background-color;
   transition-duration: 0.5s;
   background-color: var(--medium-purple);
-
 }
 
 nav div .button-nav {
@@ -209,7 +204,6 @@ nav div .button-nav {
   background-color: var(--dark-green);
   color: white;
 }
-
 
 .nav-logo {
   height: auto;
@@ -499,7 +493,7 @@ nav div .button-nav {
 }
 
 .product-name {
-  font-family: 'Libre Baskerville';
+  font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
   font-size: 1.5rem;
@@ -547,7 +541,6 @@ nav div .button-nav {
   height: auto;
   border-radius: 8px;
 }
-
 
 /*
   Payment form stuff
@@ -657,11 +650,22 @@ nav div .button-nav {
 /*
   Checkout Cart
 */
+.checkout-cart {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  gap: 16px;
+}
+
 .checkout-cart-list {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  gap: 24px;
+  gap: 16px;
+
+  border: 2px solid var(--medium-purple);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .checkout-item-card {
@@ -669,19 +673,51 @@ nav div .button-nav {
   grid-template-columns: 1fr;
   align-items: center;
   padding: 16px;
-  border: 2px solid var(--dark-green);
-  border-radius: 8px;
+  border: 1.5px solid var(--dark-green);
+  border-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
 
   max-width: 100%;
 }
 
-/* DEPRICATED */
-.checkout-cart-segment-row {
+.horizontal-bar {
+  border: none;
+  border-top: 2px dashed var(--light-green);
+  width: 100%;
+  border-radius: 2px;
+  margin: 0px;
+}
+
+.checkout-cart-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 16px;
+  border: 2px solid var(--medium-purple);
+  border-radius: 8px;
+}
+
+.checkout-cart-summary-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: fit-content;
-  gap: 24px;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.checkout-cart-emphasis-text {
+  color: var(--dark-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Removes the padding */
+.checkout-cart-summary-row h5,
+.checkout-cart-summary-row p {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .checkout-item-img {
@@ -782,14 +818,13 @@ nav div .button-nav {
 
 /* responsive screen stuff  */
 
-@media(min-width:425px) {
+@media (min-width: 425px) {
   nav div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 0.5rem;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -807,7 +842,6 @@ nav div .button-nav {
   .box {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -832,5 +866,4 @@ nav div .button-nav {
     width: 100%;
     display: inline-block;
   }
-
 }
