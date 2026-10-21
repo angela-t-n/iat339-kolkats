@@ -267,22 +267,22 @@
             <legend class="payment-form-legend">Contact</legend>
             <div class="form-row">
               <label class="text-input-label">
-                First Name:
+                *First Name:
                 <input class="text-input" type="text" placeholder="John" />
               </label>
               <label class="text-input-label">
-                Last Name:
+                *Last Name:
                 <input class="text-input" type="text" placeholder="Doe" />
               </label>
             </div>
 
             <label class="text-input-label">
-              Phone Number:
+              *Phone Number:
               <input class="text-input" type="tel" placeholder="604-123-4567" />
             </label>
 
             <label class="text-input-label">
-              Email:
+              *Email:
               <input
                 class="text-input"
                 type="email"
@@ -304,75 +304,88 @@
           <fieldset class="payment-form-group">
             <legend class="payment-form-legend">Shipping</legend>
             <label class="text-input-label">
-              Country:
+              *Country:
               <input class="text-input" type="text" placeholder="Canada" />
             </label>
-            <label class="text-input-label">
-              Address:
-              <input
-                class="text-input"
-                type="text"
-                placeholder="123 Main Street"
-              />
-            </label>
-            <label class="text-input-label">
-              Suite/Apt (Optional):
-              <input class="text-input" type="text" placeholder="Suite 100" />
-            </label>
-            <label class="text-input-label">
-              City:
-              <input class="text-input" type="text" placeholder="Vancouver" />
-            </label>
-            <label class="text-input-label">
-              Province:
-              <select class="text-input dropdown-input">
-                <option class="dropdown-item" value="AB">Alberta</option>
-                <option class="dropdown-item" value="BC">
-                  British Columbia
-                </option>
-                <option class="dropdown-item" value="MB">Manitoba</option>
-                <option class="dropdown-item" value="NB">New Brunswick</option>
-                <option class="dropdown-item" value="NL">
-                  Newfoundland and Labrador
-                </option>
-                <option class="dropdown-item" value="NT">
-                  Northwest Territories
-                </option>
-                <option class="dropdown-item" value="NS">Nova Scotia</option>
-                <option class="dropdown-item" value="NU">Nunavut</option>
-                <option class="dropdown-item" value="ON">Ontario</option>
-                <option class="dropdown-item" value="PE">
-                  Prince Edward Island
-                </option>
-                <option class="dropdown-item" value="QC">Quebec</option>
-                <option class="dropdown-item" value="SK">Saskatchewan</option>
-                <option class="dropdown-item" value="YT">Yukon</option>
-              </select>
-            </label>
-            <label class="text-input-label">
-              Postal Code:
-              <input class="text-input" type="text" placeholder="A1A 1A1" />
-            </label>
+
+            <div class="payment-form-ratio-1-2">
+              <label class="text-input-label">
+                Suite/Apt:
+                <input class="text-input" type="text" placeholder="Suite 100" />
+              </label>
+              <label class="text-input-label">
+                *Address:
+                <input
+                  class="text-input"
+                  type="text"
+                  placeholder="123 Main Street"
+                />
+              </label>
+            </div>
+
+            <div class="payment-form-ratio-1-1-1">
+              <label class="text-input-label">
+                *City:
+                <input class="text-input" type="text" placeholder="Vancouver" />
+              </label>
+
+              <label class="text-input-label">
+                *Province:
+                <select class="text-input dropdown-input">
+                  <option class="dropdown-item" value="AB">Alberta</option>
+                  <option class="dropdown-item" value="BC">
+                    British Columbia
+                  </option>
+                  <option class="dropdown-item" value="MB">Manitoba</option>
+                  <option class="dropdown-item" value="NB">
+                    New Brunswick
+                  </option>
+                  <option class="dropdown-item" value="NL">
+                    Newfoundland and Labrador
+                  </option>
+                  <option class="dropdown-item" value="NT">
+                    Northwest Territories
+                  </option>
+                  <option class="dropdown-item" value="NS">Nova Scotia</option>
+                  <option class="dropdown-item" value="NU">Nunavut</option>
+                  <option class="dropdown-item" value="ON">Ontario</option>
+                  <option class="dropdown-item" value="PE">
+                    Prince Edward Island
+                  </option>
+                  <option class="dropdown-item" value="QC">Quebec</option>
+                  <option class="dropdown-item" value="SK">Saskatchewan</option>
+                  <option class="dropdown-item" value="YT">Yukon</option>
+                </select>
+              </label>
+
+              <label class="text-input-label">
+                *Postal Code:
+                <input class="text-input" type="text" placeholder="A1A 1A1" />
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="payment-form-group">
             <legend class="payment-form-legend">Payment</legend>
             <label class="text-input-label">
-              Card Number:
+              *Card Number:
               <input
                 class="text-input"
                 type="text"
                 placeholder="1234 5678 9012 3456"
               />
             </label>
-            <label class="text-input-label">
-              Expiration Date:
-              <input class="text-input" type="text" placeholder="MM/YY" />
-            </label>
-            <label class="text-input-label">
-              CVV:
-              <input class="text-input" type="text" placeholder="123" />
-            </label>
+
+            <div class="payment-form-ratio-1-1">
+              <label class="text-input-label">
+                *Expiration Date:
+                <input class="text-input" type="text" placeholder="MM/YY" />
+              </label>
+              <label class="text-input-label">
+                *CVV:
+                <input class="text-input" type="text" placeholder="123" />
+              </label>
+            </div>
           </fieldset>
 
           <button class="button" type="submit" value="Submit">Submit</button>
@@ -382,7 +395,8 @@
         <p>
           .payment-form-legend, .payment-form-group, .payment-form-gap,
           .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
-          .text-input, .text-input-label, .button
+          .text-input, .text-input-label, .button, .payment-form-ratio-1-2,
+          .payment-form-ratio-1-1, .payment-form-ratio-1-1-1
         </p>
 
         <h3>Sample code:</h3>
@@ -394,27 +408,27 @@
           <summary>(Collasped code because it's too long)</summary>
           <pre>
             <code>
-              &lt;form class="form-column payment-form-gap"&gt;
+              &lt;form class="payment-form"&gt;
                 &lt;fieldset class="payment-form-group"&gt;
                   &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
-                  &lt;div&gt;
+                  &lt;div class="form-row"&gt;
                     &lt;label class="text-input-label"&gt;
-                      First Name:
+                      *First Name:
                       &lt;input class="text-input" type="text" placeholder="John" /&gt;
                     &lt;/label&gt;
                     &lt;label class="text-input-label"&gt;
-                      Last Name:
+                      *Last Name:
                       &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
                     &lt;/label&gt;
                   &lt;/div&gt;
 
                   &lt;label class="text-input-label"&gt;
-                    Phone Number:
+                    *Phone Number:
                     &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
                   &lt;/label&gt;
 
                   &lt;label class="text-input-label"&gt;
-                    Email:
+                    *Email:
                     &lt;input
                       class="text-input"
                       type="email"
@@ -436,75 +450,88 @@
                 &lt;fieldset class="payment-form-group"&gt;
                   &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
                   &lt;label class="text-input-label"&gt;
-                    Country:
+                    *Country:
                     &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
                   &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    Address:
-                    &lt;input
-                      class="text-input"
-                      type="text"
-                      placeholder="123 Main Street"
-                    /&gt;
-                  &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    Suite/Apt (Optional):
-                    &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
-                  &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    City:
-                    &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
-                  &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    Province:
-                    &lt;select class="text-input dropdown-input"&gt;
-                      &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="BC"&gt;
-                        British Columbia
-                      &lt;/option&gt;
-                      &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="NB"&gt;New Brunswick&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="NL"&gt;
-                        Newfoundland and Labrador
-                      &lt;/option&gt;
-                      &lt;option class="dropdown-item" value="NT"&gt;
-                        Northwest Territories
-                      &lt;/option&gt;
-                      &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="PE"&gt;
-                        Prince Edward Island
-                      &lt;/option&gt;
-                      &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
-                      &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
-                    &lt;/select&gt;
-                  &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    Postal Code:
-                    &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
-                  &lt;/label&gt;
+
+                  &lt;div class="payment-form-ratio-1-2"&gt;
+                    &lt;label class="text-input-label"&gt;
+                      Suite/Apt:
+                      &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
+                    &lt;/label&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *Address:
+                      &lt;input
+                        class="text-input"
+                        type="text"
+                        placeholder="123 Main Street"
+                      /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="payment-form-ratio-1-1-1"&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *City:
+                      &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
+                    &lt;/label&gt;
+
+                    &lt;label class="text-input-label"&gt;
+                      *Province:
+                      &lt;select class="text-input dropdown-input"&gt;
+                        &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="BC"&gt;
+                          British Columbia
+                        &lt;/option&gt;
+                        &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="NB"&gt;
+                          New Brunswick
+                        &lt;/option&gt;
+                        &lt;option class="dropdown-item" value="NL"&gt;
+                          Newfoundland and Labrador
+                        &lt;/option&gt;
+                        &lt;option class="dropdown-item" value="NT"&gt;
+                          Northwest Territories
+                        &lt;/option&gt;
+                        &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="PE"&gt;
+                          Prince Edward Island
+                        &lt;/option&gt;
+                        &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
+                        &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/label&gt;
+
+                    &lt;label class="text-input-label"&gt;
+                      *Postal Code:
+                      &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
                 &lt;/fieldset&gt;
 
                 &lt;fieldset class="payment-form-group"&gt;
                   &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
                   &lt;label class="text-input-label"&gt;
-                    Card Number:
+                    *Card Number:
                     &lt;input
                       class="text-input"
                       type="text"
                       placeholder="1234 5678 9012 3456"
                     /&gt;
                   &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    Expiration Date:
-                    &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
-                  &lt;/label&gt;
-                  &lt;label class="text-input-label"&gt;
-                    CVV:
-                    &lt;input class="text-input" type="text" placeholder="123" /&gt;
-                  &lt;/label&gt;
+
+                  &lt;div class="payment-form-ratio-1-1"&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *Expiration Date:
+                      &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
+                    &lt;/label&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *CVV:
+                      &lt;input class="text-input" type="text" placeholder="123" /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
                 &lt;/fieldset&gt;
 
                 &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;

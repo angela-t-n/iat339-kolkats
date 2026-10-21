@@ -581,6 +581,67 @@ nav div .button-nav {
 }
 
 /*
+  Specific form groups
+*/
+.payment-form-ratio-1-2 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@media (min-width: 400px) {
+  .payment-form-ratio-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.payment-form-ratio-1-1 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@media (min-width: 400px) {
+  .payment-form-ratio-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.payment-form-ratio-1-1-1 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@media (min-width: 400px) {
+  .payment-form-ratio-1-1-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+  }
+
+  /* 
+  force the last child element to span both columns
+  HAVE to use >* to target all elements 
+  inside of the last child
+  */
+  .payment-form-ratio-1-1-1>*:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 550px) {
+  .payment-form-ratio-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* reset the last child element */
+  .payment-form-ratio-1-1-1>*:last-child {
+    grid-column: auto;
+  }
+}
+
+
+/*
   Checkbox
 */
 
