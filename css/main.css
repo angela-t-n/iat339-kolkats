@@ -80,7 +80,7 @@ h3 {
   font-family: 'Libre_Baskerville';
   font-weight: normal;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
 }
 
@@ -476,8 +476,10 @@ nav div .button-nav {
 
 .product-grid {
   /* Removes the padding around the ul */
-  padding: 0px;
-  /* justify-items: center; */
+  /* padding: 0px; */
+  justify-items: space-around;/* so the listings aren't touching the edge */
+  /* add more space between each row */
+  row-gap: 3rem; 
 }
 
 /* link of each item */
@@ -795,14 +797,14 @@ nav div .button-nav {
 @media (min-width: 576px) {
   .box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
   }
 
 }
 
 @media (min-width: 768px) {
   .box {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
   }
 
 }
