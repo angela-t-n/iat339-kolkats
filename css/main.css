@@ -470,6 +470,15 @@ nav div .button-nav {
   flex-wrap: wrap;
 }
 
+.product-grid {
+  /* Removes the padding around the ul */
+  padding: 1rem;
+  justify-items: space-around;/* so the listings aren't touching the edge */
+  grid-template-columns: auto;
+  /* add more space between each row */
+  row-gap: 3rem; 
+}
+
 /* effects only the li in .product-grid */
 .product-grid.box {
   justify-content: center;
@@ -482,14 +491,6 @@ nav div .button-nav {
   max-width: 350px;
 }
 
-.product-grid {
-  /* Removes the padding around the ul */
-  padding: 1rem;
-  justify-items: space-around;/* so the listings aren't touching the edge */
-  grid-template-columns: auto;
-  /* add more space between each row */
-  row-gap: 3rem; 
-}
 
 /* link of each item */
 .grid-item {
@@ -596,6 +597,94 @@ nav div .button-nav {
   grid-template-columns: auto;
   gap: 8px;
 }
+
+/* 
+COMPONENTS 
+*/
+
+.product-desc-card{
+    display: grid;
+    max-width: 100%;
+    border: 2px solid var(--medium-green);
+    padding: 1rem;
+    border-radius: 12px 0px;
+
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    /* justify-content: space-between; */
+    margin: 5rem 15rem;
+
+}
+
+.product-desc-card .product-image{
+    max-width: 50%;
+    height: auto;
+    display: block;
+}
+
+.product-details{
+  justify-content: space-around;
+  /* margin: 0; */
+  padding-right: 2rem;
+}
+
+.product-card-interact{
+  display: flex;
+  justify-content: end;
+  max-width: fit-content;
+}
+
+.product-card-interact button{
+  max-width: 40%;
+}
+
+/* 
+HERO SECTION STYLING 
+*/
+
+.hero{
+    /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
+    /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
+    background-color: var(--light-grey);
+    padding: 3rem;
+    margin: auto;
+    height: 35rem;
+    position: relative;
+}
+
+.hero-heading{
+    position:absolute;
+    left: 3rem;
+    bottom: 0;
+    margin: 0;
+}
+
+.hero h1{
+    max-width: 80%;
+
+    /* font-size: 6rem; */
+}
+
+
+@media(min-width: 500px ){
+    .hero h1{
+        font-size: 4rem;
+    }
+}
+
+@media(min-width: 800px ){
+    .hero h1{
+        font-size: 5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .hero h1{
+        font-size: 6rem;
+    }
+}
+
+
 
 @media (min-width: 400px) {
   .payment-form-ratio-1-2 {
@@ -900,9 +989,6 @@ nav div .button-nav {
     flex-direction: row;
     gap: 0.5rem;
   }
- .grid-item{
-    max-width: 25rem ;
-  }
 
 }
 
@@ -916,10 +1002,6 @@ nav div .button-nav {
 @media (min-width: 768px) {
   .box {
     grid-template-columns: auto auto auto;
-  }
-
-  .grid-item{
-    max-width: 20rem;
   }
 
 }
