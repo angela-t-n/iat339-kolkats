@@ -470,28 +470,13 @@ nav div .button-nav {
   flex-wrap: wrap;
 }
 
-.product-grid {
-  /* Removes the padding around the ul */
-  padding: 0px;
-}
-
 /* effects only the li in .product-grid */
-.product-grid.box {
-  justify-content: center;
-}
-
-.product-grid li {
-  list-style: none;
-  display: inline-block;
-  /* grid-template-columns: auto auto auto; */
-  grid-template-columns: auto;
-  /* justify-items: center; */
-}
 
 .product-grid {
   /* Removes the padding around the ul */
-  /* padding: 0px; */
+  padding: 1rem;
   justify-items: space-around;/* so the listings aren't touching the edge */
+  grid-template-columns: auto;
   /* add more space between each row */
   row-gap: 3rem; 
 }
@@ -905,6 +890,10 @@ nav div .button-nav {
     flex-direction: row;
     gap: 0.5rem;
   }
+ .grid-item{
+    max-width: 25rem ;
+  }
+
 }
 
 @media (min-width: 576px) {
@@ -917,6 +906,10 @@ nav div .button-nav {
 @media (min-width: 768px) {
   .box {
     grid-template-columns: auto auto auto;
+  }
+
+  .grid-item{
+    max-width: 20rem;
   }
 
 }
