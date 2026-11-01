@@ -471,6 +471,16 @@ nav div .button-nav {
 }
 
 /* effects only the li in .product-grid */
+.product-grid.box {
+  justify-content: center;
+}
+
+.product-grid li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
 
 .product-grid {
   /* Removes the padding around the ul */
