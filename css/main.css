@@ -608,6 +608,67 @@ nav div .button-nav {
 COMPONENTS 
 */
 
+.section{
+    padding:3rem ;
+}
+
+.section .button{
+    width: fit-content;
+    margin-left: auto;
+}
+
+.light-purple{
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+@media(min-width:500px){
+
+    .section{
+        padding:4rem ;
+    }
+}
+@media(min-width:600px){
+
+    .section{
+        padding:5.5rem ;
+    }
+}
+
+@media(min-width:700px){
+    .section{
+        padding:7rem ;
+    }
+}
+
+@media(min-width:900px){
+    .section{
+        padding:9rem ;
+    }
+}
+
+@media(min-width:1200px){
+    .section{
+        padding:12rem ;
+    }
+
+    .section p,h2,.button{
+        max-width: 816px;
+    }
+
+    .content-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .content-info .button{
+        /* stops it from moving right */
+        margin-left: 0;
+    }  
+}
+
 .product-desc-card{
 
     display: grid;
