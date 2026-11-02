@@ -467,6 +467,8 @@ nav div .button-nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-grid {
@@ -480,7 +482,7 @@ nav div .button-nav {
 
 /* effects only the li in .product-grid */
 .product-grid.box {
-  justify-content: center;
+  max-width: fit-content;
 }
 
 .product-grid li {
@@ -615,6 +617,13 @@ COMPONENTS
 
 .section {
   padding: 3rem;
+}
+
+.section-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .section .button {
@@ -1123,13 +1132,13 @@ HERO SECTION STYLING
 @media (min-width: 576px) {
   .box {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 768px) {
   .box {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
