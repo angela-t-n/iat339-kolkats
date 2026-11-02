@@ -1,0 +1,1595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>✿ P01 - Style Guide: Plantoscope</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 - Style Guide: Plantoscope</h1>
+
+      <p>
+        Style guide for the Plantoscope brand. Created by IAT 339 Group 14:
+        Angela Nguyen & Manha Sheikh.
+      </p>
+    </header>
+
+    <nav class="card-container">
+      <a class="intext-link bold-text" href="#interactive_elements"
+        >Interactive Elements</a
+      >
+      <a class="intext-link bold-text" href="#text_elements">Text Elements</a>
+      <a class="intext-link bold-text" href="#combined_elements"
+        >Combined Elements</a
+      >
+      <a class="intext-link bold-text" href="product_listing.html"
+        >Product Listing Template</a
+      >
+      <a class="intext-link bold-text" href="checkout-style-template.html"
+        >Checkout Template</a
+      >
+      <a class="intext-link bold-text" href="#visual_style_guide_&_branding"
+        >Visual Style Guide & Branding</a
+      >
+      <a class="intext-link bold-text" href="#citations">Citations</a>
+
+      <a class="intext-link bold-text" href="index.html">Home Page</a>
+      <!-- Copied the formats above -->
+    </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>Css selector:</h4>
+        <p>.intext-link</p>
+
+        <h4>Sample code:</h4>
+        <code
+          >&lt;p&gt;Help &lt;a class= 'intext-link'
+          href="https://en.wikipedia.org/wiki/Cat"&gt;Kolkat&lt;/a&gt; save the
+          Mystic Forest before it is too late! When you purchase from the
+          Plantoscope, you will be appointed an endangered plant. But not just
+          any plant. This plant will grant you your deepest
+          desires.&lt;/p&gt;</code
+        >
+
+        <h4>Rendered element:</h4>
+        <p>
+          Help
+          <a class="intext-link" href="https://en.wikipedia.org/wiki/Cat"
+            >Kolkat</a
+          >
+          save the Mystic Forest before it is too late! When you purchase from
+          the Plantoscope, you will be appointed an endangered plant. But not
+          just any plant. This plant will grant you your deepest desires.
+        </p>
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>Css selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code
+          >&lt;a class="button-nav" href="#"&gt;Navigations Button
+          1&lt;/a&gt;</code
+        >
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Navigation Button 1</a>
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>Css selector:</h4>
+        <p>.button</p>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;<br>
+          &lt;button class="button" type="submit"
+          value="Submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;button class="button" type ="reset"
+          value="Reset"&gt;Reset&lt;/button&gt;<br>
+          &lt;/form&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <!-- used for creating the submit/reset buttons: https://www.wikihow.tech/Create-a-Reset-Button-in-HTML -->
+          <button class="button" type="submit" value="Submit">Submit</button>
+          <button class="button" type="reset" value="Reset">Reset</button>
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <!-- Angela - html, css, responsive...? -->
+
+        <!-- 
+          Can be used for username, email, etc.
+          This is important for signing up and logging in, etc
+        -->
+        <form>
+          <label class="text-input-label" for="email">
+            Email:
+            <input
+              class="text-input"
+              id="email"
+              type="email"
+              placeholder="john.doe@example.com"
+            >
+          </label>
+        </form>
+
+        <h4>css selector:</h4>
+        <p>.text-input-label, .text-input</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;form&gt;
+              &lt;label class="text-input-label" for="email"&gt;
+                Email:
+                &lt;input
+                  class="text-input"
+                  id="email"
+                  type="email"
+                  placeholder="john.doe@example.com"
+                /&gt;
+              &lt;/label&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <!-- Angela - html, css, res-wip -->
+
+        <!-- 
+          Can be used for selection of product options, etc.
+          References: 
+            - https://www.w3schools.com/tags/att_input_type_radio.asp
+            - Overall assignments and stuff
+        -->
+        <form class="payment-form-group">
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-1"
+              name="example-radio-group"
+              value="1"
+            >
+            <label for="var-1"> Variant 1 </label>
+          </div>
+
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-2"
+              name="example-radio-group"
+              value="2"
+            >
+            <label for="var-2"> Variant 2 </label>
+          </div>
+
+          <div class="radio-button-container">
+            <input
+              class="radio-button"
+              type="radio"
+              id="var-3"
+              name="example-radio-group"
+              value="3"
+            >
+            <label for="var-3"> Variant 3 </label>
+          </div>
+        </form>
+
+        <h4>css selector:</h4>
+        <p>
+          .form-column, .payment-form-group, .radio-button,
+          .radio-button-container
+        </p>
+
+        <h4>Sample code:</h4>
+        <details>
+          <summary>(Collasped code because it's too long)</summary>
+          <pre>
+            <code>
+              &lt;form class="payment-form-group"&gt;
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-1"
+                    name="example-radio-group"
+                    value="1"
+                  /&gt;
+                  &lt;label for="var-1"&gt; Variant 1 &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-2"
+                    name="example-radio-group"
+                    value="2"
+                  /&gt;
+                  &lt;label for="var-2"&gt; Variant 2 &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="radio-button-container"&gt;
+                  &lt;input
+                    class="radio-button"
+                    type="radio"
+                    id="var-3"
+                    name="example-radio-group"
+                    value="3"
+                  /&gt;
+                  &lt;label for="var-3"&gt; Variant 3 &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            </code>
+          </pre>
+        </details>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <!-- Angela - html, css, responsive -->
+
+        <a
+          class="image-link-a"
+          href="https://en.wikipedia.org/wiki/O-mikuji"
+          target="_blank"
+        >
+          <img
+            class="image-link-img"
+            src="img/love-canopy-fortune.png"
+            alt="Fortune design sample for the Love Canopy set"
+          >
+        </a>
+
+        <h4>css selector:</h4>
+        <p>.image-link-a, .image-link-img</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;a
+              class="image-link-a"
+              href="https://en.wikipedia.org/wiki/O-mikuji"
+              target="_blank"
+            &gt;
+              &lt;img
+                class="image-link-img"
+                src="img/love-canopy-fortune.png"
+                alt="Fortune design sample for the Love Canopy set"
+              /&gt;
+            &lt;/a&gt;
+          </code>
+        </pre>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>Css selctor:</h4>
+        <p>h1, h2, h3, p, .caption</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+        <code>
+        &lt;div class="box"&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Font Familes &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>Libre Baskerville &lt;/h1&gt;
+               &lt;h2>Libre Baskerville &lt;/h2&gt;
+               &lt;h3>Libre Baskerville &lt;/h3&gt;
+               &lt;p>League Spartan &lt;/p&gt;
+               &lt;p class="caption">League Spartan &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Font Weight &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>bold &lt;/h1&gt;
+               &lt;h2>normal &lt;/h2&gt;
+               &lt;h3>italic &lt;/h3&gt;
+               &lt;p>300 (light) &lt;/p&gt;
+               &lt;p class="caption">300 (italic) &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Size &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>h1 &lt;/h1&gt;
+               &lt;h2>h2 &lt;/h2&gt;
+               &lt;h3>h3 &lt;/h3&gt;
+               &lt;p>p &lt;/p&gt;
+               &lt;p class="caption"&gt;caption &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+           &lt;div&gt;
+             &lt;div&gt;
+               &lt;p class="caption">Example &lt;/p&gt;
+             &lt;/div&gt;
+
+            <!-- To remove the warning on html validation -->
+             &lt;div headingoffset="1"&gt;
+               &lt;h1>This the main headline. &lt;/h1&gt;
+               &lt;h2>This is an example of a section title. &lt;/h2&gt;
+               &lt;h3>This is subheading that goes under the section title. &lt;/h3&gt;
+               &lt;p>This is how the body text looks. &lt;/p&gt;
+               &lt;p class="caption">This is a caption. &lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+        </code>
+        </pre>
+
+        <h4>Rendered Element</h4>
+        <div class="box">
+          <div>
+            <div>
+              <p class="caption">Font Familes</p>
+            </div>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>Libre Baskerville</h1>
+              <h2>Libre Baskerville</h2>
+              <h3>Libre Baskerville</h3>
+              <p>League Spartan</p>
+              <p class="caption">League Spartan</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p class="caption">Font Weight</p>
+            </div>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>bold</h1>
+              <h2>normal</h2>
+              <h3>italic</h3>
+              <p>300 (light)</p>
+              <p class="caption">300 (italic)</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p class="caption">Size</p>
+            </div>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>h1</h1>
+              <h2>h2</h2>
+              <h3>h3</h3>
+              <p>p</p>
+              <p class="caption">caption</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p class="caption">Example</p>
+            </div>
+
+            <!-- To remove the warning on html validation -->
+            <div headingoffset="1">
+              <h1>This the main headline.</h1>
+              <h2>This is an example of a section title.</h2>
+              <h3>This is subheading that goes under the section title.</h3>
+              <p>This is how the body text looks.</p>
+              <p class="caption">This is a caption.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <!-- Angela - html, css (just default text styling), responsive naturally -->
+
+        <p>
+          Plantoscope (derived from “plant” and “horoscope”) provides fortune
+          readings in the form of blind box purchases containing a plant and
+          fortune scroll. Plantoscope offers different readings from each region
+          of Mystic Forest! Be it love, luck, health, or personal identity, each
+          set provides a different variety of plants pertaining to your selected
+          category. We currently offer the following sets (in the works still):
+          “Love Canopy” (Love Region): romantic love/affection themed plants
+          (Figure 1) “Treasured Wilds” (Luck Region): plants that say something
+          about future luck “Healing Spring” (Health Region): health related
+          plants “Mirrorwood” (Identity Region): plants to call out deep truths,
+          secrets, and true self
+        </p>
+
+        <h4>Css selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt; Plantoscope (derived from “plant” and “horoscope”) provides
+          fortune readings in the form of blind box purchases containing a plant
+          and fortune scroll. Plantoscope offers different readings from each
+          region of Mystic Forest! Be it love, luck, health, or personal
+          identity, each set provides a different variety of plants pertaining
+          to your selected category. We currently offer the following sets (in
+          the works still): “Love Canopy” (Love Region): romantic love/affection
+          themed plants (Figure 1) “Treasured Wilds” (Luck Region): plants that
+          say something about future luck “Healing Spring” (Health Region):
+          health related plants “Mirrorwood” (Identity Region): plants to call
+          out deep truths, secrets, and true self &lt;/p&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <!-- Angela - html, css, responsive naturally -->
+
+        <!-- Reference: https://www.w3schools.com/html/html_lists_ordered.asp -->
+        <ol type="1">
+          <li class="num-list-green"><p>(1) First item</p></li>
+          <li class="num-list-green"><p>(2) Second item</p></li>
+          <li class="num-list-green"><p>(3) Third item</p></li>
+        </ol>
+
+        <ol type="1">
+          <li class="num-list-purple"><p>First item</p></li>
+          <li class="num-list-purple"><p>Second item</p></li>
+          <li class="num-list-purple"><p>Third item</p></li>
+        </ol>
+
+        <h4>Css selector:</h4>
+        <p>.num-list-green, .num-list-purple</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(1) First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(2) Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-green"&gt;&lt;p&gt;(3) Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;ol type="1"&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;First item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Second item&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="num-list-purple"&gt;&lt;p&gt;Third item&lt;/p&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>Css selector:</h4>
+        <p>nav, nav div, .button-nav, nav div .button-nav, nav-logo</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+        <code>
+          &lt;nav&gt;
+          &lt;a href="style-guide.html"&gt;
+            &lt;img class="nav-logo" src="img/logo.svg" alt="Plantoscope Logo"&gt;
+          &lt;/a&gt;
+          &lt;div&gt;
+            &lt;a class="button-nav" href="style-guide.html">About&lt;/a&gt;
+            &lt;a class="button-nav" href="product_listing.html">Boxes&lt;/a&gt;
+            &lt;a class="button-nav" href="checkout-style-template.html">Cart&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+        </code>
+        </pre>
+
+        <h4>Rendered element:</h4>
+        <nav>
+          <!-- should link back to home page -->
+          <a class="button-nav" href="style-guide.html">
+            <img class="nav-logo" src="img/logo.svg" alt="Plantoscope Logo">
+          </a>
+          <div>
+            <a class="button-nav" href="style-guide.html">About</a>
+            <a class="button-nav" href="product_listing.html">Boxes</a>
+            <a class="button-nav" href="checkout-style-template.html">Cart</a>
+          </div>
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Footer</h3>
+        <!-- Angela - html, css, res-wip-->
+
+        <footer>
+          <!-- left side of footer that stacks on top -->
+          <div class="footer">
+            <div class="footer-left">
+              <img alt="Plantoscope Small logo" src="img/small-logo.svg">
+              <div class="footer-text">
+                <h4>Created by IAT 339: Group 14</h4>
+                <h5>Angela Nguyen & Manha Sheikh.</h5>
+              </div>
+            </div>
+            <!-- right side of footer, button to the style guide. -->
+            <a class="button-nav" href="style-guide.html"> Plantoscope Style Guide</a>
+          </div>
+        </footer>
+
+        <h4>Css selector:</h4>
+        <p>.footer, .footer-left, .footer-text, .button-nav</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;footer&gt;
+              &lt;div class="footer"&gt;
+                &lt;div class="footer-left"&gt;
+                  &lt;img alt="Plantoscope Small logo" src="img/small-logo.svg"&gt;
+                  &lt;div class="footer-text"&gt;
+                    &lt;h4&gt;Created by IAT 339: Group 14&lt;/h4&gt;
+                    &lt;h5&gt;Angela Nguyen &amp; Manha Sheikh.&lt;/h5&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;a class="button-nav" href="style-guide.html"&gt; Plantoscope Style Guide&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/footer&gt;
+          </code>
+        </pre>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>Css selector:</h4>
+        <p>
+          .box, .product-grid li, .grid-item, .card-container, .product-name,
+          .product-price
+        </p>
+        <h4>Sample code:</h4>
+        <pre>
+        <code>
+         &lt;ul class="product-grid box"&gt;
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/placeholder-box.png"
+                  alt="[placeholder] Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;[placeholder] Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class="grid-item" href="product.html"&gt;
+              &lt;div class="card-container"&gt;
+                &lt;img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                /&gt;&lt;br /&gt;
+                &lt;p class="product-name"&gt;Love Canopy Box&lt;/p&gt;
+                &lt;p class="product-price"&gt;$19.99&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+        &lt;/ul&gt;
+        </code>
+        </pre>
+
+        <!-- referenced this for structuring unordered list:https://www.w3schools.com/html/html_lists.asp -->
+        <ul class="product-grid box">
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/placeholder-box.png"
+                  alt="[placeholder] Box"
+                ><br>
+                <p class="product-name">[placeholder] Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                ><br>
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="grid-item" href="product.html">
+              <div class="card-container">
+                <img
+                  class="product-image"
+                  src="img/love-canopy-box.png"
+                  alt="Love Canopy Box"
+                ><br>
+                <p class="product-name">Love Canopy Box</p>
+                <p class="product-price">$19.99</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Site Elements</h2>
+        <section class="element">
+          <h3>Hero Section Element</h3>
+
+          <h3>Rendered Element</h3>
+          <!-- to remove the heading validation error for the sake for this style guide, no error would show up on the actual page, it changes how the browser reads the headings by adding 2 the h1, so the browser sees the h1 as an h3: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset  -->
+          <div headingoffset="2">
+            <div class="hero">
+              <h1 class="hero-heading">The Fortune Collection</h1>
+            </div>
+          </div>
+
+          <h3>Sample Code</h3>
+          <pre>
+          <code>
+             &lt;div class = "hero"&gt;
+                  &lt;h1 class = "hero-heading">The Fortune Collection&lt;/h1&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          </code>
+          </pre>
+
+          <h3>Css Selectors</h3>
+          <p>.hero, .hero-heading, .hero h1</p>
+        </section>
+
+        <section class="element">
+          <h3>Section</h3>
+          <div class="section">
+            <div headingoffset="1">
+              <div class="content-info">
+                <h2>What is Plantoscope?</h2>
+                <p>
+                  Plantoscope (derived from “plant” and “horoscope”) provides
+                  fortune readings in the form of blind box purchases containing
+                  a plant and fortune scroll. Plantoscope offers different
+                  readings from each region of Mystic Forest! Be it love, luck,
+                  health, or personal identity, each set provides a different
+                  variety of plants pertaining to your selected category.
+                </p>
+                <div class="button">Learn more...</div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Purple Section</h3>
+          <div class="section light-purple">
+            <div headingoffset="1">
+              <div class="content-info">
+                <h2>What is Plantoscope?</h2>
+                <p>
+                  Plantoscope (derived from “plant” and “horoscope”) provides
+                  fortune readings in the form of blind box purchases containing
+                  a plant and fortune scroll. Plantoscope offers different
+                  readings from each region of Mystic Forest! Be it love, luck,
+                  health, or personal identity, each set provides a different
+                  variety of plants pertaining to your selected category.
+                </p>
+                <div class="button">Learn more...</div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Sample code</h3>
+          <pre>
+            <code>
+            &lt;div class = "section"&gt;
+            &lt;div class="content-info"&gt;
+            &lt;h2&gt;What is Plantoscope?&lt;/h2&gt;
+            &lt;p&gt;Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. &lt;/p&gt; 
+            
+            &lt;div class="button">Learn more...&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;  
+            </code>
+          </pre>
+          <h3>css selectors</h3>
+          <p>.section, .content-info, .light-purple</p>
+        </section>
+
+        <section class="element">
+          <h3>News Section</h3>
+
+          <div class="section content-info">
+            <div class="news-grid">
+              <!-- news 1 -->
+              <div class="news">
+                <div class="news-details">
+                  <h2 class="news-title">
+                    What Will Your Next Fortune Reveal? Available October 7.
+                  </h2>
+                  <p class="caption">Oct 7 2026</p>
+                </div>
+                <img
+                  class="news-img"
+                  src="img/love-canopy-fortune.png"
+                  alt="fortune image"
+                >
+
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
+                    tenetur odio, eligendi est aperiam, dignissimos minima
+                    debitis sit illo nisi in deleniti ut.
+                  </p>
+                  <a href="#" class=".intext-link">Read More</a>
+                </div>
+              </div>
+              <!-- new 2 -->
+              <div class="news">
+                <div class="news-details">
+                  <h2 class="news-title">
+                    Kolkat caught RED HANDED! What will happen to the
+                    Plantoscope?
+                  </h2>
+                  <p class="caption">Nov 2 2026</p>
+                </div>
+                <img
+                  class="news-img"
+                  src="img/love-canopy-fortune.png"
+                  alt="fortune image"
+                >
+
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
+                    tenetur odio, eligendi est aperiam, dignissimos minima
+                    debitis sit illo nisi in deleniti ut.
+                  </p>
+                  <a href="#" class=".intext-link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Sample code</h3>
+          <pre>
+            <code>
+                &lt;div class="section content-info"&gt;
+                &lt;div class="news-grid"&gt;
+                <!-- news 1 -->
+                &lt;div class="news"&gt;
+                &lt;div class="news-details"&gt;
+                &lt;h2 class="news-title"&gt;What Will Your Next Fortune Reveal? Available October 7.&lt;/h2&gt;
+                &lt;p class="caption"&gt; Oct 7 2026&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
+
+                &lt;div&gt;
+                  
+                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
+                &lt;a href="#" class=".intext-link"&gt;Read More&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              <!-- new 2 -->
+              &lt;div class="news"&gt;
+                &lt;div class="news-details"&gt;
+                &lt;h2 class="news-title">Kolkat caught RED HANDED! What will happen to the Plantoscope?&lt;/h2&gt;
+                &lt;p class="caption"> Nov 2 2026&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
+              
+                &lt;div&gt;
+                  
+                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
+                &lt;a href="#" class=".intext-link">Read More&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+            </code>
+          </pre>
+          <h3>css selector></h3>
+          <p>
+            .section, .content-info, .news, .news-details, .news-title,
+            .caption, .news-img, news-grid
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h2>Checkout Elements</h2>
+
+        <section class="element">
+          <h3>Payment Form</h3>
+          <!-- Angela - html, css, res-->
+
+          <!-- 
+          For fields reference, I tried basing it off of many different brands 
+          I've shopped from such as Honey Wardrobe (kind of uses a default Shopify checkout form),
+          Call It Spring, DSW/The Shoe Company, Amazon, White Tiger and Black Tiger merch, etc.
+
+          In general, there needs to be a way to contact the user, an address
+          and then credit card details
+
+          Using references from: https://www.w3schools.com/html/html_form_elements.asp
+          for the checkbox specifically: https://www.w3schools.com/tags/att_input_type_checkbox.asp
+          -->
+          <form class="payment-form">
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Contact</legend>
+              <div class="form-row">
+                <label class="text-input-label">
+                  *First Name:
+                  <input class="text-input" type="text" placeholder="John">
+                </label>
+                <label class="text-input-label">
+                  *Last Name:
+                  <input class="text-input" type="text" placeholder="Doe">
+                </label>
+              </div>
+
+              <label class="text-input-label">
+                *Phone Number:
+                <input
+                  class="text-input"
+                  type="tel"
+                  placeholder="604-123-4567"
+                >
+              </label>
+
+              <label class="text-input-label">
+                *Email:
+                <input
+                  class="text-input"
+                  type="email"
+                  placeholder="john.doe@example.com"
+                >
+              </label>
+
+              <label class="checkbox-label">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  id="toggle-newsletter"
+                  value="false"
+                >
+                Send me newsletters and special offers
+              </label>
+            </fieldset>
+
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Shipping</legend>
+              <label class="text-input-label">
+                *Country:
+                <input class="text-input" type="text" placeholder="Canada">
+              </label>
+
+              <div class="payment-form-ratio-1-2">
+                <label class="text-input-label">
+                  Suite/Apt:
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="Suite 100"
+                  >
+                </label>
+                <label class="text-input-label">
+                  *Address:
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="123 Main Street"
+                  >
+                </label>
+              </div>
+
+              <div class="payment-form-ratio-1-1-1">
+                <label class="text-input-label">
+                  *City:
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="Vancouver"
+                  >
+                </label>
+
+                <label class="text-input-label">
+                  *Province:
+                  <select class="text-input dropdown-input">
+                    <option class="dropdown-item" value="AB">Alberta</option>
+                    <option class="dropdown-item" value="BC">
+                      British Columbia
+                    </option>
+                    <option class="dropdown-item" value="MB">Manitoba</option>
+                    <option class="dropdown-item" value="NB">
+                      New Brunswick
+                    </option>
+                    <option class="dropdown-item" value="NL">
+                      Newfoundland and Labrador
+                    </option>
+                    <option class="dropdown-item" value="NT">
+                      Northwest Territories
+                    </option>
+                    <option class="dropdown-item" value="NS">
+                      Nova Scotia
+                    </option>
+                    <option class="dropdown-item" value="NU">Nunavut</option>
+                    <option class="dropdown-item" value="ON">Ontario</option>
+                    <option class="dropdown-item" value="PE">
+                      Prince Edward Island
+                    </option>
+                    <option class="dropdown-item" value="QC">Quebec</option>
+                    <option class="dropdown-item" value="SK">
+                      Saskatchewan
+                    </option>
+                    <option class="dropdown-item" value="YT">Yukon</option>
+                  </select>
+                </label>
+
+                <label class="text-input-label">
+                  *Postal Code:
+                  <input class="text-input" type="text" placeholder="A1A 1A1">
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="payment-form-group">
+              <legend class="payment-form-legend">Payment</legend>
+              <label class="text-input-label">
+                *Card Number:
+                <input
+                  class="text-input"
+                  type="text"
+                  placeholder="1234 5678 9012 3456"
+                >
+              </label>
+
+              <div class="payment-form-ratio-1-1">
+                <label class="text-input-label">
+                  *Expiration Date:
+                  <input class="text-input" type="text" placeholder="MM/YY">
+                </label>
+                <label class="text-input-label">
+                  *CVV:
+                  <input class="text-input" type="text" placeholder="123">
+                </label>
+              </div>
+            </fieldset>
+
+            <button class="button" type="submit" value="Submit">Submit</button>
+          </form>
+
+          <h4>Css selector:</h4>
+          <p>
+            .payment-form-legend, .payment-form-group, .payment-form-gap,
+            .checkbox-label, .checkbox-input .dropdown-input, .dropdown-item,
+            .text-input, .text-input-label, .button, .payment-form-ratio-1-2,
+            .payment-form-ratio-1-1, .payment-form-ratio-1-1-1
+          </p>
+
+          <h3>Sample code:</h3>
+          <!--
+            The formatting looked so bad that I looked up how to keep the format
+            reference: https://www.w3schools.com/TAGs/tag_pre.asp  
+          -->
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+              <code>
+                &lt;form class="payment-form"&gt;
+                  &lt;fieldset class="payment-form-group"&gt;
+                    &lt;legend class="payment-form-legend"&gt;Contact&lt;/legend&gt;
+                    &lt;div class="form-row"&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *First Name:
+                        &lt;input class="text-input" type="text" placeholder="John" /&gt;
+                      &lt;/label&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *Last Name:
+                        &lt;input class="text-input" type="text" placeholder="Doe" /&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+
+                    &lt;label class="text-input-label"&gt;
+                      *Phone Number:
+                      &lt;input class="text-input" type="tel" placeholder="604-123-4567" /&gt;
+                    &lt;/label&gt;
+
+                    &lt;label class="text-input-label"&gt;
+                      *Email:
+                      &lt;input
+                        class="text-input"
+                        type="email"
+                        placeholder="john.doe@example.com"
+                      /&gt;
+                    &lt;/label&gt;
+
+                    &lt;label class="checkbox-label"&gt;
+                      &lt;input
+                        class="checkbox-input"
+                        type="checkbox"
+                        id="toggle-newsletter"
+                        value="false"
+                      /&gt;
+                      Send me newsletters and special offers
+                    &lt;/label&gt;
+                  &lt;/fieldset&gt;
+
+                  &lt;fieldset class="payment-form-group"&gt;
+                    &lt;legend class="payment-form-legend"&gt;Shipping&lt;/legend&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *Country:
+                      &lt;input class="text-input" type="text" placeholder="Canada" /&gt;
+                    &lt;/label&gt;
+
+                    &lt;div class="payment-form-ratio-1-2"&gt;
+                      &lt;label class="text-input-label"&gt;
+                        Suite/Apt:
+                        &lt;input class="text-input" type="text" placeholder="Suite 100" /&gt;
+                      &lt;/label&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *Address:
+                        &lt;input
+                          class="text-input"
+                          type="text"
+                          placeholder="123 Main Street"
+                        /&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="payment-form-ratio-1-1-1"&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *City:
+                        &lt;input class="text-input" type="text" placeholder="Vancouver" /&gt;
+                      &lt;/label&gt;
+
+                      &lt;label class="text-input-label"&gt;
+                        *Province:
+                        &lt;select class="text-input dropdown-input"&gt;
+                          &lt;option class="dropdown-item" value="AB"&gt;Alberta&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="BC"&gt;
+                            British Columbia
+                          &lt;/option&gt;
+                          &lt;option class="dropdown-item" value="MB"&gt;Manitoba&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="NB"&gt;
+                            New Brunswick
+                          &lt;/option&gt;
+                          &lt;option class="dropdown-item" value="NL"&gt;
+                            Newfoundland and Labrador
+                          &lt;/option&gt;
+                          &lt;option class="dropdown-item" value="NT"&gt;
+                            Northwest Territories
+                          &lt;/option&gt;
+                          &lt;option class="dropdown-item" value="NS"&gt;Nova Scotia&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="NU"&gt;Nunavut&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="ON"&gt;Ontario&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="PE"&gt;
+                            Prince Edward Island
+                          &lt;/option&gt;
+                          &lt;option class="dropdown-item" value="QC"&gt;Quebec&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="SK"&gt;Saskatchewan&lt;/option&gt;
+                          &lt;option class="dropdown-item" value="YT"&gt;Yukon&lt;/option&gt;
+                        &lt;/select&gt;
+                      &lt;/label&gt;
+
+                      &lt;label class="text-input-label"&gt;
+                        *Postal Code:
+                        &lt;input class="text-input" type="text" placeholder="A1A 1A1" /&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+
+                  &lt;fieldset class="payment-form-group"&gt;
+                    &lt;legend class="payment-form-legend"&gt;Payment&lt;/legend&gt;
+                    &lt;label class="text-input-label"&gt;
+                      *Card Number:
+                      &lt;input
+                        class="text-input"
+                        type="text"
+                        placeholder="1234 5678 9012 3456"
+                      /&gt;
+                    &lt;/label&gt;
+
+                    &lt;div class="payment-form-ratio-1-1"&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *Expiration Date:
+                        &lt;input class="text-input" type="text" placeholder="MM/YY" /&gt;
+                      &lt;/label&gt;
+                      &lt;label class="text-input-label"&gt;
+                        *CVV:
+                        &lt;input class="text-input" type="text" placeholder="123" /&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+
+                  &lt;button class="button" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+          </details>
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart</h3>
+          <!-- Angela - html, css, res-wip -->
+
+          <!-- 
+          Also referencing off of sites I do visit as mentioned in the Payment Form
+
+          A main product image, product name, quantity with the option to add or subtract,
+          a delete button, radio button with them all selected by default, and the cost are typical fields I'd see.
+
+          Though, adding a radio button which filters whether or not you want to keep an item, and then
+          keeping it in a user's cart might be more involved to code in js. Therefore, I'll probably
+          only keep the delete button and force the user to filter it manually themselves.
+        -->
+
+          <div class="checkout-cart">
+            <div class="checkout-cart-list">
+              <!-- Item 1 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/love-canopy-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>Love Canopy Blind Box</h3>
+                  <p>$19.99/unit</p>
+                </div>
+
+                <!-- Unit controls -->
+                <div class="checkout-quantity-button-group">
+                  <button class="checkout-quantity-button" type="button">
+                    -
+                  </button>
+                  <p>2</p>
+                  <button class="checkout-quantity-button" type="button">
+                    +
+                  </button>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$39.98</p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/placeholder-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>[placeholder] Blind Box</h3>
+                  <p>$19.99/unit</p>
+                </div>
+
+                <!-- Unit controls -->
+                <div class="checkout-quantity-button-group">
+                  <button class="checkout-quantity-button" type="button">
+                    -
+                  </button>
+                  <p>1</p>
+                  <button class="checkout-quantity-button" type="button">
+                    +
+                  </button>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$19.99</p>
+              </div>
+            </div>
+
+            <!-- Final cost of the entire cart -->
+            <div class="checkout-cart-summary">
+              <h4 class="visually-hidden">Reciept:</h4>
+              <div class="checkout-cart-summary-row">
+                <h5>Subtotal:</h5>
+                <p>$59.97</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>GST (5%):</h5>
+                <p>$2.99</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>HST (7%):</h5>
+                <p>$4.19</p>
+              </div>
+
+              <hr class="horizontal-bar">
+
+              <div class="checkout-cart-summary-row">
+                <h5 class="checkout-cart-emphasis-text">Total:</h5>
+                <p class="checkout-cart-emphasis-text">$67.17</p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Css selector:</h4>
+          <p>
+            .checkout-cart, .checkout-cart-list, .checkout-item-card,
+            .checkout-item-img, .checkout-item-details,
+            .checkout-quantity-button-group, .checkout-quantity-button,
+            .checkout-total-item-price, .checkout-cart-summary,
+            .checkout-cart-summary-row, .horizontal-bar,
+            .checkout-cart-emphasis-text
+          </p>
+
+          <h3>Sample Code</h3>
+          <!--
+          The formatting looked so bad that I looked up how to keep the format
+          reference: https://www.w3schools.com/TAGs/tag_pre.asp  
+        -->
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+              <code>
+                &lt;div class="checkout-cart"&gt;
+                  &lt;div class="checkout-cart-list"&gt;
+                    &lt;!-- Item 1 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/love-canopy-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99/unit&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Unit controls --&gt;
+                      &lt;div class="checkout-quantity-button-group"&gt;
+                        &lt;button class="checkout-quantity-button" type="button"&gt;
+                          -
+                        &lt;/button&gt;
+                        &lt;p&gt;2&lt;/p&gt;
+                        &lt;button class="checkout-quantity-button" type="button"&gt;
+                          +
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Item 2 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/placeholder-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99/unit&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Unit controls --&gt;
+                      &lt;div class="checkout-quantity-button-group"&gt;
+                        &lt;button class="checkout-quantity-button" type="button"&gt;
+                          -
+                        &lt;/button&gt;
+                        &lt;p&gt;1&lt;/p&gt;
+                        &lt;button class="checkout-quantity-button" type="button"&gt;
+                          +
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Final cost of the entire cart --&gt;
+                  &lt;div class="checkout-cart-summary"&gt;
+                    &lt;h4 class="visually-hidden"&gt;Receipt:&lt;/h4&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;Subtotal:&lt;/h5&gt;
+                      &lt;p&gt;$59.97&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;GST (5%):&lt;/h5&gt;
+                      &lt;p&gt;$2.99&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;HST (7%):&lt;/h5&gt;
+                      &lt;p&gt;$4.19&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;hr class="horizontal-bar" /&gt;
+
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5 class="checkout-cart-emphasis-text"&gt;Total:&lt;/h5&gt;
+                      &lt;p class="checkout-cart-emphasis-text"&gt;$67.17&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </details>
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart Alt. - For Payment Page</h3>
+          <!-- Angela - html, css, res -->
+
+          <div class="checkout-cart">
+            <div class="checkout-cart-list">
+              <!-- Item 1 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/love-canopy-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>Love Canopy Blind Box</h3>
+                  <p>$19.99 x 2</p>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$39.98</p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/placeholder-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>[placeholder] Blind Box</h3>
+                  <p>$19.99 x 1</p>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$19.99</p>
+              </div>
+            </div>
+
+            <!-- Final cost of the entire cart -->
+            <div class="checkout-cart-summary">
+              <h4 class="visually-hidden">Receipt:</h4>
+              <div class="checkout-cart-summary-row">
+                <h5>Subtotal:</h5>
+                <p>$59.97</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>GST (5%):</h5>
+                <p>$2.99</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>HST (7%):</h5>
+                <p>$4.19</p>
+              </div>
+
+              <hr class="horizontal-bar">
+
+              <div class="checkout-cart-summary-row">
+                <h5 class="checkout-cart-emphasis-text">Total:</h5>
+                <p class="checkout-cart-emphasis-text">$67.17</p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Css selector:</h4>
+          <p>
+            .checkout-cart, .checkout-cart-list, .checkout-item-card,
+            .checkout-item-img, .checkout-item-details,
+            .checkout-total-item-price, .checkout-cart-summary,
+            .checkout-cart-summary-row, .horizontal-bar,
+            .checkout-cart-emphasis-text
+          </p>
+
+          <h3>Sample Code</h3>
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+              <code>
+                &lt;div class="checkout-cart"&gt;
+                  &lt;div class="checkout-cart-list"&gt;
+                    &lt;!-- Item 1 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/love-canopy-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99 x 2&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Item 2 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/placeholder-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99 x 1&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Final cost of the entire cart --&gt;
+                  &lt;div class="checkout-cart-summary"&gt;
+                    &lt;h4 class="visually-hidden"&gt;Receipt:&lt;/h4&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;Subtotal:&lt;/h5&gt;
+                      &lt;p&gt;$59.97&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;GST (5%):&lt;/h5&gt;
+                      &lt;p&gt;$2.99&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;HST (7%):&lt;/h5&gt;
+                      &lt;p&gt;$4.19&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5 class="checkout-cart-emphasis-text"&gt;Total:&lt;/h5&gt;
+                      &lt;p class="checkout-cart-emphasis-text"&gt;$67.17&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </details>
+
+        </section>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- VISUAL STYLE GUIDE SECTION // -->
+    <section>
+      <h2>Other</h2>
+
+      <section id="visual_style_guide_&_branding" class="element">
+        <h3>Visual Style Guide and Branding</h3>
+
+        <img
+          class="branding-guide"
+          src="img/plantoscope-style-guide.png"
+          alt="Plantoscope Style Guide and Branding"
+        >
+      </section>
+    </section>
+    <!-- // VISUAL STYLE GUIDE SECTION -->
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <p>Fonts (Formal Citations):</p>
+      <ul>
+        <li>
+          Impallari Type. Designer. 2012.
+          <strong>Libre Baskerville [Font]</strong>. Retrieved from
+          <a
+            href="https://fonts.google.com/specimen/Libre+Baskerville?preview.layout=grid&preview.script=Latn"
+            >https://fonts.google.com/specimen/Libre+Baskerville?preview.layout=grid&preview.script=Latn</a
+          >
+        </li>
+
+        <li>
+          Matt Bailey, Tyler Finck. Designers. 2020.
+          <strong>League Spartan [Font]</strong>. Retrieved from
+          <a
+            href="https://fonts.google.com/specimen/League+Spartan?preview.script=Latn"
+            >https://fonts.google.com/specimen/League+Spartan?preview.script=Latn</a
+          >
+        </li>
+      </ul>
+
+      <p>Brainstorm Imagery Used in Figma (Informal Citations):</p>
+      <ul>
+        <li><a href="https://pin.it/6kviy9YFM">https://pin.it/6kviy9YFM</a></li>
+        <li><a href="https://pin.it/1LJwJg59a">https://pin.it/1LJwJg59a</a></li>
+        <li><a href="https://pin.it/7i3CGQr2g">https://pin.it/7i3CGQr2g</a></li>
+        <li><a href="https://pin.it/2nCLuKJa4">https://pin.it/2nCLuKJa4</a></li>
+        <li><a href="https://pin.it/3yYAeBFz4">https://pin.it/3yYAeBFz4</a></li>
+        <li><a href="https://pin.it/1Q9XdOgZZ">https://pin.it/1Q9XdOgZZ</a></li>
+        <li><a href="https://pin.it/10pZrKXva">https://pin.it/10pZrKXva</a></li>
+        <li>
+          <a
+            href="https://www.etsy.com/ca/listing/1241702949/healing-herbs-fine-art-print-kitchen"
+            >https://www.etsy.com/ca/listing/1241702949/healing-herbs-fine-art-print-kitchen</a
+          >
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
