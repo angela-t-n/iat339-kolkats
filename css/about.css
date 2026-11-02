@@ -1,0 +1,63 @@
+/* 
+    the main body element comes with paddings ands tuff 
+    todo: uniform this and move to a "main" css file.
+    this is mainly just quickly put together for demonstration
+*/
+.remove-pad-marg {
+  padding: 0;
+  margin: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-inner {
+  /* just sets the "universal" padding,
+    fills out the entire space, and gaps by default*/
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.center-text {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hero-fix{
+    margin: 0;
+}
+
+.section-short{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-row{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO - Unify this */
+.section-green{
+  background-color: #f1f3e4;
+}
+
+.section-purple{
+  background-color: #e9e4f3;
+}
+
+.section-img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}

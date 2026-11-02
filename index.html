@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>P01 - Style Guide: Plantoscope</title>
+    <title>✿ P01 - Style Guide: Plantoscope</title>
 
     <link href="css/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,6 +36,8 @@
         >Visual Style Guide & Branding</a
       >
       <a class="intext-link bold-text" href="#citations">Citations</a>
+
+      <a class="intext-link bold-text" href="home.html">Home Page</a>
       <!-- Copied the formats above -->
     </nav>
 
@@ -264,7 +266,7 @@
         </a>
 
         <h4>css selector:</h4>
-        <p>.image-link-a, .imae-link-img</p>
+        <p>.image-link-a, .image-link-img</p>
 
         <h4>Sample code:</h4>
         <pre>
@@ -513,7 +515,7 @@
         <code>
           &lt;nav&gt;
           &lt;a href="index.html"&gt;
-            &lt;img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo"&gt;
+            &lt;img class="nav-logo" src="img/logo.svg" alt="Plantoscope Logo"&gt;
           &lt;/a&gt;
           &lt;div&gt;
             &lt;a class="button-nav" href="index.html">About&lt;/a&gt;
@@ -528,7 +530,7 @@
         <nav>
           <!-- should link back to home page -->
           <a class="button-nav" href="index.html">
-            <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo">
+            <img class="nav-logo" src="img/logo.svg" alt="Plantoscope Logo">
           </a>
           <div>
             <a class="button-nav" href="index.html">About</a>
@@ -536,6 +538,47 @@
             <a class="button-nav" href="checkout-style-template.html">Cart</a>
           </div>
         </nav>
+      </section>
+
+      <section class="element">
+        <h3>Footer</h3>
+        <!-- Angela - html, css, res-wip-->
+
+        <footer>
+          <!-- left side of footer that stacks on top -->
+          <div class="footer">
+            <div class="footer-left">
+              <img alt="Plantoscope Small logo" src="img/small-logo.svg">
+              <div class="footer-text">
+                <h4>Created by IAT 339: Group 14</h4>
+                <h5>Angela Nguyen & Manha Sheikh.</h5>
+              </div>
+            </div>
+            <!-- right side of footer, button to the style guide. -->
+            <a class="button-nav" href="index.html"> Plantoscope Style Guide</a>
+          </div>
+        </footer>
+
+        <h4>Css selector:</h4>
+        <p>.footer, .footer-left, .footer-text, .button-nav</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;footer&gt;
+              &lt;div class="footer"&gt;
+                &lt;div class="footer-left"&gt;
+                  &lt;img alt="Plantoscope Small logo" src="img/small-logo.svg"&gt;
+                  &lt;div class="footer-text"&gt;
+                    &lt;h4&gt;Created by IAT 339: Group 14&lt;/h4&gt;
+                    &lt;h5&gt;Angela Nguyen &amp; Manha Sheikh.&lt;/h5&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;a class="button-nav" href="index.html"&gt; Plantoscope Style Guide&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/footer&gt;
+          </code>
+        </pre>
       </section>
 
       <section class="element">
@@ -643,17 +686,17 @@
 
       <section>
         <h2>Site Elements</h2>
-        <section class="element"> 
+        <section class="element">
           <h3>Hero Section Element</h3>
 
           <h3>Rendered Element</h3>
-              <!-- to remove the heading validation error for the sake for this style guide, no error would show up on the actual page, it changes how the browser reads the headings by adding 2 the h1, so the browser sees the h1 as an h3: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset  -->
-              <div headingoffset="2">
-                <div class = "hero">
-                  <h1 class = "hero-heading">The Fortune Collection</h1>
-                </div>
-              </div>
-          
+          <!-- to remove the heading validation error for the sake for this style guide, no error would show up on the actual page, it changes how the browser reads the headings by adding 2 the h1, so the browser sees the h1 as an h3: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset  -->
+          <div headingoffset="2">
+            <div class="hero">
+              <h1 class="hero-heading">The Fortune Collection</h1>
+            </div>
+          </div>
+
           <h3>Sample Code</h3>
           <pre>
           <code>
@@ -666,32 +709,44 @@
 
           <h3>Css Selectors</h3>
           <p>.hero, .hero-heading, .hero h1</p>
-
         </section>
-        
+
         <section class="element">
           <h3>Section</h3>
-          <div class = "section">
+          <div class="section">
             <div headingoffset="1">
               <div class="content-info">
                 <h2>What is Plantoscope?</h2>
-                <p>Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. </p> 
+                <p>
+                  Plantoscope (derived from “plant” and “horoscope”) provides
+                  fortune readings in the form of blind box purchases containing
+                  a plant and fortune scroll. Plantoscope offers different
+                  readings from each region of Mystic Forest! Be it love, luck,
+                  health, or personal identity, each set provides a different
+                  variety of plants pertaining to your selected category.
+                </p>
                 <div class="button">Learn more...</div>
               </div>
-              </div> 
             </div>
+          </div>
 
-            <h3>Purple Section</h3>
-          <div class = "section light-purple">
+          <h3>Purple Section</h3>
+          <div class="section light-purple">
             <div headingoffset="1">
               <div class="content-info">
                 <h2>What is Plantoscope?</h2>
-                <p>Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. </p> 
+                <p>
+                  Plantoscope (derived from “plant” and “horoscope”) provides
+                  fortune readings in the form of blind box purchases containing
+                  a plant and fortune scroll. Plantoscope offers different
+                  readings from each region of Mystic Forest! Be it love, luck,
+                  health, or personal identity, each set provides a different
+                  variety of plants pertaining to your selected category.
+                </p>
                 <div class="button">Learn more...</div>
               </div>
-              </div> 
             </div>
-
+          </div>
 
           <h3>Sample code</h3>
           <pre>
@@ -708,44 +763,64 @@
           </pre>
           <h3>css selectors</h3>
           <p>.section, .content-info, .light-purple</p>
-
         </section>
 
         <section class="element">
           <h3>News Section</h3>
-            
-          <div class="section content-info">
-          <div class="news-grid">
-              <!-- news 1 -->
-            <div class="news">
-              <div class="news-details">
-              <h2 class="news-title">What Will Your Next Fortune Reveal? Available October 7.</h2>
-              <p class="caption"> Oct 7 2026</p>
-              </div>
-              <img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image">
 
-              <div>
-                
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.</p>
-              <a href="#" class=".intext-link">Read More</a>
+          <div class="section content-info">
+            <div class="news-grid">
+              <!-- news 1 -->
+              <div class="news">
+                <div class="news-details">
+                  <h2 class="news-title">
+                    What Will Your Next Fortune Reveal? Available October 7.
+                  </h2>
+                  <p class="caption">Oct 7 2026</p>
+                </div>
+                <img
+                  class="news-img"
+                  src="img/love-canopy-fortune.png"
+                  alt="fortune image"
+                >
+
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
+                    tenetur odio, eligendi est aperiam, dignissimos minima
+                    debitis sit illo nisi in deleniti ut.
+                  </p>
+                  <a href="#" class=".intext-link">Read More</a>
+                </div>
+              </div>
+              <!-- new 2 -->
+              <div class="news">
+                <div class="news-details">
+                  <h2 class="news-title">
+                    Kolkat caught RED HANDED! What will happen to the
+                    Plantoscope?
+                  </h2>
+                  <p class="caption">Nov 2 2026</p>
+                </div>
+                <img
+                  class="news-img"
+                  src="img/love-canopy-fortune.png"
+                  alt="fortune image"
+                >
+
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
+                    tenetur odio, eligendi est aperiam, dignissimos minima
+                    debitis sit illo nisi in deleniti ut.
+                  </p>
+                  <a href="#" class=".intext-link">Read More</a>
+                </div>
               </div>
             </div>
-            <!-- new 2 -->
-            <div class="news">
-              <div class="news-details">
-              <h2 class="news-title">Kolkat caught RED HANDED! What will happen to the Plantoscope?</h2>
-              <p class="caption"> Nov 2 2026</p>
-              </div>
-              <img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image">
-            
-              <div>
-                
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.</p>
-              <a href="#" class=".intext-link">Read More</a>
-              </div>
-            </div>
-            </div>
-          </div> 
+          </div>
 
           <h3>Sample code</h3>
           <pre>
@@ -786,10 +861,11 @@
             </code>
           </pre>
           <h3>css selector></h3>
-          <p> .section, .content-info, .news, .news-details, .news-title, .caption, .news-img, news-grid</p>
-
+          <p>
+            .section, .content-info, .news, .news-details, .news-title,
+            .caption, .news-img, news-grid
+          </p>
         </section>
-
       </section>
 
       <section>
@@ -797,7 +873,7 @@
 
         <section class="element">
           <h3>Payment Form</h3>
-          <!-- Angela - html, css, res-wip-->
+          <!-- Angela - html, css, res-->
 
           <!-- 
           For fields reference, I tried basing it off of many different brands 
@@ -1284,7 +1360,7 @@
 
                   &lt;!-- Final cost of the entire cart --&gt;
                   &lt;div class="checkout-cart-summary"&gt;
-                    &lt;h4 class="visually-hidden"&gt;Reciept:&lt;/h4&gt;
+                    &lt;h4 class="visually-hidden"&gt;Receipt:&lt;/h4&gt;
                     &lt;div class="checkout-cart-summary-row"&gt;
                       &lt;h5&gt;Subtotal:&lt;/h5&gt;
                       &lt;p&gt;$59.97&lt;/p&gt;
@@ -1309,6 +1385,150 @@
               </code>
             </pre>
           </details>
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart Alt. - For Payment Page</h3>
+          <!-- Angela - html, css, res -->
+
+          <div class="checkout-cart">
+            <div class="checkout-cart-list">
+              <!-- Item 1 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/love-canopy-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>Love Canopy Blind Box</h3>
+                  <p>$19.99 x 2</p>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$39.98</p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="checkout-item-card">
+                <!-- Item visuals and info -->
+                <img
+                  class="checkout-item-img"
+                  src="img/placeholder-box.png"
+                  alt="Blind box design for the Love Canopy set"
+                >
+                <div class="checkout-item-details">
+                  <h3>[placeholder] Blind Box</h3>
+                  <p>$19.99 x 1</p>
+                </div>
+
+                <!-- Total Price -->
+                <p class="checkout-total-item-price">$19.99</p>
+              </div>
+            </div>
+
+            <!-- Final cost of the entire cart -->
+            <div class="checkout-cart-summary">
+              <h4 class="visually-hidden">Receipt:</h4>
+              <div class="checkout-cart-summary-row">
+                <h5>Subtotal:</h5>
+                <p>$59.97</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>GST (5%):</h5>
+                <p>$2.99</p>
+              </div>
+              <div class="checkout-cart-summary-row">
+                <h5>HST (7%):</h5>
+                <p>$4.19</p>
+              </div>
+
+              <hr class="horizontal-bar">
+
+              <div class="checkout-cart-summary-row">
+                <h5 class="checkout-cart-emphasis-text">Total:</h5>
+                <p class="checkout-cart-emphasis-text">$67.17</p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Css selector:</h4>
+          <p>
+            .checkout-cart, .checkout-cart-list, .checkout-item-card,
+            .checkout-item-img, .checkout-item-details,
+            .checkout-total-item-price, .checkout-cart-summary,
+            .checkout-cart-summary-row, .horizontal-bar,
+            .checkout-cart-emphasis-text
+          </p>
+
+          <h3>Sample Code</h3>
+          <details>
+            <summary>(Collasped code because it's too long)</summary>
+            <pre>
+              <code>
+                &lt;div class="checkout-cart"&gt;
+                  &lt;div class="checkout-cart-list"&gt;
+                    &lt;!-- Item 1 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/love-canopy-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;Love Canopy Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99 x 2&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$39.98&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Item 2 --&gt;
+                    &lt;div class="checkout-item-card"&gt;
+                      &lt;!-- Item visuals and info --&gt;
+                      &lt;img
+                        class="checkout-item-img"
+                        src="img/placeholder-box.png"
+                        alt="Blind box design for the Love Canopy set"
+                      /&gt;
+                      &lt;div class="checkout-item-details"&gt;
+                        &lt;h3&gt;[placeholder] Blind Box&lt;/h3&gt;
+                        &lt;p&gt;$19.99 x 1&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- Total Price --&gt;
+                      &lt;p class="checkout-total-item-price"&gt;$19.99&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Final cost of the entire cart --&gt;
+                  &lt;div class="checkout-cart-summary"&gt;
+                    &lt;h4 class="visually-hidden"&gt;Receipt:&lt;/h4&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;Subtotal:&lt;/h5&gt;
+                      &lt;p&gt;$59.97&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;GST (5%):&lt;/h5&gt;
+                      &lt;p&gt;$2.99&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5&gt;HST (7%):&lt;/h5&gt;
+                      &lt;p&gt;$4.19&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkout-cart-summary-row"&gt;
+                      &lt;h5 class="checkout-cart-emphasis-text"&gt;Total:&lt;/h5&gt;
+                      &lt;p class="checkout-cart-emphasis-text"&gt;$67.17&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </details>
+
         </section>
       </section>
     </section>

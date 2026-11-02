@@ -147,8 +147,8 @@ summary {
 }
 
 .button:hover {
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius:0;
+  border-bottom-right-radius:0;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-color: var(--dark-green);
@@ -357,8 +357,8 @@ nav div .button-nav {
 .text-input:hover {
   transition-duration: var(--transition-duration);
   border: 2px solid var(--medium-green);
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius:0;
+  border-bottom-right-radius:0;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   outline: none;
@@ -367,8 +367,8 @@ nav div .button-nav {
 /* when the input field is currently selected/active */
 .text-input:focus {
   border: 2px solid var(--light-purple);
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius:0;
+  border-bottom-right-radius:0;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   outline: none;
@@ -467,6 +467,8 @@ nav div .button-nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-grid {
@@ -480,7 +482,7 @@ nav div .button-nav {
 
 /* effects only the li in .product-grid */
 .product-grid.box {
-  justify-content: center;
+  max-width: fit-content;
 }
 
 .product-grid li {
@@ -514,7 +516,7 @@ nav div .button-nav {
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
-  margin: 24px 0px 8px 0px;
+  margin: 24px0 8px0;
 }
 
 .product-price {
@@ -523,7 +525,7 @@ nav div .button-nav {
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
-  margin: 0px;
+  margin:0;
   margin-bottom: 8px;
 }
 
@@ -615,6 +617,13 @@ COMPONENTS
 
 .section {
   padding: 3rem;
+}
+
+.section-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .section .button {
@@ -741,7 +750,7 @@ COMPONENTS
 
   border: 2px solid var(--medium-green);
   padding: 1rem;
-  border-radius: 12px 0px;
+  border-radius: 12px0;
   margin: 5rem 15rem;
 }
 
@@ -965,8 +974,8 @@ HERO SECTION STYLING
   padding: 16px;
   border: 1.5px solid var(--dark-green);
   border-radius: 12px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-left-radius:0;
+  border-top-right-radius:0;
 
   max-width: 100%;
 }
@@ -976,7 +985,7 @@ HERO SECTION STYLING
   border-top: 2px dashed var(--light-green);
   width: 100%;
   border-radius: 2px;
-  margin: 0px;
+  margin:0;
 }
 
 .checkout-cart-summary {
@@ -1010,8 +1019,8 @@ HERO SECTION STYLING
 /* Removes the padding */
 .checkout-cart-summary-row h5,
 .checkout-cart-summary-row p {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom:0;
+  margin-top:0;
 }
 
 .checkout-item-img {
@@ -1078,7 +1087,7 @@ HERO SECTION STYLING
 @container (min-width: 400px) {
   .checkout-item-card {
     grid-template-columns: auto 1fr;
-    row-gap: 0px;
+    row-gap:0;
     column-gap: 24px;
   }
 
@@ -1087,7 +1096,7 @@ HERO SECTION STYLING
   }
 
   .checkout-item-details {
-    margin-top: 0px;
+    margin-top:0;
   }
 }
 
@@ -1098,7 +1107,7 @@ HERO SECTION STYLING
   }
 
   .checkout-item-details {
-    margin-top: 0px;
+    margin-top:0;
   }
 }
 
@@ -1123,13 +1132,13 @@ HERO SECTION STYLING
 @media (min-width: 576px) {
   .box {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 768px) {
   .box {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1170,7 +1179,7 @@ HERO SECTION STYLING
 .footer h4,
 .footer h5 {
   /* remove the default margin used elsewhere */
-  margin: 0px;
+  margin:0;
   color: var(--white);
 }
 
