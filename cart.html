@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en">
+  <!-- 
+  Cart page!
+  -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Plantoscope: Cart</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/cart-checkout.css" rel="stylesheet">
+  </head>
+
+  <body class="remove-pad-marg">
+    <div class="body-wrapper">
+      <!-- Navigation on the top page -->
+      <header>
+        <h1 class="visually-hidden">Plantoscope: Cart</h1>
+        <nav>
+          <!-- <a class="button-nav" href="#plantosphere">Plantosphere</a> -->
+          <a class="button-nav" href="home.html">
+            <img class="nav-logo" src="img/logo.svg" alt="Plantosphere Logo">
+          </a>
+          <div>
+            <a class="button-nav" href="about.html">About</a>
+            <a class="button-nav" href="product_listing.html">Fortunes</a>
+            <a class="button-nav" href="cart.html">Cart</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Rest of body -->
+      <div class="page-inner page-cart">
+        <div class="cart-header">
+          <h2>Cart</h2>
+          <p>See your items below!</p>
+        </div>
+
+        <div class="checkout-cart">
+          <div class="checkout-cart-list">
+            <!-- Item 1 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
+              <img
+                class="checkout-item-img"
+                src="img/love-canopy-box.png"
+                alt="Blind box design for the Love Canopy set"
+              >
+              <div class="checkout-item-details">
+                <h3>Love Canopy Blind Box</h3>
+                <p>$19.99/unit</p>
+              </div>
+
+              <!-- Unit controls -->
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>2</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
+              </div>
+
+              <!-- Total Price -->
+              <p class="checkout-total-item-price">$39.98</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="checkout-item-card">
+              <!-- Item visuals and info -->
+              <img
+                class="checkout-item-img"
+                src="img/placeholder-box.png"
+                alt="Blind box design for the Love Canopy set"
+              >
+              <div class="checkout-item-details">
+                <h3>[placeholder] Blind Box</h3>
+                <p>$19.99/unit</p>
+              </div>
+
+              <!-- Unit controls -->
+              <div class="checkout-quantity-button-group">
+                <button class="checkout-quantity-button" type="button">
+                  -
+                </button>
+                <p>1</p>
+                <button class="checkout-quantity-button" type="button">
+                  +
+                </button>
+              </div>
+
+              <!-- Total Price -->
+              <p class="checkout-total-item-price">$19.99</p>
+            </div>
+          </div>
+
+          <!-- Final cost of the entire cart -->
+          <div class="checkout-cart-summary">
+            <h4 class="visually-hidden">Reciept:</h4>
+            <div class="checkout-cart-summary-row">
+              <h5>Subtotal:</h5>
+              <p>$59.97</p>
+            </div>
+            <div class="checkout-cart-summary-row">
+              <h5>GST (5%):</h5>
+              <p>$2.99</p>
+            </div>
+            <div class="checkout-cart-summary-row">
+              <h5>HST (7%):</h5>
+              <p>$4.19</p>
+            </div>
+
+            <hr class="horizontal-bar">
+
+            <div class="checkout-cart-summary-row">
+              <h5 class="checkout-cart-emphasis-text">Total:</h5>
+              <p class="checkout-cart-emphasis-text">$67.17</p>
+            </div>
+          </div>
+        </div>
+
+        <a type="button" class="button center-text" href="checkout.html"
+          >Checkout</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer ALWAYS under the minimum 100% vh
+     TODO: Move to style guide -->
+    <footer>
+      <!-- left side of footer that stacks on top -->
+      <div class="footer">
+        <div class="footer-left">
+          <img alt="Plantoscope Small logo" src="img/small-logo.svg">
+          <div class="footer-text">
+            <h4>Created by IAT 339: Group 14</h4>
+            <h5>Angela Nguyen & Manha Sheikh.</h5>
+          </div>
+        </div>
+        <!-- right side of footer, button to the style guide. -->
+        <a class="button-nav" href="index.html"> Plantoscope Style Guide</a>
+      </div>
+    </footer>
+  </body>
+</html>
