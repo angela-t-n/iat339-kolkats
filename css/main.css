@@ -80,7 +80,7 @@ h3 {
   font-family: "Libre_Baskerville";
   font-weight: normal;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -471,7 +471,11 @@ nav div .button-nav {
 
 .product-grid {
   /* Removes the padding around the ul */
-  padding: 0px;
+  padding: 1rem;
+  justify-items: space-around; /* so the listings aren't touching the edge */
+  grid-template-columns: auto;
+  /* add more space between each row */
+  row-gap: 3rem;
 }
 
 /* effects only the li in .product-grid */
@@ -524,9 +528,15 @@ nav div .button-nav {
 }
 
 .product-details {
+  /* display: flex;
+  flex-direction: column;
+  gap: 8px; */
+  width: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .grid-item:hover .card-container,
@@ -592,6 +602,211 @@ nav div .button-nav {
   display: grid;
   grid-template-columns: auto;
   gap: 8px;
+}
+
+/* 
+COMPONENTS 
+*/
+
+.page {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 3rem;
+}
+
+.section .button {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.light-purple {
+  background-color: var(--light-purple);
+  color: var(--white);
+}
+
+/* NEWS COMPONENT */
+.news {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: auto auto; */
+  gap: 2rem;
+  align-items: center;
+  border-bottom: 2px dashed var(--medium-grey);
+}
+
+.news-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-title {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  /* make each news element a grid box so title can span two columns */
+  .news {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 3rem;
+  }
+
+  .news-details {
+    /* getting the title to span two colums: https://www.w3schools.com/css/css_grid_item.asp */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* margin-bottom: 1rem; */
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  /* when screen gets big enough for two colums  */
+  .news-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* news size gets maxxed out */
+  .news {
+    max-width: 373.375px;
+  }
+
+  .news-grid {
+    /* justify-content: space-around; */
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .section {
+    padding: 4rem;
+  }
+}
+@media (min-width: 600px) {
+  .section {
+    padding: 5.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding: 9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 12rem;
+  }
+
+  .section p,
+  h2,
+  .button {
+    max-width: 816px;
+  }
+
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .content-info .button {
+    /* stops it from moving right */
+    margin-left: 0;
+  }
+}
+
+.product-desc-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 100%;
+  align-items: center;
+
+  border: 2px solid var(--medium-green);
+  padding: 1rem;
+  border-radius: 12px 0px;
+  margin: 5rem 15rem;
+}
+
+.product-desc-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details h1,
+h2 {
+  justify-content: space-around;
+  margin: 0;
+  padding-right: 2rem;
+}
+
+.product-card-interact {
+  /* display: flex; */
+  align-items: end;
+  max-width: fit-content;
+}
+
+/* 
+HERO SECTION STYLING 
+*/
+
+.hero {
+  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
+  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
+  background-color: var(--light-grey);
+  padding: 3rem;
+  margin: auto;
+  height: 35rem;
+  position: relative;
+}
+
+.hero-heading {
+  position: absolute;
+  left: 3rem;
+  bottom: 0;
+  margin: 0;
+}
+
+.hero h1 {
+  max-width: 80%;
+
+  /* font-size: 6rem; */
+}
+
+@media (min-width: 500px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
 }
 
 @container (min-width: 400px) {
@@ -914,13 +1129,6 @@ nav div .button-nav {
 
 @media (min-width: 768px) {
   .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .product-grid.box {
-    display: grid;
     grid-template-columns: auto auto auto;
   }
 }

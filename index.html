@@ -642,6 +642,157 @@
       </section>
 
       <section>
+        <h2>Site Elements</h2>
+        <section class="element"> 
+          <h3>Hero Section Element</h3>
+
+          <h3>Rendered Element</h3>
+              <!-- to remove the heading validation error for the sake for this style guide, no error would show up on the actual page, it changes how the browser reads the headings by adding 2 the h1, so the browser sees the h1 as an h3: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset  -->
+              <div headingoffset="2">
+                <div class = "hero">
+                  <h1 class = "hero-heading">The Fortune Collection</h1>
+                </div>
+              </div>
+          
+          <h3>Sample Code</h3>
+          <pre>
+          <code>
+             &lt;div class = "hero"&gt;
+                  &lt;h1 class = "hero-heading">The Fortune Collection&lt;/h1&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          </code>
+          </pre>
+
+          <h3>Css Selectors</h3>
+          <p>.hero, .hero-heading, .hero h1</p>
+
+        </section>
+        
+        <section class="element">
+          <h3>Section</h3>
+          <div class = "section">
+            <div headingoffset="1">
+              <div class="content-info">
+                <h2>What is Plantoscope?</h2>
+                <p>Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. </p> 
+                <div class="button">Learn more...</div>
+              </div>
+              </div> 
+            </div>
+
+            <h3>Purple Section</h3>
+          <div class = "section light-purple">
+            <div headingoffset="1">
+              <div class="content-info">
+                <h2>What is Plantoscope?</h2>
+                <p>Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. </p> 
+                <div class="button">Learn more...</div>
+              </div>
+              </div> 
+            </div>
+
+
+          <h3>Sample code</h3>
+          <pre>
+            <code>
+            &lt;div class = "section"&gt;
+            &lt;div class="content-info"&gt;
+            &lt;h2&gt;What is Plantoscope?&lt;/h2&gt;
+            &lt;p&gt;Plantoscope (derived from “plant” and “horoscope”) provides fortune readings in the form of blind box purchases containing a plant and fortune scroll. Plantoscope offers different readings from each region of Mystic Forest! Be it love, luck, health, or personal identity, each set provides a different variety of plants pertaining to your selected category. &lt;/p&gt; 
+            
+            &lt;div class="button">Learn more...&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;  
+            </code>
+          </pre>
+          <h3>css selectors</h3>
+          <p>.section, .content-info, .light-purple</p>
+
+        </section>
+
+        <section class="element">
+          <h3>News Section</h3>
+            
+          <div class="section content-info">
+          <div class="news-grid">
+              <!-- news 1 -->
+            <div class="news">
+              <div class="news-details">
+              <h2 class="news-title">What Will Your Next Fortune Reveal? Available October 7.</h2>
+              <p class="caption"> Oct 7 2026</p>
+              </div>
+              <img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image">
+
+              <div>
+                
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.</p>
+              <a href="#" class=".intext-link">Read More</a>
+              </div>
+            </div>
+            <!-- new 2 -->
+            <div class="news">
+              <div class="news-details">
+              <h2 class="news-title">Kolkat caught RED HANDED! What will happen to the Plantoscope?</h2>
+              <p class="caption"> Nov 2 2026</p>
+              </div>
+              <img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image">
+            
+              <div>
+                
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.</p>
+              <a href="#" class=".intext-link">Read More</a>
+              </div>
+            </div>
+            </div>
+          </div> 
+
+          <h3>Sample code</h3>
+          <pre>
+            <code>
+                &lt;div class="section content-info"&gt;
+                &lt;div class="news-grid"&gt;
+                <!-- news 1 -->
+                &lt;div class="news"&gt;
+                &lt;div class="news-details"&gt;
+                &lt;h2 class="news-title"&gt;What Will Your Next Fortune Reveal? Available October 7.&lt;/h2&gt;
+                &lt;p class="caption"&gt; Oct 7 2026&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
+
+                &lt;div&gt;
+                  
+                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
+                &lt;a href="#" class=".intext-link"&gt;Read More&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              <!-- new 2 -->
+              &lt;div class="news"&gt;
+                &lt;div class="news-details"&gt;
+                &lt;h2 class="news-title">Kolkat caught RED HANDED! What will happen to the Plantoscope?&lt;/h2&gt;
+                &lt;p class="caption"> Nov 2 2026&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
+              
+                &lt;div&gt;
+                  
+                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
+                &lt;a href="#" class=".intext-link">Read More&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+            </code>
+          </pre>
+          <h3>css selector></h3>
+          <p> .section, .content-info, .news, .news-details, .news-title, .caption, .news-img, news-grid</p>
+
+        </section>
+
+      </section>
+
+      <section>
         <h2>Checkout Elements</h2>
 
         <section class="element">
