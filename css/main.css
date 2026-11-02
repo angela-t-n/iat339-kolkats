@@ -608,6 +608,11 @@ nav div .button-nav {
 COMPONENTS 
 */
 
+.page{
+    padding:0;
+    margin:0;
+}
+
 .section{
     padding:3rem ;
 }
@@ -620,6 +625,68 @@ COMPONENTS
 .light-purple{
     background-color: var(--light-purple);
     color: var(--white);
+}
+
+/* NEWS COMPONENT */
+.news{
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: auto auto; */
+    gap: 2rem;
+    align-items: center;
+    border-bottom: 2px dashed var(--medium-grey);
+
+}
+
+.news-img{
+    max-width: 100%;
+    height:auto;
+}
+
+.news-title {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+@media(min-width:600px){
+    /* make each news element a grid box so title can span two columns */
+    .news{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-bottom: 3rem;
+
+    }
+
+    .news-details{
+         /* getting the title to span two colums: https://www.w3schools.com/css/css_grid_item.asp */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* margin-bottom: 1rem; */
+    font-size: 1.5rem;
+    }
+}
+
+@media(min-width:900px){
+    /* when screen gets big enough for two colums  */
+    .news-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;   
+    }
+
+}
+
+@media(min-width:1200px){
+  /* news size gets maxxed out */
+    .news{
+        max-width: 373.375px;
+    }
+
+    .news-grid{
+
+        /* justify-content: space-around; */
+        gap: 4rem;
+    }
 }
 
 @media(min-width:500px){
