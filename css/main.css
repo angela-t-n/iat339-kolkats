@@ -33,6 +33,7 @@
 }
 
 /* Global setting to border-box*/
+/* padding and border are included in the calculation of the width and height: https://www.w3schools.com/css/css3_box-sizing.asp */
 *,
 *::before,
 *::after {
@@ -214,6 +215,7 @@ nav div .button-nav {
 .nav-logo {
   height: auto;
   width: 100%;
+  /* spans entire width of parent element */
   display: block;
 }
 
