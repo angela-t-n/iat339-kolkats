@@ -1,0 +1,10 @@
+/* the main body element comes with paddings ands tuff */
+.page-main {
+    padding: 0;
+    margin: 0;
+}
+
+.page-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

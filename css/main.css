@@ -940,3 +940,32 @@ nav div .button-nav {
   font-weight: bold;
   font-style: normal;
 }
+
+/*
+  Footer stuff
+*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--medium-purple);
+  gap: 1rem;
+
+  /* top-bottom 1rem, left-right 2 rem*/
+  padding: 1rem 2rem;
+}
+
+.footer h4,
+.footer h5 {
+  /* remove the default margin used elsewhere */
+  margin: 0px;
+  color: var(--white);
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
