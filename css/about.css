@@ -32,3 +32,32 @@
 .hero-fix{
     margin: 0;
 }
+
+.section-short{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-row{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO - Unify this */
+.section-green{
+  background-color: #f1f3e4;
+}
+
+.section-purple{
+  background-color: #e9e4f3;
+}
+
+.section-img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
