@@ -946,15 +946,14 @@ nav div .button-nav {
 */
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: var(--medium-purple);
-  gap: 1rem;
+  gap: 1.5rem;
 
-  /* top-bottom 1rem, left-right 2 rem*/
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 .footer h4,
@@ -967,5 +966,20 @@ nav div .button-nav {
 .footer-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
+}
+
+@media (min-width:700px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* top-bottom 1rem, left-right 2 rem*/
+    padding: 1rem 2rem;
+  }
+
+  .footer-text {
+    align-items: flex-start;
+  }
 }
