@@ -954,6 +954,8 @@ nav div .button-nav {
   gap: 1.5rem;
 
   padding: 2rem;
+  position: absolute;
+  bottom: 0px;
 }
 
 .footer h4,
@@ -970,6 +972,18 @@ nav div .button-nav {
   gap: 0.5rem;
 }
 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-left img {
+  height: auto;
+  width: 40px;
+}
+
 @media (min-width:700px) {
   .footer {
     flex-direction: row;
@@ -981,5 +995,15 @@ nav div .button-nav {
 
   .footer-text {
     align-items: flex-start;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-left img {
+    height: auto;
+    width: auto;
   }
 }
