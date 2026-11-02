@@ -629,7 +629,7 @@ nav div .button-nav {
   HAVE to use >* to target all elements 
   inside of the last child
   */
-  .payment-form-ratio-1-1-1>*:last-child {
+  .payment-form-ratio-1-1-1 > *:last-child {
     grid-column: span 2;
   }
 }
@@ -640,11 +640,10 @@ nav div .button-nav {
   }
 
   /* reset the last child element */
-  .payment-form-ratio-1-1-1>*:last-child {
+  .payment-form-ratio-1-1-1 > *:last-child {
     grid-column: auto;
   }
 }
-
 
 /*
   Checkbox
@@ -986,7 +985,7 @@ nav div .button-nav {
   width: 40px;
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
