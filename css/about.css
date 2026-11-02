@@ -1,0 +1,30 @@
+/* 
+    the main body element comes with paddings ands tuff 
+    todo: uniform this and move to a "main" css file.
+    this is mainly just quickly put together for demonstration
+*/
+.remove-pad-marg {
+  padding: 0;
+  margin: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-inner {
+  /* just sets the "universal" padding,
+    fills out the entire space, and gaps by default*/
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.center-text {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
