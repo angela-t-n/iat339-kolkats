@@ -619,7 +619,7 @@ COMPONENTS
 }
 
 .section {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .section-center{
@@ -748,11 +748,37 @@ HERO SECTION STYLING
 .hero {
   /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
   /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
   padding: 3rem;
   margin: auto;
   height: 35rem;
   position: relative;
+  /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
+  background-image: url(../img/pattern1.svg);
+   background-size:contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hero2 {
+  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
+  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
+  /* background-color: var(--light-grey); */
+  padding: 3rem;
+  margin: auto;
+  height: 35rem;
+  position: relative;
+  background-image: url(../img/pattern2.svg);
+   background-size:contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-heading {
@@ -760,28 +786,25 @@ HERO SECTION STYLING
   left: 3rem;
   bottom: 0;
   margin: 0;
-}
-
-.hero h1 {
   max-width: 80%;
+  color:var(--neutral-green)
 
-  /* font-size: 6rem; */
 }
 
 @media (min-width: 500px) {
-  .hero h1 {
+  .hero-heading {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 800px) {
-  .hero h1 {
+  .hero-heading {
     font-size: 5rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .hero h1 {
+  .hero-heading {
     font-size: 6rem;
   }
 }
