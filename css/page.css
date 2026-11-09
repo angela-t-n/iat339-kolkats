@@ -151,12 +151,14 @@
 
 .product-card-interact {
   width: 100%;
+  text-align: center;
 }
 
 .flower-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 
   max-width: 100%;
   padding: 1rem;
@@ -175,7 +177,7 @@
 
 .flower-img {
   width: auto;
-  height: 12rem;
+  height: 16rem;
 }
 
 .flower-section {
@@ -183,6 +185,10 @@
 }
 
 @media (min-width: 600px) {
+  .flower-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .flower-img {
     width: auto;
     height: 15rem;
