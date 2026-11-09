@@ -13,6 +13,7 @@
   /* purples */
   --neutral-purple: #e9e4f3;
   --light-purple: #9e93c9;
+  --pinkish-purple: #BEAADA; 
   --medium-purple: #8267b9;
   --dark-purple: #534372;
 
@@ -633,10 +634,6 @@ COMPONENTS
   margin-left: auto;
 }
 
-.light-purple {
-  background-color: var(--light-purple);
-  color: var(--white);
-}
 
 /* NEWS COMPONENT */
 .news {
@@ -743,37 +740,6 @@ COMPONENTS
   }
 }
 
-.product-desc-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 100%;
-  align-items: center;
-
-  border: 2px solid var(--medium-green);
-  padding: 1rem;
-  border-radius: 12px0;
-  margin: 5rem 15rem;
-}
-
-.product-desc-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.product-details h1,
-h2 {
-  justify-content: space-around;
-  margin: 0;
-  padding-right: 2rem;
-}
-
-.product-card-interact {
-  /* display: flex; */
-  align-items: end;
-  max-width: fit-content;
-}
 
 /* 
 HERO SECTION STYLING 
