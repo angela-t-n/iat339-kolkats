@@ -8,6 +8,7 @@
   margin: 0;
 }
 
+/* forces the main body div to be the height of the window */
 .body-wrapper {
   display: flex;
   flex-direction: column;
@@ -29,35 +30,53 @@
   max-width: 400px;
 }
 
-.hero-fix{
-    margin: 0;
+.hero-fix {
+  margin: 0;
 }
 
-.section-short{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.section-row{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-/* TODO - Unify this */
-.section-green{
-  background-color: #f1f3e4;
-}
-
-.section-purple{
-  background-color: #e9e4f3;
-}
-
-.section-img{
+.section-img {
   width: 100%;
   max-width: 400px;
   height: auto;
   object-fit: cover;
+}
+
+.section-short {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-text {
+  max-width: auto;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .section-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-text {
+    max-width: 700px;
+  }
+}
+
+/* TODO - Unify this */
+.section-green {
+  background-color: #f1f3e4;
+}
+
+.section-purple {
+  background-color: #e9e4f3;
 }

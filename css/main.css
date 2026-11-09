@@ -1168,7 +1168,7 @@ HERO SECTION STYLING
   width: 40px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 950px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
