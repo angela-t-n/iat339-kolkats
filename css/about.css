@@ -34,6 +34,10 @@
   margin: 0;
 }
 
+.hero-short {
+  height: 20rem;
+}
+
 .section-img {
   width: 100%;
   max-width: 400px;
@@ -50,8 +54,9 @@
   max-width: auto;
 }
 
-.section-row {
+.section-flex-row {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
@@ -59,7 +64,7 @@
 }
 
 @media (min-width: 1000px) {
-  .section-row {
+  .section-flex-row {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -70,6 +75,26 @@
   .section-text {
     max-width: 700px;
   }
+}
+
+.section-column {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+
+.contact-form-title {
+  max-width: 1000px;
+  width: 100%;
+}
+.contact-form-column {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* TODO - Unify this */

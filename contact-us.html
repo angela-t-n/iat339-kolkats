@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/cart-checkout.css" rel="stylesheet">
         <link href="css/about.css" rel="stylesheet">
     </head>
 
@@ -39,13 +40,13 @@
             </header>
 
             <!-- Hero section -->
-            <div class="hero hero-fix">
+            <div class="hero hero-fix hero-short">
                 <h1 class="hero-heading">Contact Us!</h1>
             </div>
 
             <!-- Rest of body -->
 
-            <div class="section section-row section-green">
+            <div class="section section-short section-flex-row section-green">
                 <img
                     class="section-img"
                     src="img/wondering-cat.png"
@@ -72,31 +73,59 @@
                 </div>
             </div>
 
-            <div class="section section-row section-purple">
-                <div>
-                    <h2>What is Plantoscope?</h2>
+            <div class="section section-short section-column section-purple">
+                <h2 class="contact-form-title">Contact Form:</h2>
+                <div class="contact-form-column page-checkout-column">
+                    <form class="contact-form payment-form">
+                        <fieldset class="payment-form-group">
+                            <div class="form-row">
+                                <label class="text-input-label">
+                                    *First Name:
+                                    <input
+                                        class="text-input"
+                                        type="text"
+                                        placeholder="John"
+                                    >
+                                </label>
+                                <label class="text-input-label">
+                                    *Last Name:
+                                    <input
+                                        class="text-input"
+                                        type="text"
+                                        placeholder="Doe"
+                                    >
+                                </label>
+                            </div>
 
-                    <p class="section-text">
-                        Plantoscope (derived from “plant” and “horoscope”)
-                        provides fortune readings in the form of blind box
-                        purchases containing a plant and fortune scroll.
-                        <br><br>
-                        Plantoscope offers different readings from each region
-                        of Mystic Forest! Be it love, luck, health, or personal
-                        identity, each set provides a different variety of
-                        plants pertaining to your selected category.
-                        <br><br>
-                        We currently offer the following sets (in the works
-                        still): “Love Canopy” (Love Region): romantic
-                        love/affection themed plants (Figure 1)
-                    </p>
+                            <label class="text-input-label">
+                                *Email:
+                                <input
+                                    class="text-input"
+                                    type="email"
+                                    placeholder="john.doe@example.com"
+                                >
+                            </label>
+
+                            <label class="text-input-label">
+                                *Reason for Contact:
+                                <input
+                                    class="text-input"
+                                    type="text"
+                                    placeholder="Meow meow meow!"
+                                >
+                            </label>
+
+                            <label class="text-input-label">
+                                *Message:
+                                <textarea
+                                    class="text-input input-text-field"
+                                    type="text"
+                                    placeholder="Type your lengthy message here..."
+                                ></textarea>
+                            </label>
+                        </fieldset>
+                    </form>
                 </div>
-
-                <img
-                    class="section-img"
-                    src="img/plantoscope-circle.png"
-                    alt="Plantoscope Horoscope"
-                >
             </div>
         </div>
 
@@ -115,17 +144,27 @@
                     </div>
                 </div>
                 <!-- right side of footer, button to the style guide. -->
-                <div>
-                    <a class="button-nav" href="contact-us.html"> Contact Us</a>
-                    <a class="button-nav" href="style-guide.html">
-                        Style Guide</a
-                    >
-                    <a
-                        class="button-nav"
-                        href="https://github.com/angela-t-n/iat339-kolkats"
-                    >
-                        Github Repo</a
-                    >
+                <div class="footer-buttons">
+                    <div class="footer-button-rows">
+                        <a class="button-nav" href="contact-us.html">
+                            Contact Us</a
+                        >
+                        <a class="button-nav" href="style-guide.html">
+                            Style Guide</a
+                        >
+                    </div>
+                    <div class="footer-button-rows">
+                        <a
+                            class="button-nav"
+                            href="https://github.com/angela-t-n/iat339-kolkats"
+                        >
+                            Github Repo</a
+                        >
+
+                        <a class="button-nav" href="style-guide.html#citations">
+                            Citations</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
