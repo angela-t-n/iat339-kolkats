@@ -13,7 +13,7 @@
   /* purples */
   --neutral-purple: #e9e4f3;
   --light-purple: #9e93c9;
-  --pinkish-purple: #BEAADA; 
+  --pinkish-purple: #beaada;
   --medium-purple: #8267b9;
   --dark-purple: #534372;
 
@@ -149,8 +149,8 @@ summary {
 }
 
 .button:hover {
-  border-top-left-radius:0;
-  border-bottom-right-radius:0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-color: var(--dark-green);
@@ -356,12 +356,18 @@ nav div .button-nav {
   border-bottom-right-radius: 12px;
 }
 
+/* https://stackoverflow.com/questions/67079303/how-do-i-make-the-text-in-the-input-start-from-the-top */
+.input-text-field {
+  height: 5rem;
+  resize: vertical;
+}
+
 /* when the input field is hovered on */
 .text-input:hover {
   transition-duration: var(--transition-duration);
   border: 2px solid var(--medium-green);
-  border-top-left-radius:0;
-  border-bottom-right-radius:0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   outline: none;
@@ -370,8 +376,8 @@ nav div .button-nav {
 /* when the input field is currently selected/active */
 .text-input:focus {
   border: 2px solid var(--light-purple);
-  border-top-left-radius:0;
-  border-bottom-right-radius:0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   outline: none;
@@ -528,7 +534,7 @@ nav div .button-nav {
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
-  margin:0;
+  margin: 0;
   margin-bottom: 8px;
 }
 
@@ -622,7 +628,7 @@ COMPONENTS
   padding: 2.5rem;
 }
 
-.section-center{
+.section-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -633,7 +639,6 @@ COMPONENTS
   width: fit-content;
   margin-left: auto;
 }
-
 
 /* NEWS COMPONENT */
 .news {
@@ -749,7 +754,6 @@ COMPONENTS
     margin-left: 0;
   }
 }
-
 
 /* 
 HERO SECTION STYLING 
@@ -975,8 +979,8 @@ HERO SECTION STYLING
   padding: 16px;
   border: 1.5px solid var(--dark-green);
   border-radius: 12px;
-  border-bottom-left-radius:0;
-  border-top-right-radius:0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
 
   max-width: 100%;
 }
@@ -986,7 +990,7 @@ HERO SECTION STYLING
   border-top: 2px dashed var(--light-green);
   width: 100%;
   border-radius: 2px;
-  margin:0;
+  margin: 0;
 }
 
 .checkout-cart-summary {
@@ -1020,8 +1024,8 @@ HERO SECTION STYLING
 /* Removes the padding */
 .checkout-cart-summary-row h5,
 .checkout-cart-summary-row p {
-  margin-bottom:0;
-  margin-top:0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .checkout-item-img {
@@ -1088,7 +1092,7 @@ HERO SECTION STYLING
 @container (min-width: 400px) {
   .checkout-item-card {
     grid-template-columns: auto 1fr;
-    row-gap:0;
+    row-gap: 0;
     column-gap: 24px;
   }
 
@@ -1097,7 +1101,7 @@ HERO SECTION STYLING
   }
 
   .checkout-item-details {
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
@@ -1108,7 +1112,7 @@ HERO SECTION STYLING
   }
 
   .checkout-item-details {
-    margin-top:0;
+    margin-top: 0;
   }
 }
 
@@ -1180,12 +1184,13 @@ HERO SECTION STYLING
 .footer h4,
 .footer h5 {
   /* remove the default margin used elsewhere */
-  margin:0;
+  margin: 0;
   color: var(--white);
 }
 
 .footer-text {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
@@ -1195,6 +1200,7 @@ HERO SECTION STYLING
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 
@@ -1203,7 +1209,20 @@ HERO SECTION STYLING
   width: 40px;
 }
 
-@media (min-width: 700px) {
+.footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+}
+
+.footer-button-rows {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media (min-width: 800px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -1224,5 +1243,9 @@ HERO SECTION STYLING
   .footer-left img {
     height: auto;
     width: auto;
+  }
+
+  .footer-buttons {
+    justify-content: flex-end;
   }
 }

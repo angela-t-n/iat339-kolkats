@@ -1,51 +1,48 @@
 @import url("./fonts.css");
 @import url("./main.css");
 
-
-
-.home-box{
-    display: flex;
-    flex-direction: column;
-    /* width: 100%; */
+.home-box {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
 }
 
-.definition{
-    font-size: 2rem;
+.definition {
+  font-size: 2rem;
 }
 
-@media(min-width:1200px){
-    .home-box{
-        flex-direction: row;
-    }
-}
-
-.sub-nav{
-    display: flex;
-    gap: 2rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-@media(min-width: 600px){
-    .sub-nav{
-        margin-left: 3rem;
-        margin-top: 3rem;
-    }
-}
-
-.flex-row{
-    display: flex;
+@media (min-width: 1200px) {
+  .home-box {
     flex-direction: row;
-    margin: 1rem 0;
+  }
 }
 
-.flex-end{
-    justify-content: flex-end;
+.sub-nav {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
-.space-between{
-        justify-content: space-between;
+@media (min-width: 600px) {
+  .sub-nav {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+}
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .pinkish-purple {
@@ -53,7 +50,7 @@
   color: var(--white);
 }
 
-.product-section{
+.product-section {
   padding: 1rem;
 }
 
@@ -61,36 +58,32 @@
   display: grid;
   max-width: 100%;
   padding: 1rem;
-
 }
 
 /* change h1 specific sizing when screen is small */
-.product-section h1{
+.product-section h1 {
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.product-section h2{
+.product-section h2 {
   font-weight: bold;
 }
 
-
-.img-border{
-  border:2px solid var(--pinkish-purple) ;
+.img-border {
+  border: 2px solid var(--pinkish-purple);
   padding: 1rem;
   border-radius: 12px 0;
 }
 
-
-
-.border{
-  border:2px solid var(--pinkish-purple) ;
+.border {
+  border: 2px solid var(--pinkish-purple);
   padding: 1rem;
   border-radius: 12px 0;
 }
 
-.white-border{
-  border:2px solid var(--white) ;
+.white-border {
+  border: 2px solid var(--white);
   padding: 1rem;
   border-radius: 12px 0;
 }
@@ -101,150 +94,149 @@
   display: block;
 }
 
-.main-img{
-  background-color: var(--pinkish-purple);
+.main-img {
+  background-color: var(--neutral-green);
   padding: 1rem;
 }
 
-.stars{
+.stars {
   max-width: 30%;
 }
 
-.product-desc-details{
+.product-desc-details {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.product-desc-details h1{
+.product-desc-details h1 {
   margin: 0;
 }
 
-.product-desc-details .intext-link{
+.product-desc-details .intext-link {
   font-size: 1.5rem;
 }
 
-.space-out{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-  }
+.space-out {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 /* first section responsiveness */
 
-@media(min-width:560px){
-  .product-desc{
+@media (min-width: 560px) {
+  .product-desc {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
   }
 
-  .small-desc{
+  .small-desc {
     font-size: 0.8rem;
   }
 }
 
-@media(min-width:780px){
-  .product-section{
-    width: 780px; 
+@media (min-width: 780px) {
+  .product-section {
+    width: 780px;
     justify-content: center;
 
     margin: 0 auto;
   }
 }
 
-@media(min-width: 1000px){
-  .small-desc{
+@media (min-width: 1000px) {
+  .small-desc {
     font-size: 1rem;
   }
 
-  .space-out{
+  .space-out {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 }
 
-
 .product-card-interact {
   width: 100%;
+  text-align: center;
 }
 
 .flower-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 
   max-width: 100%;
   padding: 1rem;
-
 }
 
-.flower-title{
+.flower-title {
   font-size: 1.5rem;
   font-weight: normal;
+  padding: 0;
 }
 
-.flower-img{
-  width: auto;
-  height: 12rem;
+.flower-grid.flower-title {
+  padding: 0;
+  padding-bottom: 1rem;
+}
 
+.flower-img {
+  width: 100%;
+  height: auto;
+  max-width: 12rem;
 }
 
 .flower-section {
   padding: 3rem;
 }
 
-@media(min-width: 600px){
-    .flower-img{
-  width: auto;
-  height: 15rem;
+@media (min-width: 600px) {
+  .flower-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media(min-width:900px){
+@media (min-width: 900px) {
   .flower-section {
-  padding: 2rem;
-}
+    padding: 2rem;
+  }
 }
 
-@media(min-width: 800px){
+@media (min-width: 800px) {
   .flower-grid {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
 
-}
-}
-
-@media(min-width: 1100px){
-  .flower-grid {
-  display: flex;
-  flex-direction: row;
-  width: 1100px;
-  padding: 1rem;
+    max-width: 1000px;
+    gap: 2rem;
+  }
 }
 
-
+.flower-icon-img {
+  width: 5rem;
 }
 
 /* review stuff */
 
-
-
-.review-main{
+.review-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review-main h2, p{
+.review-main h2,
+p {
   margin: 0;
 }
 
-.review{
+.review {
   display: grid;
   width: 100%;
   /* grid-template-columns: auto 1fr; */
@@ -253,7 +245,6 @@
   border-top: 2px dashed var(--medium-purple);
   padding: 1rem;
   margin-top: 1rem;
-
 }
 /* getting the review to span two colums: https://www.w3schools.com/css/css_grid_item.asp */
 .span-two-columns {
@@ -267,12 +258,12 @@
   margin-bottom: 0;
 }
 
-.profile-pic{
+.profile-pic {
   width: 3rem;
   height: auto;
 }
 
-.profile{
+.profile {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -280,27 +271,21 @@
   margin-top: 2rem;
 }
 
-.green{
+.green {
   background-color: var(--medium-green);
   color: var(--white);
 }
 
-.short{
-  width:50%;
+.short {
+  width: 50%;
 }
 
-.message{
-  height:5rem;
+.message {
+  height: 5rem;
 }
 
-@media(min-width:600px){
-  .review-title{
+@media (min-width: 600px) {
+  .review-title {
     justify-content: center;
+  }
 }
-}
-
-
-
-
-
-
