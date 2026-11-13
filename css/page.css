@@ -1,21 +1,11 @@
 @import url("./fonts.css");
 @import url("./main.css");
 
-.home-box {
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-}
 
 .definition {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-@media (min-width: 1200px) {
-  .home-box {
-    flex-direction: row;
-  }
-}
 
 .sub-nav {
   display: flex;
