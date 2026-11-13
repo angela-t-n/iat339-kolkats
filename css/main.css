@@ -140,6 +140,8 @@ summary {
   font-style: italic;
   font-size: 1.25rem;
   padding: 2px 24px;
+  /* removes underline: https://www.w3schools.com/css/css3_buttons.asp; */
+  text-decoration: none;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   border-radius: 8px;
   border: 2px solid var(--light-green);
@@ -148,24 +150,25 @@ summary {
   transition: 0.5s;
 }
 
-.button:hover {
+/* use focus for navigating with tab: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus */
+.button:hover, .button:focus {
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   border-color: var(--dark-green);
   color: white;
   background-color: var(--medium-green);
   border: 2px solid var(--dark-green);
 }
 
-.button:active {
+/* .button:active {
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
   border: 2px solid var(--dark-green);
   transition: 0.25s;
-}
+} */
 
 /* Styling for the navigation bar + its buttons */
 nav {
@@ -203,7 +206,8 @@ nav div .button-nav {
   border-bottom-right-radius: 50px;
 }
 
-.button-nav:hover {
+
+.button-nav:hover, .button-nav:focus {
   background-color: var(--medium-green);
 }
 
@@ -745,7 +749,7 @@ COMPONENTS
   .content-info {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     gap: 3rem;
   }
 
