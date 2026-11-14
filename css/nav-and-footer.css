@@ -1,0 +1,174 @@
+/*
+*
+*
+*
+* === Navigation stuff ===
+*/
+.nav-logo {
+  height: auto;
+  width: 100%;
+  /* spans entire width of parent element */
+  display: block;
+}
+
+/* Styling for the navigation bar + its buttons */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--medium-purple);
+  padding: 0.5rem;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 0.5rem;
+}
+
+.button-nav {
+  font-family: "Libre_Baskerville";
+  font-weight: normal;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: var(--medium-purple);
+}
+
+nav div .button-nav {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.button-nav:hover {
+  background-color: var(--medium-green);
+}
+
+.button-nav:active {
+  background-color: var(--dark-green);
+  color: white;
+  transition: 0.25s;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: none;
+}
+
+
+/* responsive screen stuff for product listing and nav bar*/
+@media (min-width: 425px) {
+  nav div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    height: auto;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+/*
+*
+*
+*
+* === Footer stuff ===
+*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--medium-purple);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.footer h4,
+.footer h5 {
+  /* remove the default margin used elsewhere */
+  margin: 0;
+  color: var(--white);
+}
+
+.footer-text {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-left img {
+  height: auto;
+  width: 40px;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+}
+
+.footer-button-rows {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* top-bottom 1rem, left-right 2 rem*/
+    padding: 1rem 2rem;
+  }
+
+  .footer-text {
+    align-items: flex-start;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-left img {
+    height: auto;
+    width: auto;
+  }
+
+  .footer-buttons {
+    justify-content: flex-end;
+  }
+}
