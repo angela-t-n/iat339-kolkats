@@ -140,6 +140,8 @@ summary {
   font-style: italic;
   font-size: 1.25rem;
   padding: 2px 24px;
+  /* removes underline: https://www.w3schools.com/css/css3_buttons.asp; */
+  text-decoration: none;
   /* make corners round: https://www.w3schools.com/css/css3_borders.asp */
   border-radius: 8px;
   border: 2px solid var(--light-green);
@@ -148,24 +150,25 @@ summary {
   transition: 0.5s;
 }
 
-.button:hover {
+/* use focus for navigating with tab: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus */
+.button:hover, .button:focus {
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   border-color: var(--dark-green);
   color: white;
   background-color: var(--medium-green);
   border: 2px solid var(--dark-green);
 }
 
-.button:active {
+/* .button:active {
   border-color: var(--dark-green);
   color: white;
   background-color: var(--dark-green);
   border: 2px solid var(--dark-green);
   transition: 0.25s;
-}
+} */
 
 /* Styling for the navigation bar + its buttons */
 nav {
@@ -203,7 +206,8 @@ nav div .button-nav {
   border-bottom-right-radius: 50px;
 }
 
-.button-nav:hover {
+
+.button-nav:hover, .button-nav:focus {
   background-color: var(--medium-green);
 }
 
@@ -628,6 +632,10 @@ COMPONENTS
   padding: 2.5rem;
 }
 
+.heading{
+  color: var(--black);
+}
+
 .section-center {
   display: flex;
   flex-direction: column;
@@ -640,73 +648,6 @@ COMPONENTS
   margin-left: auto;
 }
 
-/* NEWS COMPONENT */
-.news {
-  display: flex;
-  flex-direction: column;
-  /* grid-template-columns: auto auto; */
-  gap: 2rem;
-  align-items: center;
-  border-bottom: 2px dashed var(--medium-grey);
-}
-
-.news-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.news-title {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-}
-
-@media (min-width: 600px) {
-  /* make each news element a grid box so title can span two columns */
-  .news {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-bottom: 3rem;
-  }
-
-  .news-details {
-    /* getting the title to span two colums: https://www.w3schools.com/css/css_grid_item.asp */
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* margin-bottom: 1rem; */
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 900px) {
-  /* when screen gets big enough for two colums  */
-  .news-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .news-grid{
-      grid-template-columns: auto;
-  }
-  
-}
-
-@media(min-width: 1300px){
-  .news-grid{
-      grid-template-columns: auto auto;
-      gap:3rem;
-  }
-}
-
-@media(min-width:1460px){
-  
-  .news{
-    width: 354px;
-  }
-}
 
 @media (min-width: 500px) {
   .section {
@@ -745,7 +686,7 @@ COMPONENTS
   .content-info {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     gap: 3rem;
   }
 

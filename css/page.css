@@ -1,21 +1,11 @@
 @import url("./fonts.css");
 @import url("./main.css");
 
-.home-box {
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-}
 
 .definition {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-@media (min-width: 1200px) {
-  .home-box {
-    flex-direction: row;
-  }
-}
 
 .sub-nav {
   display: flex;
@@ -288,4 +278,137 @@ p {
   .review-title {
     justify-content: center;
   }
+}
+
+/* NEWs stuff */
+
+.news-heading {
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    /* align-items: start; */
+}
+
+/* main article */
+
+.main-news{
+  width: 100%;
+  padding: 1rem;
+}
+
+.main-news img {
+  width: 100%;
+  height: 20rem;
+  /* crops image within size without stretching: https://youtu.be/6yAAV-uP0po?si=N7AAiulOBjcANVef  */
+  object-fit: cover;
+  border-radius: 1.5rem;
+  /* display: block; */
+}
+
+.news-date {
+  font-size: 1.25rem;
+  color: var(--off-black);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.news-title {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0;
+}
+
+.news-desc {
+  width: 100%;
+  font-size: 1.5rem;
+  /* add line-height to the description for readability: https://www.w3schools.com/cssref/pr_dim_line-height.php */
+  line-height: 1.2;
+  color: var(--black);
+}
+
+/* Side articles */
+
+.side-news {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.side-news .news-title{
+  font-size: 1.2rem;
+}
+
+.side-news .news-date{
+  font-size: 1rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 1.25rem;
+  /* align-items: start; */
+  border: 2px dashed var(--black);
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 1rem;
+}
+
+.news-img{
+  width:100%;
+  height:100%;
+  border-radius: 1.5rem;
+  /* crops image within size without stretching: https://youtu.be/6yAAV-uP0po?si=N7AAiulOBjcANVef  */
+  object-fit: cover;
+}
+
+.side-news .news-desc{
+  font-size: 1.2rem;
+}
+
+.news-content .news-date {
+  margin-top: 0.5rem;
+}
+
+.news-content .intext-link{
+  /* aligns link on the right side of the news-item */
+  justify-self: end;
+}
+.news-button:hover, .news-button:focus{
+  background-color: var(--light-purple);
+   border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: 0.3s;
+
+}
+
+@media(max-width: 1275px){
+
+   .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+     .main-news img {
+        max-width: 100%;
+    }
+
+
+    .news-item {
+        grid-template-columns: 120px 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-news img {
+    height: 10rem;
+    }
+
+    .news-title {
+    font-size: 1.5rem;
+}
 }
