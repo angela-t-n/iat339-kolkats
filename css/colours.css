@@ -1,0 +1,26 @@
+/*variables: https://www.w3schools.com/CSS/css3_variables.asp */
+:root {
+  --transition-duration: 0.2s;
+
+  /* purples */
+  --neutral-purple: #e9e4f3;
+  --light-purple: #9e93c9;
+  --pinkish-purple: #beaada;
+  --medium-purple: #8267b9;
+  --dark-purple: #534372;
+
+  /* greens */
+  --neutral-green: #f1f3e4;
+  --light-green: #a9ba7f;
+  --medium-green: #739600;
+  --dark-green: #526903;
+
+  /* monochromes */
+  --light-greyish-green: #969f94;
+  --light-greyish-purple: #a59eac;
+  --medium-grey: #808080;
+  --light-grey: #cdcdcd;
+  --white: #ffffff;
+  --black: #000000;
+  --off-black: #323232;
+}
