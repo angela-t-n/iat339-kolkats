@@ -648,6 +648,13 @@ COMPONENTS
   margin-left: auto;
 }
 
+ .content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
 
 @media (min-width: 500px) {
   .section {
@@ -666,16 +673,7 @@ COMPONENTS
   }
 }
 
-@media (min-width: 900px) {
-  .section {
-    /* padding: rem; */
-  }
-}
-
 @media (min-width: 1200px) {
-  .section {
-    /* padding: 12rem; */
-  }
 
   .section p,
   h2,
@@ -684,16 +682,15 @@ COMPONENTS
   }
 
   .content-info {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 3rem;
   }
 
-  .content-info .button {
-    /* stops it from moving right */
-    margin-left: 0;
+  .content-info .button{
+    /* centers button */
+    margin-left: auto;
+    margin-right: auto;
   }
+
 }
 
 /* 
@@ -701,39 +698,16 @@ HERO SECTION STYLING
 */
 
 .hero {
-  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
-  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
-  /* background-color: var(--light-grey); */
-  padding: 3rem;
   margin: auto;
   height: 35rem;
   position: relative;
-  /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
-  background-image: url(../img/pattern1.svg);
-   background-size:contain;
-  background-position: center;
-  background-repeat: repeat;
 }
 
-.hero2 {
-  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
-  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
-  /* background-color: var(--light-grey); */
-  padding: 3rem;
-  margin: auto;
-  height: 35rem;
-  position: relative;
-  background-image: url(../img/pattern2.svg);
-   background-size:contain;
-  background-position: center;
-  background-repeat: repeat;
-}
 
 .hero-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .hero-heading {
@@ -742,7 +716,7 @@ HERO SECTION STYLING
   bottom: 0;
   margin: 0;
   max-width: 80%;
-  color:var(--neutral-green)
+  color:var(--dark-purple)
 
 }
 
