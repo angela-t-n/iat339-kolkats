@@ -412,3 +412,40 @@ p {
     font-size: 1.5rem;
 }
 }
+
+
+/* sticky nav bar */
+
+.sticky-bar{
+
+  /* sticky so it always stays in viewport: https://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky */
+  position: sticky;
+  /* when it reaches the top (top=0), it stays there: https://www.w3schools.com/css/css_positioning_sticky.asp */
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  font-family: "Libre_Baskerville";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+
+  /* move it down from the hero section */
+  padding: 1rem;
+
+}
+
+.sticky-bar a {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--light-green);
+  color: var(--white);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.sticky-bar a:active, .sticky-bar a:focus, .sticky-bar a:hover{
+  font-weight: bold;
+}
