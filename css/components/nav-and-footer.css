@@ -1,7 +1,6 @@
 /*
 *
 *
-*
 * === Navigation stuff ===
 */
 .nav-logo {
@@ -86,9 +85,28 @@ nav a:focus {
     display: inline-block;
   }
 }
-
 /*
 *
+*
+* === Sub-nav for use under products ===
+*/
+
+.sub-nav {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .sub-nav {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+
+/*
 *
 *
 * === Footer stuff ===

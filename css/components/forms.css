@@ -1,0 +1,132 @@
+@import url("./colours.css");
+
+/*
+  FORM ELEMENTS -------------------
+*/
+/* make form fields stack vertically with spacing */
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* make them a row instead. */
+.form-row {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+}
+
+/* allow it */
+.form-row .text-input-label {
+  flex: 1 1 130px;
+  width: auto;
+}
+
+/*
+  MARK: Payment Form 
+  At least the field and name is reusable!
+*/
+.payment-form-legend {
+  font-family: "Libre_Baskerville", serif;
+  font-size: 1.3rem;
+  color: var(--dark-purple);
+  margin-left: -9px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.payment-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--light-grey);
+  border-style: dashed;
+}
+
+.payment-form {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+
+  container-type: inline-size;
+}
+
+/* Specific form groups */
+.payment-form-ratio-1-2 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@container (min-width: 400px) {
+  .payment-form-ratio-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.payment-form-ratio-1-1 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@container (min-width: 400px) {
+  .payment-form-ratio-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.payment-form-ratio-1-1-1 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+}
+
+@container (min-width: 400px) {
+  .payment-form-ratio-1-1-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+  }
+
+  /* 
+  force the last child element to span both columns
+  HAVE to use >* to target all elements 
+  inside of the last child
+  */
+  .payment-form-ratio-1-1-1 > *:last-child {
+    grid-column: span 2;
+  }
+}
+
+@container (min-width: 550px) {
+  .payment-form-ratio-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* reset the last child element */
+  .payment-form-ratio-1-1-1 > *:last-child {
+    grid-column: auto;
+  }
+}
+
+/*
+  MARK: Contact Form 
+*/
+.contact-form-title {
+  max-width: 1000px;
+  width: 100%;
+}
+.contact-form-column {
+  width: 100%;
+  max-width: 1000px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 1000px;
+}

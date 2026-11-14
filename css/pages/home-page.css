@@ -1,0 +1,12 @@
+.home-box {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
+
+
+@media (min-width: 1200px) {
+  .home-box {
+    flex-direction: row;
+  }
+}

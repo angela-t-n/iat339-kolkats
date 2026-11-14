@@ -1,0 +1,174 @@
+/*
+  MARK: Checkout Cart
+*/
+.checkout-cart {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1000px;
+  gap: 16px;
+
+  container-type: inline-size;
+}
+
+.checkout-cart-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  gap: 16px;
+
+  border: 2px solid var(--medium-purple);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.checkout-item-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 16px;
+  border: 1.5px solid var(--dark-green);
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+
+  max-width: 100%;
+}
+
+.checkout-cart-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 16px;
+  border: 2px solid var(--medium-purple);
+  border-radius: 8px;
+}
+
+.checkout-cart-summary-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.checkout-cart-emphasis-text {
+  color: var(--dark-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Removes the padding */
+.checkout-cart-summary-row h5,
+.checkout-cart-summary-row p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.checkout-item-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.checkout-item-details {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* removes the auto margin */
+.checkout-item-details h3,
+.checkout-item-details p {
+  margin: 0;
+}
+
+.checkout-quantity-button-group {
+  width: fit-content;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  gap: 8px;
+}
+
+.checkout-quantity-button {
+  background-color: var(--neutral-purple);
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 2px solid var(--light-purple);
+  flex-shrink: 0;
+}
+
+.checkout-quantity-button:hover {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--light-green);
+}
+
+.checkout-quantity-button:active {
+  background-color: var(--neutral-green);
+  border: 2px solid var(--medium-green);
+  color: var(--dark-green);
+}
+
+.checkout-total-item-price {
+  width: fit-content;
+  font-weight: normal;
+  color: var(--dark-green);
+}
+
+.horizontal-bar {
+  border: none;
+  border-top: 2px dashed var(--light-green);
+  width: 100%;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/*
+  MARK: Media Queries
+  since it's read top to bottom, these
+  should be on the bottom for it to take effect
+*/
+@container (min-width: 400px) {
+  .checkout-item-card {
+    grid-template-columns: auto 1fr;
+    row-gap: 0;
+    column-gap: 24px;
+  }
+
+  .checkout-quantity-button-group {
+    width: 100%;
+  }
+
+  .checkout-item-details {
+    margin-top: 0;
+  }
+}
+
+/*
+    i realized the media queries are well, media queries.
+    they don't work with parent div. had to google this
+    
+    sources: https://www.w3schools.com/cssref/atrule_container.php
+    https://css-tricks.com/almanac/properties/c/container-type/
+*/
+@container (min-width: 600px) {
+  .checkout-item-card {
+    grid-template-columns: auto 1fr auto auto;
+    column-gap: 24px;
+  }
+
+  .checkout-item-details {
+    margin-top: 0;
+  }
+}

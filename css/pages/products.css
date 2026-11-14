@@ -1,53 +1,116 @@
-@import url("./fonts.css");
-@import url("./main.css");
+/* product listing stuff */
+.box {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-.home-box {
+.product-grid {
+  /* Removes the padding around the ul */
+  padding: 1rem;
+  justify-items: space-around; /* so the listings aren't touching the edge */
+  grid-template-columns: auto;
+  /* add more space between each row */
+  row-gap: 3rem;
+}
+
+/* effects only the li in .product-grid */
+.product-grid.box {
+  max-width: fit-content;
+}
+
+.product-grid li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* link of each item */
+.grid-item {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card-container {
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  border: 2px solid var(--light-green);
+  padding: 1rem;
+  background-color: var(--neutral-green);
+  transition-duration: 0.3s;
+}
+
+.product-name {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition-duration: 0.3s;
+  margin: 24px0 8px0;
+}
+
+.product-price {
+  font-family: "League_Spartan";
+  font-weight: normal;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition-duration: 0.3s;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.product-details {
+  /* display: flex;
+  flex-direction: column;
+  gap: 8px; */
+  width: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  gap: 16px;
+  margin-top: 16px;
 }
 
-.definition {
-  font-size: 2rem;
+.grid-item:hover .card-container,
+.grid-item:focus .card-container {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
 }
 
-@media (min-width: 1200px) {
-  .home-box {
-    flex-direction: row;
+.grid-item:hover .product-name,
+.grid-item:focus .product-name {
+  color: var(--neutral-green);
+}
+
+.grid-item:hover .product-price,
+.grid-item:focus .product-price {
+  color: var(--neutral-green);
+}
+
+.product-image {
+  /* change width to fit within the product listing */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (min-width: 576px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.sub-nav {
-  display: flex;
-  gap: 2rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-
-@media (min-width: 600px) {
-  .sub-nav {
-    margin-left: 3rem;
-    margin-top: 3rem;
+@media (min-width: 768px) {
+  .box {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  margin: 1rem 0;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.pinkish-purple {
-  background-color: var(--pinkish-purple);
-  color: var(--white);
 }
 
 .product-section {
@@ -70,37 +133,10 @@
   font-weight: bold;
 }
 
-.img-border {
-  border: 2px solid var(--pinkish-purple);
-  padding: 1rem;
-  border-radius: 12px 0;
-}
-
-.border {
-  border: 2px solid var(--pinkish-purple);
-  padding: 1rem;
-  border-radius: 12px 0;
-}
-
-.white-border {
-  border: 2px solid var(--white);
-  padding: 1rem;
-  border-radius: 12px 0;
-}
-
 .product-desc-img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.main-img {
-  background-color: var(--neutral-green);
-  padding: 1rem;
-}
-
-.stars {
-  max-width: 30%;
 }
 
 .product-desc-details {
@@ -124,8 +160,30 @@
   gap: 1rem;
 }
 
-/* first section responsiveness */
+.img-border {
+  border: 2px solid var(--pinkish-purple);
+  padding: 1rem;
+  border-radius: 12px 0;
+}
 
+.border {
+  border: 2px solid var(--pinkish-purple);
+  padding: 1rem;
+  border-radius: 12px 0;
+}
+
+.white-border {
+  border: 2px solid var(--white);
+  padding: 1rem;
+  border-radius: 12px 0;
+}
+.main-img {
+  background-color: var(--neutral-green);
+  padding: 1rem;
+}
+
+
+/* first section responsiveness */
 @media (min-width: 560px) {
   .product-desc {
     grid-template-columns: 1fr 1fr;
@@ -195,6 +253,10 @@
   padding: 3rem;
 }
 
+.flower-icon-img {
+  width: 5rem;
+}
+
 @media (min-width: 600px) {
   .flower-grid {
     grid-template-columns: 1fr 1fr;
@@ -219,11 +281,10 @@
   }
 }
 
-.flower-icon-img {
-  width: 5rem;
-}
-
 /* review stuff */
+.stars {
+  max-width: 30%;
+}
 
 .review-main {
   display: flex;
@@ -269,15 +330,6 @@ p {
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
-}
-
-.green {
-  background-color: var(--medium-green);
-  color: var(--white);
-}
-
-.short {
-  width: 50%;
 }
 
 .message {

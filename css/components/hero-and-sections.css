@@ -1,0 +1,176 @@
+@import url("./colours.css");
+/* 
+  MARK: SECTIONS STYLING 
+*/
+.section {
+  padding: 2.5rem;
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.section .button {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.section-short {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-text {
+  max-width: auto;
+}
+
+.section-flex-row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .section {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 5.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section p,
+  h2,
+  .button {
+    max-width: 816px;
+  }
+
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 3rem;
+  }
+
+  .content-info .button {
+    /* stops it from moving right */
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-text {
+    max-width: 700px;
+  }
+}
+
+.section-column {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+
+/* 
+  MARK: HERO SECTION STYLING 
+*/
+.hero {
+  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
+  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
+  /* background-color: var(--light-grey); */
+  padding: 3rem;
+  margin: auto;
+  height: 35rem;
+  position: relative;
+  /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
+  background-image: url(../img/pattern1.svg);
+   background-size:contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hero2 {
+  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
+  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
+  /* background-color: var(--light-grey); */
+  padding: 3rem;
+  margin: auto;
+  height: 35rem;
+  position: relative;
+  background-image: url(../img/pattern2.svg);
+   background-size:contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-heading {
+  position: absolute;
+  left: 3rem;
+  bottom: 0;
+  margin: 0;
+  max-width: 80%;
+  color:var(--neutral-green)
+}
+
+.hero-fix {
+  margin: 0;
+}
+
+.hero-short {
+  height: 20rem;
+}
+
+@media (min-width: 500px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-heading {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-heading {
+    font-size: 6rem;
+  }
+}
