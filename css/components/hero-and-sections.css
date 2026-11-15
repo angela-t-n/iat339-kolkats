@@ -43,6 +43,13 @@
   align-items: center;
 }
 
+.content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
 @media (min-width: 500px) {
   .section {
     padding: 4rem;
@@ -69,15 +76,13 @@
   }
 
   .content-info {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    gap: 3rem;
+    align-items: center;
   }
 
   .content-info .button {
-    /* stops it from moving right */
-    margin-left: 0;
+    /* centers button */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -104,7 +109,7 @@
 /* 
   MARK: HERO SECTION STYLING 
 */
-.hero {
+.hero-old {
   /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
   /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
   /* background-color: var(--light-grey); */
@@ -133,11 +138,25 @@
   background-repeat: repeat;
 }
 
+.hero {
+  margin: auto;
+  height: 35rem;
+  position: relative;
+}
+
 .hero-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+}
+
+.hero-heading-green {
+  position: absolute;
+  left: 3rem;
+  bottom: 0;
+  margin: 0;
+  max-width: 80%;
+  color:var(--neutral-green)
 }
 
 .hero-heading {
@@ -146,7 +165,7 @@
   bottom: 0;
   margin: 0;
   max-width: 80%;
-  color:var(--neutral-green)
+  color:var(--dark-purple)
 }
 
 .hero-fix {

@@ -1,6 +1,8 @@
 /* 
   for cart page 
 */
+@import url("../components/checkout-cart.css");
+
 .page-cart {
   /* the body is a centered structure */
   flex-direction: column;

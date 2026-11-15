@@ -130,10 +130,6 @@
   margin: 0;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 /*
   MARK: Media Queries
   since it's read top to bottom, these

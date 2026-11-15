@@ -42,3 +42,7 @@
 .section-purple {
   background-color: var(--neutral-purple);
 }
+
+.heading{
+  color: var(--black);
+}

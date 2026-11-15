@@ -1,3 +1,6 @@
+@import url("../components/checkout-cart.css");
+@import url("../components/forms.css");
+
 .page-checkout {
   display: flex;
   justify-content: center;

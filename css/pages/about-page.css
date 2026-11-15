@@ -4,5 +4,21 @@
     this is mainly just quickly put together for demonstration
 */
 @import url("./colours.css");
+@import url("./checkout-page.css");
 @import url("./forms.css");
 
+/*
+  MARK: Contact Form 
+*/
+.contact-form-title {
+  max-width: 1000px;
+  width: 100%;
+}
+.contact-form-column {
+  width: 100%;
+  max-width: 1000px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 1000px;
+}

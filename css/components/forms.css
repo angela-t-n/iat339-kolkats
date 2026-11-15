@@ -1,7 +1,7 @@
 @import url("./colours.css");
 
 /*
-  FORM ELEMENTS -------------------
+  MARK: General Form Elements
 */
 /* make form fields stack vertically with spacing */
 .form-column {
@@ -113,20 +113,4 @@
   .payment-form-ratio-1-1-1 > *:last-child {
     grid-column: auto;
   }
-}
-
-/*
-  MARK: Contact Form 
-*/
-.contact-form-title {
-  max-width: 1000px;
-  width: 100%;
-}
-.contact-form-column {
-  width: 100%;
-  max-width: 1000px;
-}
-.contact-form {
-  width: 100%;
-  max-width: 1000px;
 }
