@@ -1,0 +1,22 @@
+/* Must import everything */
+@import url(../pages/about-page.css);
+@import url(../pages/cart-page.css);
+@import url(../pages/home-page.css);
+@import url(../pages/news-page.css);
+@import url(../pages/products-page.css);
+@import url(../pages/about-page.css);
+
+@import url("../components/forms.css");
+@import url("../components/checkout-cart.css");
+
+body{
+  padding: 2rem;
+}
+
+/*
+  Branding guide at the end 
+*/
+.branding-guide {
+  width: 100%;
+  height: auto;
+}
