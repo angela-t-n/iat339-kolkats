@@ -125,6 +125,12 @@
   padding: 1rem;
 }
 
+.leave-review-sec{
+  display: grid;
+  max-width: 100%;
+  padding: 3rem;
+}
+
 /* change h1 specific sizing when screen is small */
 .product-section h1 {
   font-size: 1.5rem;
@@ -192,6 +198,13 @@
     gap: 2rem;
     align-items: start;
   }
+
+  /* manha added new! */
+  .leave-review-sec{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* align-items: start; */
+}
 
   .small-desc {
     font-size: 0.8rem;
