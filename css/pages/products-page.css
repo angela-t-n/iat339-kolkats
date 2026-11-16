@@ -125,7 +125,7 @@
   padding: 1rem;
 }
 
-.leave-review-sec{
+.leave-review-sec {
   display: grid;
   max-width: 100%;
   padding: 3rem;
@@ -191,7 +191,6 @@
   padding: 1rem;
 }
 
-
 /* first section responsiveness */
 @media (min-width: 560px) {
   .product-desc {
@@ -201,11 +200,11 @@
   }
 
   /* manha added new! */
-  .leave-review-sec{
+  .leave-review-sec {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     /* align-items: start; */
-}
+  }
 
   .small-desc {
     font-size: 0.8rem;
@@ -255,7 +254,6 @@
   padding-bottom: 1rem;
 }
 
-
 /* .flower-grid.flower-title {
   padding: 0;
   padding-bottom: 1rem;
@@ -286,7 +284,6 @@
   }
 }
 
-
 @media (min-width: 800px) {
   .flower-grid {
     display: flex;
@@ -296,7 +293,7 @@
     margin: 0 auto;
 
     /* keeps grid border contained to flower width plus a bit more*/
-    max-width: 63rem;;
+    max-width: 63rem;
     gap: 2rem;
   }
 }

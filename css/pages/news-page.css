@@ -102,10 +102,9 @@
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   transition: 0.3s;
-
 }
 
-@media(max-width: 1275px) {
+@media (max-width: 1275px) {
   .news-grid {
     grid-template-columns: 1fr;
   }
@@ -113,7 +112,7 @@
   .main-news img {
     max-width: 100%;
   }
-  
+
   .news-item {
     grid-template-columns: 120px 1fr;
   }
