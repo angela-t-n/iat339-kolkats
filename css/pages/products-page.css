@@ -125,7 +125,14 @@
   padding: 1rem;
 }
 
+.leave-review-sec{
+  display: grid;
+  max-width: 100%;
+  padding: 3rem;
+}
+
 /* change h1 specific sizing when screen is small */
+/* changed naming to review-section-manha */
 .product-section h1 {
   font-size: 1.5rem;
   font-weight: normal;
@@ -193,6 +200,13 @@
     align-items: start;
   }
 
+  /* manha added new! */
+  .leave-review-sec{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* align-items: start; */
+}
+
   .small-desc {
     font-size: 0.8rem;
   }
@@ -237,13 +251,15 @@
 .flower-title {
   font-size: 1.5rem;
   font-weight: normal;
-  padding: 0;
-}
-
-.flower-grid.flower-title {
-  padding: 0;
+  /* padding: 0; */
   padding-bottom: 1rem;
 }
+
+
+/* .flower-grid.flower-title {
+  padding: 0;
+  padding-bottom: 1rem;
+} */
 
 .flower-img {
   width: 100%;
@@ -253,6 +269,11 @@
 
 .flower-section {
   padding: 3rem;
+  /* made the section a grid box */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 }
 
 .flower-icon-img {
@@ -265,21 +286,25 @@
   }
 }
 
-@media (min-width: 900px) {
-  .flower-section {
-    padding: 2rem;
-  }
-}
 
 @media (min-width: 800px) {
   .flower-grid {
     display: flex;
     flex-direction: row;
     width: 100%;
+    /* top and bottom 0, right and left are automatic: https://www.w3schools.com/css/css_margin.asp */
     margin: 0 auto;
 
-    max-width: 1000px;
+    /* keeps grid border contained to flower width plus a bit more*/
+    max-width: 63rem;;
     gap: 2rem;
+  }
+}
+
+/* moved this selector down because it is bigger */
+@media (min-width: 900px) {
+  .flower-section {
+    padding: 2rem;
   }
 }
 

@@ -27,6 +27,8 @@
       <a class="intext-link bold-text" href="#combined_elements"
         >Combined Elements</a
       >
+      <a class="intext-link bold-text" href="#site-elements">Site Elements</a>
+      <a class="intext-link bold-text" href="#news-elements">News Elements</a>
       <a class="intext-link bold-text" href="product_listing.html"
         >Product Listing Template</a
       >
@@ -726,56 +728,184 @@
             </a>
           </li>
         </ul>
+        <section class="element">
+          <h3>Product Description</h3>
+
+          <h3>css selectors</h3>
+
+        </section>
+        <section class="element">
+          <h3>Flower Reveal Section</h3>
+
+          <div headingoffset="1">
+
+            <div class="flower-section pinkish-purple">
+              <h1 class="flower-title">4 possible plants...</h1>
+              <div class="white-border flower-grid">
+                <img
+                  class="flower-img"
+                  src="img/cupid-rose-transparent.svg"
+                  alt="cupid rose"
+                >
+                <img
+                  class="flower-img"
+                  src="img/sweetly-violet-transparent.svg"
+                  alt="sweetlyviolet"
+                >
+                <img
+                  class="flower-img"
+                  src="img/forget-me-not-transparent.svg"
+                  alt="forget me not flower"
+                >
+                <img
+                  class="flower-img"
+                  src="img/tulips-embrace-transparent.png"
+                  alt="tulip's embrace flower"
+                >
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code>
+
+              &lt;div class="flower-section pinkish-purple"&gt;
+                &lt;h1 class="flower-title"&gt;4 possible plants...&lt;/h1&gt;
+                &lt;div class="white-border flower-grid"&gt;
+                  &lt;img
+                    class="flower-img"
+                    src="img/cupid-rose-transparent.svg"
+                    alt="cupid rose"
+                  &gt;
+                  &lt;img
+                    class="flower-img"
+                    src="img/sweetly-violet-transparent.svg"
+                    alt="sweetlyviolet"
+                  &gt;
+                  &lt;img
+                    class="flower-img"
+                    src="img/forget-me-not-transparent.svg"
+                    alt="forget me not flower"
+                  &gt;
+                  &lt;img
+                    class="flower-img"
+                    src="img/tulips-embrace-transparent.png"
+                    alt="tulip's embrace flower"
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+            </code>
+          </pre>
+
+          <h3>css selectors</h3>
+          <p>.flower-section, .pinkish-purple, .flower-title, .flower-grid, .flower-img</p>
+
+        </section>
+        <section>
+          <h3>Review Section</h3>
+
+          <div headingoffset="1">
+            <div class="section product-section">
+
+              <div class="review-main">
+                <h1>Reviews</h1>
+                <h2>5.0</h2>
+                <img class="stars" src="img/stars.svg" alt="stars">
+                <p>2 reviews</p>
+              </div>
+
+              <!-- review 1 -->
+              <div class="review">
+                <div class="profile">
+                  <img class="profile-pic" src="img/profile.svg" alt="profile image">
+                  <p>Spongebob Squarepants</p>
+                </div>
+                <h3 class="span-two-columns">This box is so insightful!</h3>
+                <img class="span-two-columns stars" src="img/stars.svg" alt="stars">
+                <p class="span-two-columns">
+                  I was skeptical at first but the fortune was fun to read. Plus, I get
+                  a cool plant that I can grow! I just might consider the monthly
+                  subscription...
+                </p>
+              </div>
+
+            </div>
+          </div>
+        
+
+           <pre>
+            <code>
+
+              &lt;div class="section product-section">
+
+                &lt;div class="review-main">
+                  &lt;h1>Reviews&lt;/h1>
+                  &lt;h2>5.0&lt;/h2>
+                  &lt;img class="stars" src="img/stars.svg" alt="stars">
+                  &lt;p>2 reviews&lt;/p>
+                &lt;/div>
+
+                <!-- review 1 -->
+                &lt;div class="review"&gt;
+                  &lt;div class="profile"&gt;
+                    &lt;img class="profile-pic" src="img/profile.svg" alt="profile image"&gt;
+                    &lt;p>Spongebob Squarepants&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;h3 class="span-two-columns">This box is so insightful!&lt;/h3&gt;
+                  &lt;img class="span-two-columns stars" src="img/stars.svg" alt="stars"&gt;
+                  &lt;p class="span-two-columns"&gt;
+                    I was skeptical at first but the fortune was fun to read. Plus, I get
+                    a cool plant that I can grow! I just might consider the monthly
+                    subscription...
+                  &lt;/p&gt;
+                &lt;/div&gt;
+
+              &lt;/div&gt;
+              
+            </code>
+          </pre>
+
+          <h3>css selectors</h3>
+          <p>.section, .product-section, .review-main, .stars, .review, .profile, .profile-pic, .span-two-columns</p>
+
+        </section>
       </section>
 
-      <section>
+      <section id="site-elements">
         <h2>Site Elements</h2>
         <section class="element">
-          <h3>Hero Section Element</h3>
+          <h3>Hero Section</h3>
 
           <h3>Rendered Element</h3>
           <!-- to remove the heading validation error for the sake for this style guide, no error would show up on the actual page, it changes how the browser reads the headings by adding 2 the h1, so the browser sees the h1 as an h3: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/headingoffset  -->
-          <div headingoffset="2">
-            <div class="hero">
-              <h1 class="hero-heading">The Fortune Collection</h1>
+          <!-- <div headingoffset="2"> -->
+
+            <div class="hero hero-fix">
+              <img class="hero-img" src="img/hero2.svg" alt="hero image">
+              <!-- changed to h3 because the headingoffset wasn't working, but it is h1 in the actual page - manha -->
+              <h3 class="hero-heading">Plantoscope</h3>
             </div>
-          </div>
+           
+          <!-- </div> -->
 
           <h3>Sample Code</h3>
           <pre>
           <code>
-             &lt;div class = "hero"&gt;
-                  &lt;h1 class = "hero-heading">The Fortune Collection&lt;/h1&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+            &lt;div class="hero hero-fix"&gt;
+              &lt;img class="hero-img" src="img/hero2.svg" alt="hero image"&gt;
+              &lt;h1 class="hero-heading">Plantoscope&lt;/h1&gt;
+            &lt;/div>
           </code>
           </pre>
 
           <h3>Css Selectors</h3>
-          <p>.hero, .hero-heading, .hero h1</p>
+          <p>.hero, .hero-fix, .hero-img, .hero-heading</p>
         </section>
 
         <section class="element">
           <h3>Section</h3>
           <div class="section">
-            <div headingoffset="1">
-              <div class="content-info">
-                <h2>What is Plantoscope?</h2>
-                <p>
-                  Plantoscope (derived from “plant” and “horoscope”) provides
-                  fortune readings in the form of blind box purchases containing
-                  a plant and fortune scroll. Plantoscope offers different
-                  readings from each region of Mystic Forest! Be it love, luck,
-                  health, or personal identity, each set provides a different
-                  variety of plants pertaining to your selected category.
-                </p>
-                <div class="button">Learn more...</div>
-              </div>
-            </div>
-          </div>
-
-          <h3>Purple Section</h3>
-          <div class="section light-purple">
             <div headingoffset="1">
               <div class="content-info">
                 <h2>What is Plantoscope?</h2>
@@ -806,109 +936,96 @@
             </code>
           </pre>
           <h3>css selectors</h3>
-          <p>.section, .content-info, .light-purple</p>
+          <p>.section, .content-info</p>
         </section>
-
+        </section>
+      <section id="news-elements">
+        <h2>News Elements</h2>
         <section class="element">
-          <h3>News Section</h3>
-
-          <div class="section content-info">
-            <div class="news-grid">
-              <!-- news 1 -->
-              <div class="news">
-                <div class="news-details">
-                  <h2 class="news-title">
-                    What Will Your Next Fortune Reveal? Available October 7.
-                  </h2>
-                  <p class="caption">Oct 7 2026</p>
-                </div>
-                <img
-                  class="news-img"
-                  src="img/love-canopy-fortune.png"
-                  alt="fortune image"
-                >
-
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
-                    tenetur odio, eligendi est aperiam, dignissimos minima
-                    debitis sit illo nisi in deleniti ut.
-                  </p>
-                  <a href="#" class=".intext-link">Read More</a>
-                </div>
-              </div>
-              <!-- new 2 -->
-              <div class="news">
-                <div class="news-details">
-                  <h2 class="news-title">
-                    Kolkat caught RED HANDED! What will happen to the
-                    Plantoscope?
-                  </h2>
-                  <p class="caption">Nov 2 2026</p>
-                </div>
-                <img
-                  class="news-img"
-                  src="img/love-canopy-fortune.png"
-                  alt="fortune image"
-                >
-
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur maxime nemo dolorum voluptas cum eum eveniet
-                    tenetur odio, eligendi est aperiam, dignissimos minima
-                    debitis sit illo nisi in deleniti ut.
-                  </p>
-                  <a href="#" class=".intext-link">Read More</a>
-                </div>
-              </div>
+          <h3>Main News</h3>
+          <div headingoffset="1">
+            <div class="main-news">
+              <img src="img/jail.png" alt="jail image">
+              <h2 class="news-title">Kolkat caught <em>RED HANDED!</em>  What will happen to the Plantoscope?</h2>
+              <p class="news-date">Nov 13, 2026</p>
+              <p class="news-desc">
+                  Kolkat has been caught smuggling seeds from the neigbouring city, Surreyite. This is a serious crime. What will happen to our dear Kolkat?
+              </p>
+              <a href="#" class="intext-link">Read More</a>
             </div>
           </div>
-
           <h3>Sample code</h3>
           <pre>
             <code>
-                &lt;div class="section content-info"&gt;
-                &lt;div class="news-grid"&gt;
-                <!-- news 1 -->
-                &lt;div class="news"&gt;
-                &lt;div class="news-details"&gt;
-                &lt;h2 class="news-title"&gt;What Will Your Next Fortune Reveal? Available October 7.&lt;/h2&gt;
-                &lt;p class="caption"&gt; Oct 7 2026&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
-
-                &lt;div&gt;
-                  
-                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
-                &lt;a href="#" class=".intext-link"&gt;Read More&lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              <!-- new 2 -->
-              &lt;div class="news"&gt;
-                &lt;div class="news-details"&gt;
-                &lt;h2 class="news-title">Kolkat caught RED HANDED! What will happen to the Plantoscope?&lt;/h2&gt;
-                &lt;p class="caption"> Nov 2 2026&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;img class="news-img" src="img/love-canopy-fortune.png" alt="fortune image"&gt;
-              
-                &lt;div&gt;
-                  
-                &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime nemo dolorum voluptas cum eum eveniet tenetur odio, eligendi est aperiam, dignissimos minima debitis sit illo nisi in deleniti ut.&lt;/p&gt;
-                &lt;a href="#" class=".intext-link">Read More&lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
+                &lt;div class="main-news"&gt;
+                  &lt;img src="img/jail.png" alt="jail image"&gt;
+                  &lt;h2 class="news-title">Kolkat caught &lt;em&gt;RED HANDED!&lt;/em&gt;  What will happen to the Plantoscope?&lt;/h2&gt;
+                  &lt;p class="news-date"&gt;Nov 13, 2026&lt;/p&gt;
+                  &lt;p class="news-desc"&gt;
+                      Kolkat has been caught smuggling seeds from the neigbouring city, Surreyite. This is a serious crime. What will happen to our dear Kolkat?
+                  &lt;/p&gt;
+                  &lt;a href="#" class="intext-link">Read More&lt;/a&gt;
+                &lt;/div>
 
             </code>
           </pre>
-          <h3>css selector></h3>
+          <h3>css selector</h3>
           <p>
-            .section, .content-info, .news, .news-details, .news-title,
-            .caption, .news-img, news-grid
+            .main-news, .news-title, .news-date, .news-desc, .intext-link
           </p>
+        </section>
+        <section class="element">
+          <h3>Small News </h3>
+
+          <div class="side-news">
+
+            <div class="news-item">
+              <img  class="news-img" src="img/closed.avif" alt="closed image">
+              <div class="news-content">
+                <h2 class="news-title">  Plantoscope at risk of going under. Here is what you can do to help.</h2>
+                <p class="news-date">Nov 7, 2026</p>
+                <a href="#" class="intext-link">Read More</a>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <img  class="news-img" src="img/closed.avif" alt="closed image">
+              <div class="news-content">
+                <h2 class="news-title">  Plantoscope at risk of going under. Here is what you can do to help.</h2>
+                <p class="news-date">Nov 7, 2026</p>
+                <a href="#" class="intext-link">Read More</a>
+              </div>
+            </div>
+
+          </div>
+          <h3>Sample Code</h3>
+          <pre>
+            <code>
+              &lt;div class="side-news"&gt;
+                &lt;div class="news-item"&gt;
+                  &lt;img  class="news-img" src="img/closed.avif" alt="closed image"&gt;
+                  &lt;div class="news-content"&gt;
+                    &lt;h2 class="news-title"&gt;  Plantoscope at risk of going under. Here is what you can do to help.&lt;/h2&gt;
+                    &lt;p class="news-date">Nov 7, 2026&lt;/p&gt;
+                    &lt;a href="#" class="intext-link">Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                 &lt;div class="news-item"&gt;
+                  &lt;img  class="news-img" src="img/closed.avif" alt="closed image"&gt;
+                  &lt;div class="news-content"&gt;
+                    &lt;h2 class="news-title"&gt;  Plantoscope at risk of going under. Here is what you can do to help.&lt;/h2&gt;
+                    &lt;p class="news-date">Nov 7, 2026&lt;/p&gt;
+                    &lt;a href="#" class="intext-link">Read More&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div>&gt;
+
+            </code>
+          </pre>
+
+          <h3>css selectors</h3>
+          <p>.side-news, .news-item, .news-img, .news-content, .news-title, .news-date</p>
         </section>
       </section>
 
@@ -1645,6 +1762,7 @@
       <ul>
         <li><a href="https://pin.it/oo014gUSN">About Us Page: https://pin.it/oo014gUSN</a></li>
         <li><a href="https://ca.pinterest.com/pin/946670784155496881/">Home Page: https://ca.pinterest.com/pin/946670784155496881/</a></li>
+        <li><a href="https://pin.it/5H55w5yQB">Fortune Collection Page: https://pin.it/5H55w5yQB</a></li>
       </ul>
     </section>
   </body>
