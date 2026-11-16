@@ -26,7 +26,7 @@
 }
 
 .section-text {
-  max-width: auto;
+  max-width: 100%;
 }
 
 .section-flex-row {
@@ -110,38 +110,11 @@
 /* 
   MARK: HERO SECTION STYLING 
 */
-.hero-old {
-  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
-  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
-  /* background-color: var(--light-grey); */
-  padding: 3rem;
-  margin: auto;
-  height: 35rem;
-  position: relative;
-  /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
-  background-image: url(../img/pattern1.svg);
-   background-size:contain;
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.hero2 {
-  /* gradients reference: https://www.w3schools.com/css/css3_gradients.asp */
-  /* background-image: linear-gradient(to bottom, var(--medium-purple), var(--white)); */
-  /* background-color: var(--light-grey); */
-  padding: 3rem;
-  margin: auto;
-  height: 35rem;
-  position: relative;
-  background-image: url(../img/pattern2.svg);
-   background-size:contain;
-  background-position: center;
-  background-repeat: repeat;
-}
 
 .hero {
   margin: auto;
   height: 35rem;
+  /* parent item is relative: https://youtu.be/YEmdHbQBCSQ?si=C8oIVxyJpPdBmZyF */
   position: relative;
 }
 
@@ -150,6 +123,9 @@
   height: 100%;
   object-fit: cover;
 }
+
+  /* hero headings is positioned absolute to the parent .hero: https://youtu.be/YEmdHbQBCSQ?si=C8oIVxyJpPdBmZyF */
+
 
 .hero-heading-green {
   position: absolute;

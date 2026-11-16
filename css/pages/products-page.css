@@ -12,7 +12,7 @@
 .product-grid {
   /* Removes the padding around the ul */
   padding: 1rem;
-  justify-items: space-around; /* so the listings aren't touching the edge */
+  align-content: space-around; /* so the listings aren't touching the edge */
   grid-template-columns: auto;
   /* add more space between each row */
   row-gap: 3rem;
@@ -54,7 +54,7 @@
   color: var(--dark-green);
   text-decoration: none;
   transition-duration: 0.3s;
-  margin: 24px0 8px0;
+  margin: 24px 0 8px 0;
 }
 
 .product-price {
