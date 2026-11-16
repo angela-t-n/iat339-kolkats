@@ -8,6 +8,7 @@
   --light-purple: #9e93c9;
   --medium-purple: #8267b9;
   --dark-purple: #534372;
+  --deep-purple: #443363;
   --pinkish-purple: #beaada;
 
   /* greens */
@@ -16,6 +17,7 @@
   --light-green: #a9ba7f;
   --medium-green: #739600;
   --dark-green: #526903;
+  --deep-green: #34410b;
 
   /* monochromes */
   --medium-grey: #808080;
@@ -47,6 +49,14 @@
   background-color: var(--neutral-purple);
 }
 
-.heading {
+.heading-black {
   color: var(--black);
+}
+
+.heading-purple {
+  color: var(--deep-purple);
+}
+
+.heading-green {
+  color: var(--deep-green);
 }
