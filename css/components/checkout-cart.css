@@ -8,7 +8,6 @@
   max-width: 1000px;
   gap: 16px;
 
-  container-type: inline-size;
 }
 
 .checkout-cart-list {
@@ -22,7 +21,7 @@
   border-radius: 8px;
 }
 
-.checkout-item-card {
+/* .checkout-item-card {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -32,6 +31,21 @@
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
 
+  max-width: 100%;
+} */
+
+.checkout-item-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 16px; /* Replaces the manual margin-top when items wrap */
+  
+  padding: 16px;
+  border: 1.5px solid var(--dark-green);
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
   max-width: 100%;
 }
 
@@ -72,6 +86,7 @@
 }
 
 .checkout-item-details {
+  flex: 1 1 180px;
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -135,15 +150,11 @@
   since it's read top to bottom, these
   should be on the bottom for it to take effect
 */
-@container (min-width: 400px) {
+@media (min-width: 400px) {
   .checkout-item-card {
     grid-template-columns: auto 1fr;
     row-gap: 0;
     column-gap: 24px;
-  }
-
-  .checkout-quantity-button-group {
-    width: 100%;
   }
 
   .checkout-item-details {
@@ -157,8 +168,11 @@
     
     sources: https://www.w3schools.com/cssref/atrule_container.php
     https://css-tricks.com/almanac/properties/c/container-type/
+
+    Turns out this is NOT valid with W3C CSS Validation
+    because this feature came out AFTER CSS level 3!
 */
-@container (min-width: 600px) {
+@media (min-width: 600px) {
   .checkout-item-card {
     grid-template-columns: auto 1fr auto auto;
     column-gap: 24px;

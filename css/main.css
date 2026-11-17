@@ -491,6 +491,9 @@ label {
 .center-text {
   text-align: center;
   width: 100%;
+}
+
+.limit-button-width{
   max-width: 400px;
 }
 
